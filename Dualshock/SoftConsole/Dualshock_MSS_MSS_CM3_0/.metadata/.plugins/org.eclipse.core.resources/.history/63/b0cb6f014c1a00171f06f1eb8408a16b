@@ -1,0 +1,8 @@
+int main()
+{
+	MSS_gpio_init()
+
+	while( 1 )
+	{
+	}
+}

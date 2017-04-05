@@ -1,0 +1,11 @@
+#include "drivers/mss_gpio/mss_gpio.h"
+#include "drivers/CoreSPI/core_spi.h"
+
+int main()
+{
+	MSS_GPIO_init();
+
+	while( 1 )
+	{
+	}
+}

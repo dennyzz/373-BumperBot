@@ -58,3 +58,7 @@
 
 #designer files
 */designer/*/*
+
+#softconsole 
+
+*/.metadata/*

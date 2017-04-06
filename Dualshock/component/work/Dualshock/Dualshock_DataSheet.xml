@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>E:/BumperBot/Dualshock/component/work/Dualshock</location>
-    <state>GENERATED ( Thu Apr 06 00:02:08 2017 )</state>
+    <state>GENERATED ( Thu Apr 06 01:24:11 2017 )</state>
     <swide-toolchain>SoftConsole workspace generated to E:\BumperBot\Dualshock\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
@@ -95,6 +95,12 @@
   </io>
   <io>
     <port-name>SPISCLKO</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>GPIO_0_OUT</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -391,9 +397,9 @@ There is one APB3 Master interface.
     </core-param>
     <core-param>
       <param-name>Clock Rate (0-255):</param-name>
-      <param-value>10</param-value>
+      <param-value>19</param-value>
       <param-hdlname>CFG_CLK</param-hdlname>
-      <param-hdlvalue>10</param-hdlvalue>
+      <param-hdlvalue>19</param-hdlvalue>
       <param-tag>spirit:hwParameter</param-tag>
     </core-param>
     <core-param>

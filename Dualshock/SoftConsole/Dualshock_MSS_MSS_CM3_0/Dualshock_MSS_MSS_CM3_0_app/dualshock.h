@@ -3,6 +3,7 @@
 
 #include "drivers/mss_gpio/mss_gpio.h"
 #include "drivers/CoreSPI/core_spi.h"
+#include "drivers/mss_timer/mss_timer.h"
 
 static const uint8_t digital_poll[] = {0x01, 0x42, 0x00, 0x00, 0x00};
 static const uint8_t enter_config[] = {0x01, 0x43, 0x00, 0x01, 0x00};

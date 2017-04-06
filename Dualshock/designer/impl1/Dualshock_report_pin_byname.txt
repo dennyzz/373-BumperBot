@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Wed Apr 05 21:47:34 2017 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Thu Apr 06 01:24:50 2017 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.7 SP3
 Version: 11.7.3.8
@@ -10,6 +10,7 @@ Package: 484 FBGA
 *****************************************************************
 Port        |Pin  |Fixed |Function           |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
 ------------|-----|------|-------------------|--------|------------------|-----|--------------|----------------|-----|-----------------|------------|--------------|
+GPIO_0_OUT   V1    Yes    GPIO_0/IO47RSB4V0   LVTTL    8                  High  None           ---              No    35                No           Yes
 GPIO_13_OUT  AB2   Yes    GPIO_13/IO36RSB4V0  LVTTL    8                  High  None           ---              No    35                No           Yes
 GPIO_14_OUT  AB3   Yes    GPIO_14/IO35RSB4V0  LVTTL    8                  High  None           ---              No    35                No           Yes
 GPIO_15_OUT  Y3    Yes    GPIO_15/IO34RSB4V0  LVTTL    8                  High  None           ---              No    35                No           Yes

@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Wed Apr 05 21:47:33 2017 ***************************************************************************
+                          Thu Apr 06 01:24:49 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.7 SP3
 Version: 11.7.3.8
 File Name: E:\BumperBot\Dualshock\designer\impl1\Dualshock.adb
 Design Name: Dualshock  Design State: layout
-Last Saved: Wed Apr 05 21:47:19 2017
+Last Saved: Thu Apr 06 01:24:35 2017
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Wed Apr 05 21:47:15 2017:
+Source File(s) Imported on Thu Apr 06 01:24:31 2017:
         E:\BumperBot\Dualshock\synthesis\Dualshock.edn
         E:\BumperBot\Dualshock\component\work\Dualshock\Dualshock.pdc
 
@@ -229,7 +229,6 @@ Warning: CMP201: Net Dualshock_MSS_0/MSS_ADLIB_INST_GPOE[28] drives no load.
 Warning: CMP201: Net Dualshock_MSS_0/MSS_ADLIB_INST_GPOE[29] drives no load.
 Warning: CMP201: Net Dualshock_MSS_0/MSS_ADLIB_INST_GPOE[30] drives no load.
 Warning: CMP201: Net Dualshock_MSS_0/MSS_ADLIB_INST_GPOE[31] drives no load.
-Warning: CMP201: Net Dualshock_MSS_0/GPO_net_0[0] drives no load.
 Warning: CMP201: Net Dualshock_MSS_0/GPO_net_0[1] drives no load.
 Warning: CMP201: Net Dualshock_MSS_0/GPO_net_0[2] drives no load.
 Warning: CMP201: Net Dualshock_MSS_0/GPO_net_0[3] drives no load.
@@ -397,11 +396,11 @@ Optimized macros:
   - Buffers:                0
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        15
+  - Logic combining:        17
 
-    Total macros optimized  15
+    Total macros optimized  17
 
-There were 0 error(s) and 310 warning(s) in this design.
+There were 0 error(s) and 309 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -421,11 +420,11 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:    729  Total:   4608   (15.82%)
+    Fabric                     Used:    735  Total:   4608   (15.95%)
     Fabric IO (W/ clocks)      Used:      3  Total:     94   (3.19%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
-    Dedicated MSS IO           Used:      6  Total:     43   (13.95%)
+    Dedicated MSS IO           Used:      7  Total:     43   (16.28%)
     GLOBAL (Chip+Quadrant)     Used:      1  Total:     15   (6.67%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      0  Total:      1   (0.00%)
@@ -450,7 +449,7 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 478          | 478
+    COMB    | 484          | 484
     SEQ     | 251          | 251
 
 I/O Function:
@@ -493,50 +492,50 @@ The following nets have been assigned to a chip global resource:
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
+    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[2]
+                          Driver: Dualshock_MSS_0/MSS_ADLIB_INST
     21      INT_NET       Net   : CORESPI_0/USPI/UTXF/rd_pointer_q[0]
                           Driver: CORESPI_0/USPI/UTXF/rd_pointer_q[0]
     21      INT_NET       Net   : CORESPI_0/USPI/URXF/rd_pointer_q[0]
                           Driver: CORESPI_0/USPI/URXF/rd_pointer_q[0]
+    20      INT_NET       Net   : CORESPI_0/USPI/UCC/clock_rx_fe_i_0
+                          Driver: CORESPI_0/USPI/UCC/clock_rx_q3_RNI3249
     19      INT_NET       Net   : CORESPI_0/USPI/SPIMODE
                           Driver: CORESPI_0/USPI/URF/control1[1]
-    17      INT_NET       Net   : CORESPI_0/USPI/UCC/clock_rx_fe
-                          Driver: CORESPI_0/USPI/UCC/clock_rx_q3_RNI3249
-    16      INT_NET       Net   : CORESPI_0/USPI/UCC/stxs_state
+    15      INT_NET       Net   : CORESPI_0/USPI/UCC/stxs_state
                           Driver: CORESPI_0/USPI/UCC/stxs_state
-    16      INT_NET       Net   : CORESPI_0/USPI/UCC/msrxs_datain_0_sqmuxa_1
-                          Driver: CORESPI_0/USPI/UCC/mtx_lastbit_RNIID3J1
-    14      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[2]
-                          Driver: Dualshock_MSS_0/MSS_ADLIB_INST
     14      INT_NET       Net   : CORESPI_0/USPI/fiforstrx
                           Driver: CORESPI_0/USPI/URF/clr_rxfifo
     14      INT_NET       Net   : CORESPI_0/USPI/fiforsttx
                           Driver: CORESPI_0/USPI/URF/clr_txfifo
     14      INT_NET       Net   : CORESPI_0/USPI/UCC/spi_clk_tick
                           Driver: CORESPI_0/USPI/UCC/spi_clk_tick
+    14      INT_NET       Net   : CORESPI_0/USPI/UCC/N_28
+                          Driver: CORESPI_0/USPI/UCC/mtx_lastbit_RNI93KQ1
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    26      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[2]
+    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[2]
                           Driver: Dualshock_MSS_0/MSS_ADLIB_INST
     21      INT_NET       Net   : CORESPI_0/USPI/UTXF/rd_pointer_q[0]
                           Driver: CORESPI_0/USPI/UTXF/rd_pointer_q[0]
     21      INT_NET       Net   : CORESPI_0/USPI/URXF/rd_pointer_q[0]
                           Driver: CORESPI_0/USPI/URXF/rd_pointer_q[0]
+    20      INT_NET       Net   : CORESPI_0/USPI/UCC/clock_rx_fe_i_0
+                          Driver: CORESPI_0/USPI/UCC/clock_rx_q3_RNI3249
     19      INT_NET       Net   : CORESPI_0/USPI/SPIMODE
                           Driver: CORESPI_0/USPI/URF/control1[1]
-    17      INT_NET       Net   : CORESPI_0/USPI/UCC/stxs_state
+    16      INT_NET       Net   : CORESPI_0/USPI/UCC/stxs_state
                           Driver: CORESPI_0/USPI/UCC/stxs_state
-    17      INT_NET       Net   : CORESPI_0/USPI/UCC/clock_rx_fe
-                          Driver: CORESPI_0/USPI/UCC/clock_rx_q3_RNI3249
-    16      INT_NET       Net   : CORESPI_0/USPI/UCC/msrxs_datain_0_sqmuxa_1
-                          Driver: CORESPI_0/USPI/UCC/mtx_lastbit_RNIID3J1
     14      INT_NET       Net   : CORESPI_0/USPI/fiforstrx
                           Driver: CORESPI_0/USPI/URF/clr_rxfifo
     14      INT_NET       Net   : CORESPI_0/USPI/fiforsttx
                           Driver: CORESPI_0/USPI/URF/clr_txfifo
     14      INT_NET       Net   : CORESPI_0/USPI/UCC/spi_clk_tick
                           Driver: CORESPI_0/USPI/UCC/spi_clk_tick
+    14      INT_NET       Net   : CORESPI_0/USPI/UCC/N_28
+                          Driver: CORESPI_0/USPI/UCC/mtx_lastbit_RNI93KQ1
 
 
 Layout Output:
@@ -562,25 +561,25 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Wed Apr 05 21:47:22 2017
+Timing-driven Placer Started: Thu Apr 06 01:24:39 2017
 
-Placer Finished: Wed Apr 05 21:47:26 2017
-Total Placer CPU Time:     00:00:04
+Placer Finished: Thu Apr 06 01:24:42 2017
+Total Placer CPU Time:     00:00:03
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: Dualshock                       Started: Wed Apr 05 21:47:27 2017
+Design: Dualshock                       Started: Thu Apr 06 01:24:43 2017
 
  
 
 Timing-driven Router completed successfully.
 
 Design: Dualshock                       
-Finished: Wed Apr 05 21:47:31 2017
+Finished: Thu Apr 06 01:24:47 2017
 Total CPU Time:     00:00:03            Total Elapsed Time: 00:00:04
-Total Memory Usage: 171.0 Mbytes
+Total Memory Usage: 171.3 Mbytes
                         o - o - o - o - o - o
 
 

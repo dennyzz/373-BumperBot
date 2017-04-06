@@ -2,7 +2,7 @@
 <device>
   <name>Dualshock</name>
   <version>1.0</version>
-  <description>CMSIS description for Dualshock.  Created by Microsemi SmartDesign on Thu Apr 06 00:02:30 2017</description>
+  <description>CMSIS description for Dualshock.  Created by Microsemi SmartDesign on Thu Apr 06 01:24:11 2017</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>

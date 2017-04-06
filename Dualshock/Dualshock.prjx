@@ -1,6 +1,7 @@
 KEY LIBERO "11.7"
 KEY CAPTURE "11.7.3.8"
 KEY DEFAULT_IMPORT_LOC "C:\Libero_projects\test_fabric2\hdl"
+KEY DEFAULT_OPEN_LOC ""
 KEY ProjectID "0"
 KEY HDLTechnology "VERILOG"
 KEY VERILOGMODE "VERILOG2001"
@@ -12,10 +13,15 @@ KEY VendorTechnology_Package "fg484"
 KEY VendorTechnology_Speed "STD"
 KEY VendorTechnology_DieVoltage "1.5"
 KEY VendorTechnology_PART_RANGE "COM"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE ""
 KEY VendorTechnology_IO_DEFT_STD "LVTTL"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY ""
+KEY VendorTechnology_RAD_EXPOSURE ""
 KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
 KEY VendorTechnology_RESTRICTPROBEPINS "1"
 KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE ""
 KEY VendorTechnology_TARGETDEVICESFORMIGRATION "IP4X3M1"
 KEY VendorTechnology_TEMPR "COM"
 KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
@@ -57,13 +63,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491451324"
+TIME="1491456248"
 SIZE="2736"
 PARENT="<project>\component\work\Dualshock\Dualshock.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1491451324"
+TIME="1491456248"
 SIZE="1284"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
@@ -152,7 +158,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\CORESPI.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491451324"
+TIME="1491456248"
 SIZE="2961"
 PARENT="<project>\component\work\Dualshock\Dualshock.cxf"
 ENDFILE
@@ -271,7 +277,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491427236"
+TIME="1491456227"
 SIZE="945"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 ENDFILE
@@ -289,96 +295,106 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CCC\2.0.106\MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491427234"
+TIME="1491456225"
 SIZE="252"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491427234"
+TIME="1491456225"
 SIZE="252"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_COM\1.0.200\MSS_COM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491427234"
+TIME="1491456225"
 SIZE="252"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_DMA\1.0.101\MSS_DMA.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491427234"
+TIME="1491456225"
 SIZE="252"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ENVM\2.3.200\MSS_ENVM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491427235"
+TIME="1491456226"
 SIZE="253"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIC\1.0.101\MSS_FIC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491427235"
+TIME="1491456226"
 SIZE="252"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIO\1.0.203\MSS_FIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491427235"
+TIME="1491456226"
 SIZE="252"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_GPIO\1.0.101\MSS_GPIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491427235"
+TIME="1491456226"
 SIZE="253"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_INTR\1.0.101\MSS_INTR.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491427235"
+TIME="1491456226"
 SIZE="253"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RESET\1.0.101\MSS_RESET.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491427235"
+TIME="1491456226"
 SIZE="254"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RTC\1.0.100\MSS_RTC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491427235"
+TIME="1491456226"
 SIZE="252"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_TIMER\1.0.100\MSS_TIMER.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491427235"
+TIME="1491456226"
 SIZE="254"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UART\1.0.101\MSS_UART.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491427235"
+TIME="1491456226"
 SIZE="253"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UFROM\1.0.100\MSS_UFROM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491427235"
+TIME="1491456226"
 SIZE="254"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 ENDFILE
+VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491428120"
+SIZE="2203"
+ENDFILE
+VALUE "<project>\component\work\DESIGN_IO\DESIGN_IO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491428128"
+SIZE="413"
+ENDFILE
 VALUE "<project>\component\work\Dualshock\Dualshock.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491451329"
-SIZE="4956"
+TIME="1491456251"
+SIZE="5270"
 ENDFILE
 VALUE "<project>\component\work\Dualshock\Dualshock.pdc,pdc"
 STATE="utd"
-TIME="1491451323"
+TIME="1491456248"
 SIZE="836"
 PARENT="<project>\component\work\Dualshock\Dualshock.cxf"
 BEGIN_USE_CONSTRAINT
@@ -389,46 +405,46 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Dualshock\Dualshock.v,hdl"
 STATE="utd"
-TIME="1491451324"
-SIZE="15386"
+TIME="1491456248"
+SIZE="15625"
 PARENT="<project>\component\work\Dualshock\Dualshock.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491427237"
-SIZE="12554"
+TIME="1491456228"
+SIZE="12793"
 ENDFILE
 VALUE "<project>\component\work\Dualshock_MSS\Dualshock_MSS.v,hdl"
 STATE="utd"
-TIME="1491427236"
-SIZE="20823"
+TIME="1491456227"
+SIZE="21407"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Dualshock_MSS\MSS_CCC_0\Dualshock_MSS_tmp_MSS_CCC_0_MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491427234"
+TIME="1491456225"
 SIZE="493"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\work\Dualshock_MSS\MSS_CCC_0\Dualshock_MSS_tmp_MSS_CCC_0_MSS_CCC.v,hdl"
 STATE="utd"
-TIME="1491427234"
+TIME="1491456225"
 SIZE="2914"
 PARENT="<project>\component\work\Dualshock_MSS\MSS_CCC_0\Dualshock_MSS_tmp_MSS_CCC_0_MSS_CCC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Dualshock_MSS\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
 STATE="utd"
-TIME="1491427235"
+TIME="1491456226"
 SIZE="16218"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Dualshock_MSS\mss_tshell.v,hdl"
 STATE="utd"
-TIME="1491427236"
+TIME="1491456226"
 SIZE="12226"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -440,7 +456,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Dualshock_MSS\mss_tshell_syn.sdc,sdc"
 STATE="utd"
-TIME="1491427236"
+TIME="1491456226"
 SIZE="196"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -452,52 +468,52 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\Dualshock.adb,adb"
 STATE="utd"
-TIME="1491428161"
-SIZE="546816"
+TIME="1491443266"
+SIZE="795136"
 ENDFILE
 VALUE "<project>\designer\impl1\Dualshock.fdb,fdb"
-STATE="ood"
-TIME="1491443266"
-SIZE="56506"
+STATE="utd"
+TIME="1491456302"
+SIZE="56979"
 ENDFILE
 VALUE "<project>\designer\impl1\Dualshock.ide_des,ide_des"
 STATE="utd"
-TIME="1491425747"
-SIZE="183"
+TIME="1491451327"
+SIZE="1012"
 ENDFILE
 VALUE "<project>\designer\impl1\Dualshock_compile_log.rpt,log"
 STATE="utd"
-TIME="1491428161"
-SIZE="34188"
+TIME="1491443239"
+SIZE="34037"
 ENDFILE
 VALUE "<project>\designer\impl1\Dualshock_fp\Dualshock.pdb,pdb"
-STATE="ood"
-TIME="1491428436"
-SIZE="62690"
+STATE="utd"
+TIME="1491445920"
+SIZE="62013"
 ENDFILE
 VALUE "<project>\designer\impl1\Dualshock_fp\Dualshock.pro,pro"
 STATE="utd"
-TIME="1491428434"
-SIZE="1983"
+TIME="1491445958"
+SIZE="2354"
 ENDFILE
 VALUE "<project>\designer\impl1\Dualshock_fp\projectData\Dualshock.pdb,pdb"
 STATE="utd"
-TIME="1491429428"
-SIZE="62474"
+TIME="1491445958"
+SIZE="62013"
 ENDFILE
 VALUE "<project>\designer\impl1\Dualshock_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1491443255"
+TIME="1491456291"
 SIZE="2594"
 ENDFILE
 VALUE "<project>\designer\impl1\Dualshock_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1491443266"
+TIME="1491456302"
 SIZE="608"
 ENDFILE
 VALUE "<project>\designer\impl1\Dualshock_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1491443259"
+TIME="1491456295"
 SIZE="1130"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
@@ -520,13 +536,13 @@ PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1491451324"
+TIME="1491456248"
 SIZE="632"
 PARENT="<project>\component\work\Dualshock\Dualshock.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
-TIME="1491427235"
+TIME="1491456225"
 SIZE="5496"
 PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
 ENDFILE
@@ -544,22 +560,22 @@ PARENT="<project>\component\Actel\DirectCore\CORESPI\5.1.104\CORESPI.cxf"
 ENDFILE
 VALUE "<project>\synthesis\Dualshock.edn,syn_edn"
 STATE="utd"
-TIME="1491428152"
-SIZE="546265"
+TIME="1491443230"
+SIZE="531188"
 ENDFILE
 VALUE "<project>\synthesis\Dualshock.so,so"
 STATE="utd"
-TIME="1491428152"
+TIME="1491443230"
 SIZE="210"
 ENDFILE
 VALUE "<project>\synthesis\Dualshock_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1491428152"
+TIME="1491443230"
 SIZE="546"
 ENDFILE
 VALUE "<project>\synthesis\Dualshock_syn.prj,prj"
 STATE="utd"
-TIME="1491428152"
+TIME="1491443230"
 SIZE="3333"
 ENDFILE
 ENDLIST
@@ -577,8 +593,9 @@ VALUE "<project>\component\work\Dualshock_MSS\mss_tshell_syn.sdc,sdc"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
-LiberoState=Post_Synthesis
+LiberoState=Post_Layout
 ideSYNTHESIS(<project>\synthesis\Dualshock.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\Dualshock.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -586,6 +603,10 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl1\Dualshock_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl1\Dualshock_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 LIST "Dualshock_MSS::work"
@@ -797,8 +818,9 @@ ENDLIST
 LIST ProjectState5.1
 LIST "Dualshock::work"
 LIST Impl1
-LiberoState=Post_Synthesis
+LiberoState=Post_Layout
 ideSYNTHESIS(<project>\synthesis\Dualshock.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\Dualshock.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -821,18 +843,32 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Program Device:Dualshock_program.log
+ReportsCurrentItem;Generate Programming Data:Dualshock_prgdata_log.rpt
 StartPage;StartPage;0
 SmartDesign;Dualshock;0
 SmartDesign;Dualshock_MSS;0
-HDL;synthesis\Dualshock_sdc.sdc;0
-SmartDesign;DESIGN_FIRMWARE;0
-ACTIVEVIEW;DESIGN_FIRMWARE
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 ENDLIST
 LIST "BIBUF_OPEND_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "CoreSPI_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
+SUBBLOCK "CoreSPI_Driver::work","","FALSE","FALSE"
+SUBBLOCK "HAL::work","","FALSE","FALSE"
+SUBBLOCK "MSS_GPIO_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_IAP_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_NVM_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_PDMA_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_RTC_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_Timer_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_UART_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion_CMSIS_PAL::work","","FALSE","FALSE"
+ENDLIST
+LIST "DESIGN_IO::work","component\work\DESIGN_IO\DESIGN_IO.cxf","TRUE","FALSE"
 ENDLIST
 LIST "Dualshock::work","component\work\Dualshock\Dualshock.v","TRUE","FALSE"
 SUBBLOCK "Dualshock_MSS::work","component\work\Dualshock_MSS\Dualshock_MSS.v","TRUE","FALSE"
@@ -849,6 +885,8 @@ LIST "Dualshock_MSS_tmp_MSS_CCC_0_MSS_CCC::work","component\work\Dualshock_MSS\M
 SUBBLOCK "MSS_CCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 SUBBLOCK "MSS_XTLOSC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 ENDLIST
+LIST "HAL::work","","FALSE","FALSE"
+ENDLIST
 LIST "INBUF_LVDS_MCCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 ENDLIST
 LIST "INBUF_LVPECL_MCCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
@@ -863,13 +901,29 @@ LIST "MSS_APB::work","component\work\Dualshock_MSS\mss_tshell.v","FALSE","FALSE"
 ENDLIST
 LIST "MSS_CCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 ENDLIST
+LIST "MSS_GPIO_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "MSS_IAP_Driver::work","","FALSE","FALSE"
+ENDLIST
 LIST "MSS_LPXTLOSC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "MSS_NVM_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "MSS_PDMA_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "MSS_RTC_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "MSS_Timer_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "MSS_UART_Driver::work","","FALSE","FALSE"
 ENDLIST
 LIST "MSS_XTLOSC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 ENDLIST
 LIST "MSSINT::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 ENDLIST
 LIST "OUTBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion_CMSIS_PAL::work","","FALSE","FALSE"
 ENDLIST
 LIST "TRIBUFF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 ENDLIST

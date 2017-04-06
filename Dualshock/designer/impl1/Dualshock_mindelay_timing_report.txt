@@ -2,7 +2,7 @@ Timing Report Min Delay Analysis
 
 SmartTime Version v11.7 SP3
 Microsemi Corporation - Microsemi Libero Software Release v11.7 SP3 (Version 11.7.3.8)
-Date: Wed Apr 05 21:47:38 2017
+Date: Thu Apr 06 01:24:55 2017
 
 
 Design: Dualshock
@@ -34,8 +34,8 @@ Min Clock-To-Out (ns):      N/A
 Max Clock-To-Out (ns):      N/A
 
 Clock Domain:               mss_fabric_interface_clock
-Period (ns):                18.238
-Frequency (MHz):            54.831
+Period (ns):                18.930
+Frequency (MHz):            52.826
 Required Period (ns):       N/A
 Required Frequency (MHz):   N/A
 External Setup (ns):        N/A
@@ -50,18 +50,18 @@ Required Period (ns):       N/A
 Required Frequency (MHz):   N/A
 External Setup (ns):        N/A
 External Hold (ns):         N/A
-Min Clock-To-Out (ns):      4.072
+Min Clock-To-Out (ns):      3.849
 Max Clock-To-Out (ns):      9.755
 
 Clock Domain:               mss_ccc_gla1
-Period (ns):                22.880
-Frequency (MHz):            43.706
+Period (ns):                19.691
+Frequency (MHz):            50.785
 Required Period (ns):       N/A
 Required Frequency (MHz):   N/A
-External Setup (ns):        5.518
-External Hold (ns):         -0.775
-Min Clock-To-Out (ns):      2.473
-Max Clock-To-Out (ns):      12.857
+External Setup (ns):        4.523
+External Hold (ns):         -0.751
+Min Clock-To-Out (ns):      3.005
+Max Clock-To-Out (ns):      11.817
 
 Clock Domain:               mss_ccc_gla0
 Period (ns):                12.500
@@ -146,54 +146,54 @@ SET Register to Register
 
 Path 1
   From:                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[4]
-  Delay (ns):                  3.111
+  To:                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[1]
+  Delay (ns):                  3.138
   Slack (ns):
-  Arrival (ns):                3.111
-  Required (ns):
-  Hold (ns):                   1.380
-
-Path 2
-  From:                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[3]
-  Delay (ns):                  3.242
-  Slack (ns):
-  Arrival (ns):                3.242
+  Arrival (ns):                3.138
   Required (ns):
   Hold (ns):                   1.379
 
+Path 2
+  From:                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[4]
+  Delay (ns):                  3.163
+  Slack (ns):
+  Arrival (ns):                3.163
+  Required (ns):
+  Hold (ns):                   1.380
+
 Path 3
   From:                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[0]
-  Delay (ns):                  3.361
+  To:                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[2]
+  Delay (ns):                  3.164
   Slack (ns):
-  Arrival (ns):                3.361
+  Arrival (ns):                3.164
   Required (ns):
   Hold (ns):                   1.377
 
 Path 4
   From:                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[5]
-  Delay (ns):                  3.554
+  To:                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[3]
+  Delay (ns):                  3.212
   Slack (ns):
-  Arrival (ns):                3.554
+  Arrival (ns):                3.212
   Required (ns):
-  Hold (ns):                   1.380
+  Hold (ns):                   1.379
 
 Path 5
   From:                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[6]
-  Delay (ns):                  3.731
+  To:                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[0]
+  Delay (ns):                  3.323
   Slack (ns):
-  Arrival (ns):                3.731
+  Arrival (ns):                3.323
   Required (ns):
-  Hold (ns):                   1.383
+  Hold (ns):                   1.377
 
 
 Expanded Path 1
   From: Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To: Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[4]
-  data arrival time                              3.111
+  To: Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[1]
+  data arrival time                              3.138
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -211,25 +211,25 @@ Expanded Path 1
   1.936                        CoreAPB3_0/iPSELS_1[0]:A (r)
                +     0.158          cell: ADLIB:NOR2
   2.094                        CoreAPB3_0/iPSELS_1[0]:Y (f)
-               +     0.142          net: CoreAPB3_0_iPSELS_1[0]
-  2.236                        CoreAPB3_0/u_mux_p_to_b3/PRDATA_4:A (f)
+               +     0.194          net: CoreAPB3_0_iPSELS_1[0]
+  2.288                        CoreAPB3_0/u_mux_p_to_b3/PRDATA_1:A (f)
                +     0.202          cell: ADLIB:NOR3C
-  2.438                        CoreAPB3_0/u_mux_p_to_b3/PRDATA_4:Y (f)
-               +     0.416          net: Dualshock_MSS_0_MSS_MASTER_APB_PRDATA[4]
-  2.854                        Dualshock_MSS_0/MSS_ADLIB_INST/U_38:PIN5 (f)
+  2.490                        CoreAPB3_0/u_mux_p_to_b3/PRDATA_1:Y (f)
+               +     0.397          net: Dualshock_MSS_0_MSS_MASTER_APB_PRDATA[1]
+  2.887                        Dualshock_MSS_0/MSS_ADLIB_INST/U_37:PIN5 (f)
                +     0.046          cell: ADLIB:MSS_IF
-  2.900                        Dualshock_MSS_0/MSS_ADLIB_INST/U_38:PIN5INT (f)
-               +     0.211          net: Dualshock_MSS_0/MSS_ADLIB_INST/MSSPRDATA[4]INT_NET
-  3.111                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[4] (f)
+  2.933                        Dualshock_MSS_0/MSS_ADLIB_INST/U_37:PIN5INT (f)
+               +     0.205          net: Dualshock_MSS_0/MSS_ADLIB_INST/MSSPRDATA[1]INT_NET
+  3.138                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[1] (f)
                                     
-  3.111                        data arrival time
+  3.138                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_fabric_interface_clock
                +     0.000          Clock source
   N/C                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:GLB (r)
-               +     1.380          Library hold time: ADLIB:MSS_APB_IP
-  N/C                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[4]
+               +     1.379          Library hold time: ADLIB:MSS_APB_IP
+  N/C                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[1]
 
 
 END SET Register to Register
@@ -298,6 +298,15 @@ SET Clock to Output
 
 Path 1
   From:                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                          GPIO_0_OUT
+  Delay (ns):                  3.849
+  Slack (ns):
+  Arrival (ns):                3.849
+  Required (ns):
+  Clock to Out (ns):           3.849
+
+Path 2
+  From:                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
   To:                          GPIO_15_OUT
   Delay (ns):                  4.072
   Slack (ns):
@@ -305,7 +314,7 @@ Path 1
   Required (ns):
   Clock to Out (ns):           4.072
 
-Path 2
+Path 3
   From:                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
   To:                          GPIO_14_OUT
   Delay (ns):                  4.116
@@ -314,7 +323,7 @@ Path 2
   Required (ns):
   Clock to Out (ns):           4.116
 
-Path 3
+Path 4
   From:                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
   To:                          GPIO_13_OUT
   Delay (ns):                  4.136
@@ -326,8 +335,8 @@ Path 3
 
 Expanded Path 1
   From: Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
-  To: GPIO_15_OUT
-  data arrival time                              4.072
+  To: GPIO_0_OUT
+  data arrival time                              3.849
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -335,23 +344,23 @@ Expanded Path 1
   0.000                        mss_pclk1
                +     0.000          Clock source
   0.000                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1 (r)
-               +     2.043          cell: ADLIB:MSS_APB_IP
-  2.043                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:GPO[15] (r)
-               +     0.599          net: Dualshock_MSS_0/GPO_net_0[15]
-  2.642                        Dualshock_MSS_0/MSS_GPIO_0_GPIO_15_OUT:D (r)
+               +     2.079          cell: ADLIB:MSS_APB_IP
+  2.079                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:GPO[0] (r)
+               +     0.340          net: Dualshock_MSS_0/GPO_net_0[0]
+  2.419                        Dualshock_MSS_0/MSS_GPIO_0_GPIO_0_OUT:D (r)
                +     1.430          cell: ADLIB:IOPAD_TRI
-  4.072                        Dualshock_MSS_0/MSS_GPIO_0_GPIO_15_OUT:PAD (r)
-               +     0.000          net: GPIO_15_OUT
-  4.072                        GPIO_15_OUT (r)
+  3.849                        Dualshock_MSS_0/MSS_GPIO_0_GPIO_0_OUT:PAD (r)
+               +     0.000          net: GPIO_0_OUT
+  3.849                        GPIO_0_OUT (r)
                                     
-  4.072                        data arrival time
+  3.849                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_pclk1
                +     0.000          Clock source
   N/C                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1 (r)
                                     
-  N/C                          GPIO_15_OUT (r)
+  N/C                          GPIO_0_OUT (r)
 
 
 END SET Clock to Output
@@ -387,55 +396,55 @@ Clock Domain mss_ccc_gla1
 SET Register to Register
 
 Path 1
-  From:                        CORESPI_0/USPI/UCC/msrxs_shiftreg[6]:CLK
-  To:                          CORESPI_0/USPI/UCC/msrxs_datain[7]:D
-  Delay (ns):                  0.399
+  From:                        CORESPI_0/USPI/UCC/SYNC1_msrxp_strobe:CLK
+  To:                          CORESPI_0/USPI/UCC/SYNC2_msrxp_strobe:D
+  Delay (ns):                  0.395
   Slack (ns):
-  Arrival (ns):                0.706
+  Arrival (ns):                0.710
   Required (ns):
   Hold (ns):                   0.000
 
 Path 2
-  From:                        CORESPI_0/USPI/UCC/stxs_strobetx:CLK
-  To:                          CORESPI_0/USPI/UCC/SYNC1_stxp_strobetx:D
-  Delay (ns):                  0.399
+  From:                        CORESPI_0/USPI/UCC/mtx_first:CLK
+  To:                          CORESPI_0/USPI/UCC/mtx_firstrx:D
+  Delay (ns):                  0.395
   Slack (ns):
-  Arrival (ns):                0.731
+  Arrival (ns):                0.696
   Required (ns):
   Hold (ns):                   0.000
 
 Path 3
-  From:                        CORESPI_0/USPI/UCC/SYNC1_stxp_strobetx:CLK
-  To:                          CORESPI_0/USPI/UCC/SYNC2_stxp_strobetx:D
+  From:                        CORESPI_0/USPI/UCC/msrxs_strobe:CLK
+  To:                          CORESPI_0/USPI/UCC/SYNC1_msrxp_strobe:D
   Delay (ns):                  0.399
   Slack (ns):
-  Arrival (ns):                0.731
+  Arrival (ns):                0.714
   Required (ns):
   Hold (ns):                   0.000
 
 Path 4
-  From:                        CORESPI_0/USPI/UCC/mtx_re:CLK
-  To:                          CORESPI_0/USPI/UCC/mtx_re_q1:D
+  From:                        CORESPI_0/USPI/UCC/SYNC1_stxp_strobetx:CLK
+  To:                          CORESPI_0/USPI/UCC/SYNC2_stxp_strobetx:D
   Delay (ns):                  0.399
   Slack (ns):
-  Arrival (ns):                0.731
+  Arrival (ns):                0.714
   Required (ns):
   Hold (ns):                   0.000
 
 Path 5
-  From:                        CORESPI_0/USPI/UCC/data_rx_q1:CLK
-  To:                          CORESPI_0/USPI/UCC/data_rx_q2:D
-  Delay (ns):                  0.403
+  From:                        CORESPI_0/USPI/UCC/msrxs_shiftreg[6]:CLK
+  To:                          CORESPI_0/USPI/UCC/msrxs_datain[7]:D
+  Delay (ns):                  0.399
   Slack (ns):
-  Arrival (ns):                0.716
+  Arrival (ns):                0.714
   Required (ns):
   Hold (ns):                   0.000
 
 
 Expanded Path 1
-  From: CORESPI_0/USPI/UCC/msrxs_shiftreg[6]:CLK
-  To: CORESPI_0/USPI/UCC/msrxs_datain[7]:D
-  data arrival time                              0.706
+  From: CORESPI_0/USPI/UCC/SYNC1_msrxp_strobe:CLK
+  To: CORESPI_0/USPI/UCC/SYNC2_msrxp_strobe:D
+  data arrival time                              0.710
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -447,14 +456,14 @@ Expanded Path 1
   0.000                        Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   0.000                        Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.307          net: FAB_CLK
-  0.307                        CORESPI_0/USPI/UCC/msrxs_shiftreg[6]:CLK (r)
-               +     0.249          cell: ADLIB:DFN1E1C0
-  0.556                        CORESPI_0/USPI/UCC/msrxs_shiftreg[6]:Q (r)
-               +     0.150          net: CORESPI_0/USPI/UCC/msrxs_shiftreg[6]
-  0.706                        CORESPI_0/USPI/UCC/msrxs_datain[7]:D (r)
+               +     0.315          net: FAB_CLK
+  0.315                        CORESPI_0/USPI/UCC/SYNC1_msrxp_strobe:CLK (r)
+               +     0.249          cell: ADLIB:DFN1P0
+  0.564                        CORESPI_0/USPI/UCC/SYNC1_msrxp_strobe:Q (r)
+               +     0.146          net: CORESPI_0/USPI/UCC/SYNC1_msrxp_strobe
+  0.710                        CORESPI_0/USPI/UCC/SYNC2_msrxp_strobe:D (r)
                                     
-  0.706                        data arrival time
+  0.710                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_ccc_gla1
@@ -464,10 +473,10 @@ Expanded Path 1
   N/C                          Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   N/C                          Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.331          net: FAB_CLK
-  N/C                          CORESPI_0/USPI/UCC/msrxs_datain[7]:CLK (r)
-               +     0.000          Library hold time: ADLIB:DFN1E1C0
-  N/C                          CORESPI_0/USPI/UCC/msrxs_datain[7]:D
+               +     0.335          net: FAB_CLK
+  N/C                          CORESPI_0/USPI/UCC/SYNC2_msrxp_strobe:CLK (r)
+               +     0.000          Library hold time: ADLIB:DFN1P0
+  N/C                          CORESPI_0/USPI/UCC/SYNC2_msrxp_strobe:D
 
 
 END SET Register to Register
@@ -479,38 +488,38 @@ SET External Hold
 Path 1
   From:                        SPISDI
   To:                          CORESPI_0/USPI/UCC/data_rx_q1:D
-  Delay (ns):                  1.150
+  Delay (ns):                  1.095
   Slack (ns):
-  Arrival (ns):                1.150
+  Arrival (ns):                1.095
   Required (ns):
   Hold (ns):                   0.000
-  External Hold (ns):          -0.775
+  External Hold (ns):          -0.751
 
 Path 2
   From:                        SPISDI
   To:                          CORESPI_0/USPI/UCC/msrxs_datain[0]:D
-  Delay (ns):                  2.349
+  Delay (ns):                  1.758
   Slack (ns):
-  Arrival (ns):                2.349
+  Arrival (ns):                1.758
   Required (ns):
   Hold (ns):                   0.000
-  External Hold (ns):          -1.979
+  External Hold (ns):          -1.393
 
 Path 3
   From:                        SPISDI
   To:                          CORESPI_0/USPI/UCC/msrxs_shiftreg[0]:D
-  Delay (ns):                  2.643
+  Delay (ns):                  2.102
   Slack (ns):
-  Arrival (ns):                2.643
+  Arrival (ns):                2.102
   Required (ns):
   Hold (ns):                   0.000
-  External Hold (ns):          -2.275
+  External Hold (ns):          -1.713
 
 
 Expanded Path 1
   From: SPISDI
   To: CORESPI_0/USPI/UCC/data_rx_q1:D
-  data arrival time                              1.150
+  data arrival time                              1.095
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -524,10 +533,10 @@ Expanded Path 1
   0.293                        SPISDI_pad/U0/U1:YIN (f)
                +     0.017          cell: ADLIB:IOIN_IB
   0.310                        SPISDI_pad/U0/U1:Y (f)
-               +     0.840          net: SPISDI_c
-  1.150                        CORESPI_0/USPI/UCC/data_rx_q1:D (f)
+               +     0.785          net: SPISDI_c
+  1.095                        CORESPI_0/USPI/UCC/data_rx_q1:D (f)
                                     
-  1.150                        data arrival time
+  1.095                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_ccc_gla1
@@ -537,7 +546,7 @@ Expanded Path 1
   N/C                          Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   N/C                          Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.375          net: FAB_CLK
+               +     0.344          net: FAB_CLK
   N/C                          CORESPI_0/USPI/UCC/data_rx_q1:CLK (r)
                +     0.000          Library hold time: ADLIB:DFN1C0
   N/C                          CORESPI_0/USPI/UCC/data_rx_q1:D
@@ -552,53 +561,53 @@ SET Clock to Output
 Path 1
   From:                        CORESPI_0/USPI/UCC/spi_clk_out:CLK
   To:                          SPISCLKO
-  Delay (ns):                  2.168
+  Delay (ns):                  2.698
   Slack (ns):
-  Arrival (ns):                2.473
+  Arrival (ns):                3.005
   Required (ns):
-  Clock to Out (ns):           2.473
+  Clock to Out (ns):           3.005
 
 Path 2
-  From:                        CORESPI_0/USPI/UCC/stxs_direct:CLK
-  To:                          SPISDO
-  Delay (ns):                  2.995
-  Slack (ns):
-  Arrival (ns):                3.296
-  Required (ns):
-  Clock to Out (ns):           3.296
-
-Path 3
-  From:                        CORESPI_0/USPI/UCC/txfifo_datadelay[7]:CLK
-  To:                          SPISDO
-  Delay (ns):                  3.013
-  Slack (ns):
-  Arrival (ns):                3.328
-  Required (ns):
-  Clock to Out (ns):           3.328
-
-Path 4
   From:                        CORESPI_0/USPI/UCC/mtx_spi_data_out:CLK
   To:                          SPISDO
-  Delay (ns):                  3.082
+  Delay (ns):                  3.054
   Slack (ns):
-  Arrival (ns):                3.397
+  Arrival (ns):                3.367
   Required (ns):
-  Clock to Out (ns):           3.397
+  Clock to Out (ns):           3.367
 
-Path 5
+Path 3
   From:                        CORESPI_0/USPI/UCC/stxs_datareg[7]:CLK
   To:                          SPISDO
-  Delay (ns):                  3.158
+  Delay (ns):                  3.846
   Slack (ns):
-  Arrival (ns):                3.444
+  Arrival (ns):                4.136
   Required (ns):
-  Clock to Out (ns):           3.444
+  Clock to Out (ns):           4.136
+
+Path 4
+  From:                        CORESPI_0/USPI/UCC/txfifo_datadelay[7]:CLK
+  To:                          SPISDO
+  Delay (ns):                  3.854
+  Slack (ns):
+  Arrival (ns):                4.152
+  Required (ns):
+  Clock to Out (ns):           4.152
+
+Path 5
+  From:                        CORESPI_0/USPI/UCC/stxs_txzeros:CLK
+  To:                          SPISDO
+  Delay (ns):                  4.012
+  Slack (ns):
+  Arrival (ns):                4.298
+  Required (ns):
+  Clock to Out (ns):           4.298
 
 
 Expanded Path 1
   From: CORESPI_0/USPI/UCC/spi_clk_out:CLK
   To: SPISCLKO
-  data arrival time                              2.473
+  data arrival time                              3.005
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -610,22 +619,22 @@ Expanded Path 1
   0.000                        Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   0.000                        Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.305          net: FAB_CLK
-  0.305                        CORESPI_0/USPI/UCC/spi_clk_out:CLK (r)
+               +     0.307          net: FAB_CLK
+  0.307                        CORESPI_0/USPI/UCC/spi_clk_out:CLK (r)
                +     0.249          cell: ADLIB:DFN1P0
-  0.554                        CORESPI_0/USPI/UCC/spi_clk_out:Q (r)
-               +     0.543          net: SPISCLKO_c
-  1.097                        SPISCLKO_pad/U0/U1:D (r)
+  0.556                        CORESPI_0/USPI/UCC/spi_clk_out:Q (r)
+               +     1.073          net: SPISCLKO_c
+  1.629                        SPISCLKO_pad/U0/U1:D (r)
                +     0.257          cell: ADLIB:IOTRI_OB_EB
-  1.354                        SPISCLKO_pad/U0/U1:DOUT (r)
+  1.886                        SPISCLKO_pad/U0/U1:DOUT (r)
                +     0.000          net: SPISCLKO_pad/U0/NET1
-  1.354                        SPISCLKO_pad/U0/U0:D (r)
+  1.886                        SPISCLKO_pad/U0/U0:D (r)
                +     1.119          cell: ADLIB:IOPAD_TRI
-  2.473                        SPISCLKO_pad/U0/U0:PAD (r)
+  3.005                        SPISCLKO_pad/U0/U0:PAD (r)
                +     0.000          net: SPISCLKO
-  2.473                        SPISCLKO (r)
+  3.005                        SPISCLKO (r)
                                     
-  2.473                        data arrival time
+  3.005                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_ccc_gla1

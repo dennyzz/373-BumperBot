@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Wed Apr 05 21:47:35 2017 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Thu Apr 06 01:24:51 2017 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.7 SP3
 Version: 11.7.3.8
@@ -428,7 +428,7 @@ U19                  VCCMSSIOB2                    Reserved
 U20                  I2C_1_SCL/GPIO_31             Special
 U21                  I2C_0_SCL/GPIO_23             Special
 U22                  GND                           Reserved
-V1                   GPIO_0/IO47RSB4V0             Unassigned
+V1      GPIO_0_OUT   GPIO_0/IO47RSB4V0             Fixed        LVTTL    8                  High  None           ---              No    35                No           Yes
 V2                   GPIO_6/IO41RSB4V0             Unassigned
 V3                   GPIO_9/IO38RSB4V0             Unassigned
 V4                   MAC_MDIO/IO49RSB4V0           Unassigned

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Wed Apr 05 17:20:36 2017
+// Created by SmartDesign Thu Apr 06 01:23:47 2017
 // Version: v11.7 SP3 11.7.3.8
 //////////////////////////////////////////////////////////////////////
 
@@ -16,6 +16,7 @@ module Dualshock_MSS(
     UART_0_RXD,
     // Outputs
     FAB_CLK,
+    GPIO_0_OUT,
     GPIO_13_OUT,
     GPIO_14_OUT,
     GPIO_15_OUT,
@@ -41,6 +42,7 @@ input         UART_0_RXD;
 // Output
 //--------------------------------------------------------------------
 output        FAB_CLK;
+output        GPIO_0_OUT;
 output        GPIO_13_OUT;
 output        GPIO_14_OUT;
 output        GPIO_15_OUT;
@@ -54,6 +56,7 @@ output        UART_0_TXD;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
+wire           GPIO_0_OUT_net_0;
 wire           GPIO_13_OUT_net_0;
 wire           GPIO_14_OUT_net_0;
 wire           GPIO_15_OUT_net_0;
@@ -64,6 +67,7 @@ wire           MSS_ADLIB_INST_MACCLK;
 wire           MSS_ADLIB_INST_MACCLKCCC;
 wire           MSS_ADLIB_INST_PLLLOCK;
 wire           MSS_ADLIB_INST_SYNCCLKFDBK;
+wire   [0:0]   MSS_GPIO_0_GPIO_0_OUT_D;
 wire   [13:13] MSS_GPIO_0_GPIO_13_OUT_D;
 wire   [14:14] MSS_GPIO_0_GPIO_14_OUT_D;
 wire   [15:15] MSS_GPIO_0_GPIO_15_OUT_D;
@@ -93,6 +97,7 @@ wire           UART_0_TXD_net_1;
 wire           GPIO_15_OUT_net_1;
 wire           GPIO_14_OUT_net_1;
 wire           GPIO_13_OUT_net_1;
+wire           GPIO_0_OUT_net_1;
 wire   [31:0]  GPO_net_0;
 //--------------------------------------------------------------------
 // TiedOff Nets
@@ -143,9 +148,12 @@ assign GPIO_14_OUT_net_1                = GPIO_14_OUT_net_0;
 assign GPIO_14_OUT                      = GPIO_14_OUT_net_1;
 assign GPIO_13_OUT_net_1                = GPIO_13_OUT_net_0;
 assign GPIO_13_OUT                      = GPIO_13_OUT_net_1;
+assign GPIO_0_OUT_net_1                 = GPIO_0_OUT_net_0;
+assign GPIO_0_OUT                       = GPIO_0_OUT_net_1;
 //--------------------------------------------------------------------
 // Slices assignments
 //--------------------------------------------------------------------
+assign MSS_GPIO_0_GPIO_0_OUT_D[0]   = GPO_net_0[0:0];
 assign MSS_GPIO_0_GPIO_13_OUT_D[13] = GPO_net_0[13:13];
 assign MSS_GPIO_0_GPIO_14_OUT_D[14] = GPO_net_0[14:14];
 assign MSS_GPIO_0_GPIO_15_OUT_D[15] = GPO_net_0[15:15];
@@ -410,6 +418,17 @@ Dualshock_MSS_tmp_MSS_CCC_0_MSS_CCC MSS_CCC_0(
         .MSS_LOCK       ( MSS_ADLIB_INST_PLLLOCK ),
         .MAC_CLK_CCC    ( MSS_ADLIB_INST_MACCLKCCC ),
         .MAC_CLK_IO     ( MSS_ADLIB_INST_MACCLK ) 
+        );
+
+//--------OUTBUF_MSS
+OUTBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "V1" ) )
+MSS_GPIO_0_GPIO_0_OUT(
+        // Inputs
+        .D   ( MSS_GPIO_0_GPIO_0_OUT_D ),
+        // Outputs
+        .PAD ( GPIO_0_OUT_net_0 ) 
         );
 
 //--------OUTBUF_MSS

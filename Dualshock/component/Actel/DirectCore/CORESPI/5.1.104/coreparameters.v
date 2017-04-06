@@ -1,11 +1,11 @@
 //--------------------------------------------------------------------
-// Created by Microsemi SmartDesign Thu Apr 06 00:02:04 2017
+// Created by Microsemi SmartDesign Thu Apr 06 01:24:08 2017
 // Parameters for CORESPI
 //--------------------------------------------------------------------
 
 
 parameter APB_DWIDTH = 32;
-parameter CFG_CLK = 10;
+parameter CFG_CLK = 19;
 parameter CFG_FIFO_DEPTH = 4;
 parameter CFG_FRAME_SIZE = 8;
 parameter CFG_MODE = 0;

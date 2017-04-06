@@ -37,7 +37,6 @@
 #ignore miscellaneous files in the following directories
 */simulation/*
 */package/*
-*/component/*
 */tooldata/*
 */viewdraw/*
 

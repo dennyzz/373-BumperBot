@@ -1,0 +1,24 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.7 SP3 (Version 11.7.3.8)
+
+Date      :  Thu Apr 06 00:02:09 2017
+Project   :  E:\BumperBot\Dualshock
+Component :  Dualshock
+Family    :  SmartFusion
+
+
+HDL source files for all Synthesis and Simulation tools:
+    E:/BumperBot/Dualshock/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/corespi.v
+    E:/BumperBot/Dualshock/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi.v
+    E:/BumperBot/Dualshock/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_chanctrl.v
+    E:/BumperBot/Dualshock/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_clockmux.v
+    E:/BumperBot/Dualshock/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_control.v
+    E:/BumperBot/Dualshock/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_fifo.v
+    E:/BumperBot/Dualshock/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_rf.v
+    E:/BumperBot/Dualshock/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3.v
+    E:/BumperBot/Dualshock/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_iaddr_reg.v
+    E:/BumperBot/Dualshock/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_muxptob3.v
+    E:/BumperBot/Dualshock/component/work/Dualshock/Dualshock.v
+
+Stimulus files for all Simulation tools:
+    E:/BumperBot/Dualshock/component/work/Dualshock/subsystem.bfm
+

@@ -1,0 +1,910 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version v11.7 SP3
+Microsemi Corporation - Microsemi Libero Software Release v11.7 SP3 (Version 11.7.3.8)
+Date: Wed Apr 05 21:47:38 2017
+
+
+Design: Dualshock
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+Temperature Range: 0 - 85 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 85 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               mss_aclk
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_fabric_interface_clock
+Period (ns):                18.238
+Frequency (MHz):            54.831
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_pclk1
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      4.072
+Max Clock-To-Out (ns):      9.755
+
+Clock Domain:               mss_ccc_gla1
+Period (ns):                22.880
+Frequency (MHz):            43.706
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        5.518
+External Hold (ns):         -0.775
+Min Clock-To-Out (ns):      2.473
+Max Clock-To-Out (ns):      12.857
+
+Clock Domain:               mss_ccc_gla0
+Period (ns):                12.500
+Frequency (MHz):            80.000
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        -1.889
+External Hold (ns):         1.452
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               Dualshock_MSS_0/MSS_CCC_0/I_XTLOSC:CLKOUT
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+                            Input to Output
+Min Delay (ns):             N/A
+Max Delay (ns):             N/A
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain mss_aclk
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_fabric_interface_clock
+
+SET Register to Register
+
+Path 1
+  From:                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[1]
+  Delay (ns):                  20.462
+  Slack (ns):
+  Arrival (ns):                20.462
+  Required (ns):
+  Setup (ns):                  -2.224
+  Minimum Period (ns):         18.238
+
+Path 2
+  From:                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[6]
+  Delay (ns):                  20.138
+  Slack (ns):
+  Arrival (ns):                20.138
+  Required (ns):
+  Setup (ns):                  -2.234
+  Minimum Period (ns):         17.904
+
+Path 3
+  From:                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[7]
+  Delay (ns):                  19.631
+  Slack (ns):
+  Arrival (ns):                19.631
+  Required (ns):
+  Setup (ns):                  -2.227
+  Minimum Period (ns):         17.404
+
+Path 4
+  From:                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[2]
+  Delay (ns):                  19.530
+  Slack (ns):
+  Arrival (ns):                19.530
+  Required (ns):
+  Setup (ns):                  -2.215
+  Minimum Period (ns):         17.315
+
+Path 5
+  From:                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[4]
+  Delay (ns):                  19.399
+  Slack (ns):
+  Arrival (ns):                19.399
+  Required (ns):
+  Setup (ns):                  -2.224
+  Minimum Period (ns):         17.175
+
+
+Expanded Path 1
+  From: Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To: Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[1]
+  data required time                             N/C
+  data arrival time                          -   20.462
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_fabric_interface_clock
+               +     0.000          Clock source
+  0.000                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:GLB (r)
+               +     3.840          cell: ADLIB:MSS_APB_IP
+  3.840                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPADDR[2] (r)
+               +     0.124          net: Dualshock_MSS_0/MSS_ADLIB_INST/MSSPADDR[2]INT_NET
+  3.964                        Dualshock_MSS_0/MSS_ADLIB_INST/U_30:PIN3INT (r)
+               +     0.086          cell: ADLIB:MSS_IF
+  4.050                        Dualshock_MSS_0/MSS_ADLIB_INST/U_30:PIN3 (r)
+               +     2.595          net: CoreAPB3_0_APBmslave0_PADDR[2]
+  6.645                        Dualshock_MSS_0/MSS_ADLIB_INST_RNIOMT1_0:A (r)
+               +     0.331          cell: ADLIB:BUFF
+  6.976                        Dualshock_MSS_0/MSS_ADLIB_INST_RNIOMT1_0:Y (r)
+               +     3.442          net: CoreAPB3_0_APBmslave0_PADDR_0[2]
+  10.418                       CORESPI_0/USPI/URF/m9:C (r)
+               +     0.683          cell: ADLIB:NOR3C
+  11.101                       CORESPI_0/USPI/URF/m9:Y (r)
+               +     3.259          net: CORESPI_0/USPI/URF/rdata_3_sqmuxa
+  14.360                       CORESPI_0/USPI/URF/int_raw_RNI11KL[1]:B (r)
+               +     0.470          cell: ADLIB:NOR2B
+  14.830                       CORESPI_0/USPI/URF/int_raw_RNI11KL[1]:Y (r)
+               +     0.302          net: CORESPI_0/USPI/URF/int_raw_m[1]
+  15.132                       CORESPI_0/USPI/URF/control1_RNI0HBI1[1]:C (r)
+               +     0.698          cell: ADLIB:AO1
+  15.830                       CORESPI_0/USPI/URF/control1_RNI0HBI1[1]:Y (r)
+               +     0.303          net: CORESPI_0/USPI/URF/prdata_2_0_iv_0[1]
+  16.133                       CORESPI_0/USPI/URF/control1_RNIJTV55[1]:A (r)
+               +     0.327          cell: ADLIB:OR3
+  16.460                       CORESPI_0/USPI/URF/control1_RNIJTV55[1]:Y (r)
+               +     1.323          net: CORESPI_0/USPI/prdata_regs[1]
+  17.783                       CORESPI_0/USPI/URXF/fifo_mem_q_fifo_mem_q_ram1__RNIG7CN7[2]:A (r)
+               +     0.606          cell: ADLIB:MX2
+  18.389                       CORESPI_0/USPI/URXF/fifo_mem_q_fifo_mem_q_ram1__RNIG7CN7[2]:Y (r)
+               +     0.306          net: CoreAPB3_0_APBmslave0_PRDATA[1]
+  18.695                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_1:C (r)
+               +     0.606          cell: ADLIB:NOR3C
+  19.301                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_1:Y (r)
+               +     0.647          net: Dualshock_MSS_0_MSS_MASTER_APB_PRDATA[1]
+  19.948                       Dualshock_MSS_0/MSS_ADLIB_INST/U_37:PIN5 (r)
+               +     0.079          cell: ADLIB:MSS_IF
+  20.027                       Dualshock_MSS_0/MSS_ADLIB_INST/U_37:PIN5INT (r)
+               +     0.435          net: Dualshock_MSS_0/MSS_ADLIB_INST/MSSPRDATA[1]INT_NET
+  20.462                       Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[1] (r)
+                                    
+  20.462                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_fabric_interface_clock
+               +     0.000          Clock source
+  N/C                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:GLB (r)
+               -    -2.224          Library setup time: ADLIB:MSS_APB_IP
+  N/C                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[1]
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_pclk1
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                          GPIO_13_OUT
+  Delay (ns):                  9.755
+  Slack (ns):
+  Arrival (ns):                9.755
+  Required (ns):
+  Clock to Out (ns):           9.755
+
+Path 2
+  From:                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                          GPIO_14_OUT
+  Delay (ns):                  9.715
+  Slack (ns):
+  Arrival (ns):                9.715
+  Required (ns):
+  Clock to Out (ns):           9.715
+
+Path 3
+  From:                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                          GPIO_15_OUT
+  Delay (ns):                  9.499
+  Slack (ns):
+  Arrival (ns):                9.499
+  Required (ns):
+  Clock to Out (ns):           9.499
+
+
+Expanded Path 1
+  From: Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To: GPIO_13_OUT
+  data required time                             N/C
+  data arrival time                          -   9.755
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_pclk1
+               +     0.000          Clock source
+  0.000                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1 (r)
+               +     4.643          cell: ADLIB:MSS_APB_IP
+  4.643                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:GPO[13] (f)
+               +     1.106          net: Dualshock_MSS_0/GPO_net_0[13]
+  5.749                        Dualshock_MSS_0/MSS_GPIO_0_GPIO_13_OUT:D (f)
+               +     4.006          cell: ADLIB:IOPAD_TRI
+  9.755                        Dualshock_MSS_0/MSS_GPIO_0_GPIO_13_OUT:PAD (f)
+               +     0.000          net: GPIO_13_OUT
+  9.755                        GPIO_13_OUT (f)
+                                    
+  9.755                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_pclk1
+               +     0.000          Clock source
+  N/C                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1 (r)
+                                    
+  N/C                          GPIO_13_OUT (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_ccc_gla1
+
+SET Register to Register
+
+Path 1
+  From:                        CORESPI_0/USPI/UCC/SYNC2_stxp_strobetx:CLK
+  To:                          CORESPI_0/USPI/UTXF/full_out:D
+  Delay (ns):                  22.296
+  Slack (ns):
+  Arrival (ns):                22.972
+  Required (ns):
+  Setup (ns):                  0.490
+  Minimum Period (ns):         22.880
+
+Path 2
+  From:                        CORESPI_0/USPI/UCC/SYNC2_stxp_strobetx:CLK
+  To:                          CORESPI_0/USPI/UTXF/empty_out:D
+  Delay (ns):                  21.644
+  Slack (ns):
+  Arrival (ns):                22.320
+  Required (ns):
+  Setup (ns):                  0.490
+  Minimum Period (ns):         22.228
+
+Path 3
+  From:                        CORESPI_0/USPI/UCC/SYNC3_stxp_strobetx:CLK
+  To:                          CORESPI_0/USPI/UTXF/full_out:D
+  Delay (ns):                  21.438
+  Slack (ns):
+  Arrival (ns):                22.072
+  Required (ns):
+  Setup (ns):                  0.490
+  Minimum Period (ns):         21.980
+
+Path 4
+  From:                        CORESPI_0/USPI/URF/control1[1]:CLK
+  To:                          CORESPI_0/USPI/UTXF/full_out:D
+  Delay (ns):                  21.257
+  Slack (ns):
+  Arrival (ns):                21.891
+  Required (ns):
+  Setup (ns):                  0.490
+  Minimum Period (ns):         21.799
+
+Path 5
+  From:                        CORESPI_0/USPI/UCC/SYNC2_stxp_strobetx:CLK
+  To:                          CORESPI_0/USPI/UTXF/counter_q[5]:D
+  Delay (ns):                  20.992
+  Slack (ns):
+  Arrival (ns):                21.668
+  Required (ns):
+  Setup (ns):                  0.490
+  Minimum Period (ns):         21.579
+
+
+Expanded Path 1
+  From: CORESPI_0/USPI/UCC/SYNC2_stxp_strobetx:CLK
+  To: CORESPI_0/USPI/UTXF/full_out:D
+  data required time                             N/C
+  data arrival time                          -   22.972
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     0.000          net: Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  0.000                        Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  0.000                        Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.676          net: FAB_CLK
+  0.676                        CORESPI_0/USPI/UCC/SYNC2_stxp_strobetx:CLK (r)
+               +     0.528          cell: ADLIB:DFN1C0
+  1.204                        CORESPI_0/USPI/UCC/SYNC2_stxp_strobetx:Q (r)
+               +     1.247          net: CORESPI_0/USPI/UCC/SYNC2_stxp_strobetx
+  2.451                        CORESPI_0/USPI/UCC/SYNC3_stxp_strobetx_RNI3G1P:A (r)
+               +     0.445          cell: ADLIB:NOR2B
+  2.896                        CORESPI_0/USPI/UCC/SYNC3_stxp_strobetx_RNI3G1P:Y (r)
+               +     0.994          net: CORESPI_0/USPI/UCC/stxp_strobe
+  3.890                        CORESPI_0/USPI/UCC/mtx_fiforead_RNIS4RD1:A (r)
+               +     0.606          cell: ADLIB:MX2
+  4.496                        CORESPI_0/USPI/UCC/mtx_fiforead_RNIS4RD1:Y (r)
+               +     1.598          net: CORESPI_0/USPI/tx_fifo_read
+  6.094                        CORESPI_0/USPI/UTXF/empty_out_RNIOLSF2:A (r)
+               +     0.604          cell: ADLIB:NOR3A
+  6.698                        CORESPI_0/USPI/UTXF/empty_out_RNIOLSF2:Y (r)
+               +     5.031          net: CORESPI_0/USPI/UTXF/un1_counter_d_0_sqmuxa[1]
+  11.729                       CORESPI_0/USPI/UTXF/empty_out_RNI0K835:B (r)
+               +     0.468          cell: ADLIB:OR2
+  12.197                       CORESPI_0/USPI/UTXF/empty_out_RNI0K835:Y (r)
+               +     0.404          net: CORESPI_0/USPI/UTXF/un1_counter_d_0_sqmuxa[0]
+  12.601                       CORESPI_0/USPI/UTXF/un1_counter_q_ADD_6x6_slow_I0_un1_CO1:B (r)
+               +     0.538          cell: ADLIB:NOR2B
+  13.139                       CORESPI_0/USPI/UTXF/un1_counter_q_ADD_6x6_slow_I0_un1_CO1:Y (r)
+               +     0.351          net: CORESPI_0/USPI/UTXF/I0_un1_CO1
+  13.490                       CORESPI_0/USPI/UTXF/un1_counter_q_ADD_6x6_slow_I1_CO1:B (r)
+               +     0.606          cell: ADLIB:AO1
+  14.096                       CORESPI_0/USPI/UTXF/un1_counter_q_ADD_6x6_slow_I1_CO1:Y (r)
+               +     2.484          net: CORESPI_0/USPI/UTXF/N98
+  16.580                       CORESPI_0/USPI/UTXF/un1_counter_q_ADD_6x6_slow_I2_un1_CO1:C (r)
+               +     0.658          cell: ADLIB:MAJ3
+  17.238                       CORESPI_0/USPI/UTXF/un1_counter_q_ADD_6x6_slow_I2_un1_CO1:Y (r)
+               +     0.369          net: CORESPI_0/USPI/UTXF/I2_un1_CO1
+  17.607                       CORESPI_0/USPI/UTXF/un1_counter_q_ADD_6x6_slow_I3_CO1:C (r)
+               +     0.658          cell: ADLIB:MAJ3
+  18.265                       CORESPI_0/USPI/UTXF/un1_counter_q_ADD_6x6_slow_I3_CO1:Y (r)
+               +     0.369          net: CORESPI_0/USPI/UTXF/N102
+  18.634                       CORESPI_0/USPI/UTXF/un1_counter_q_ADD_6x6_slow_I4_un1_CO1:C (r)
+               +     0.658          cell: ADLIB:MAJ3
+  19.292                       CORESPI_0/USPI/UTXF/un1_counter_q_ADD_6x6_slow_I4_un1_CO1:Y (r)
+               +     0.306          net: CORESPI_0/USPI/UTXF/I4_un1_CO1
+  19.598                       CORESPI_0/USPI/UTXF/un1_counter_q_ADD_6x6_slow_I5_Y:C (r)
+               +     0.897          cell: ADLIB:XOR3
+  20.495                       CORESPI_0/USPI/UTXF/un1_counter_q_ADD_6x6_slow_I5_Y:Y (f)
+               +     1.505          net: CORESPI_0/USPI/UTXF/un1_counter_q[5]
+  22.000                       CORESPI_0/USPI/UTXF/full_out_RNO:C (f)
+               +     0.652          cell: ADLIB:NOR3A
+  22.652                       CORESPI_0/USPI/UTXF/full_out_RNO:Y (r)
+               +     0.320          net: CORESPI_0/USPI/UTXF/full_out_2
+  22.972                       CORESPI_0/USPI/UTXF/full_out:D (r)
+                                    
+  22.972                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla1
+               +     0.000          Clock source
+  N/C                          Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     0.000          net: Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  N/C                          Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  N/C                          Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.582          net: FAB_CLK
+  N/C                          CORESPI_0/USPI/UTXF/full_out:CLK (r)
+               -     0.490          Library setup time: ADLIB:DFN1C0
+  N/C                          CORESPI_0/USPI/UTXF/full_out:D
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        SPISDI
+  To:                          CORESPI_0/USPI/UCC/msrxs_shiftreg[0]:D
+  Delay (ns):                  5.684
+  Slack (ns):
+  Arrival (ns):                5.684
+  Required (ns):
+  Setup (ns):                  0.459
+  External Setup (ns):         5.518
+
+Path 2
+  From:                        SPISDI
+  To:                          CORESPI_0/USPI/UCC/msrxs_datain[0]:D
+  Delay (ns):                  5.214
+  Slack (ns):
+  Arrival (ns):                5.214
+  Required (ns):
+  Setup (ns):                  0.490
+  External Setup (ns):         5.076
+
+Path 3
+  From:                        SPISDI
+  To:                          CORESPI_0/USPI/UCC/data_rx_q1:D
+  Delay (ns):                  2.594
+  Slack (ns):
+  Arrival (ns):                2.594
+  Required (ns):
+  Setup (ns):                  0.522
+  External Setup (ns):         2.479
+
+
+Expanded Path 1
+  From: SPISDI
+  To: CORESPI_0/USPI/UCC/msrxs_shiftreg[0]:D
+  data required time                             N/C
+  data arrival time                          -   5.684
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        SPISDI (r)
+               +     0.000          net: SPISDI
+  0.000                        SPISDI_pad/U0/U0:PAD (r)
+               +     0.967          cell: ADLIB:IOPAD_IN
+  0.967                        SPISDI_pad/U0/U0:Y (r)
+               +     0.000          net: SPISDI_pad/U0/NET1
+  0.967                        SPISDI_pad/U0/U1:YIN (r)
+               +     0.039          cell: ADLIB:IOIN_IB
+  1.006                        SPISDI_pad/U0/U1:Y (r)
+               +     1.596          net: SPISDI_c
+  2.602                        CORESPI_0/USPI/UCC/data_rx_q2_RNI6R1S:B (r)
+               +     0.617          cell: ADLIB:MX2
+  3.219                        CORESPI_0/USPI/UCC/data_rx_q2_RNI6R1S:Y (r)
+               +     1.699          net: CORESPI_0/USPI/UCC/spi_di_mux
+  4.918                        CORESPI_0/USPI/UCC/msrxs_shiftreg_RNO[0]:A (r)
+               +     0.470          cell: ADLIB:NOR2A
+  5.388                        CORESPI_0/USPI/UCC/msrxs_shiftreg_RNO[0]:Y (r)
+               +     0.296          net: CORESPI_0/USPI/UCC/msrxs_shiftreg_5[0]
+  5.684                        CORESPI_0/USPI/UCC/msrxs_shiftreg[0]:D (r)
+                                    
+  5.684                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla1
+               +     0.000          Clock source
+  N/C                          Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     0.000          net: Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  N/C                          Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  N/C                          Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.625          net: FAB_CLK
+  N/C                          CORESPI_0/USPI/UCC/msrxs_shiftreg[0]:CLK (r)
+               -     0.459          Library setup time: ADLIB:DFN1E1C0
+  N/C                          CORESPI_0/USPI/UCC/msrxs_shiftreg[0]:D
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        CORESPI_0/USPI/URF/control1[1]:CLK
+  To:                          SPISDO
+  Delay (ns):                  12.223
+  Slack (ns):
+  Arrival (ns):                12.857
+  Required (ns):
+  Clock to Out (ns):           12.857
+
+Path 2
+  From:                        CORESPI_0/USPI/UCC/stxs_txzeros:CLK
+  To:                          SPISDO
+  Delay (ns):                  9.914
+  Slack (ns):
+  Arrival (ns):                10.522
+  Required (ns):
+  Clock to Out (ns):           10.522
+
+Path 3
+  From:                        CORESPI_0/USPI/UCC/stxs_datareg[7]:CLK
+  To:                          SPISDO
+  Delay (ns):                  7.806
+  Slack (ns):
+  Arrival (ns):                8.388
+  Required (ns):
+  Clock to Out (ns):           8.388
+
+Path 4
+  From:                        CORESPI_0/USPI/UCC/mtx_spi_data_out:CLK
+  To:                          SPISDO
+  Delay (ns):                  7.663
+  Slack (ns):
+  Arrival (ns):                8.303
+  Required (ns):
+  Clock to Out (ns):           8.303
+
+Path 5
+  From:                        CORESPI_0/USPI/UCC/stxs_direct:CLK
+  To:                          SPISDO
+  Delay (ns):                  7.591
+  Slack (ns):
+  Arrival (ns):                8.202
+  Required (ns):
+  Clock to Out (ns):           8.202
+
+
+Expanded Path 1
+  From: CORESPI_0/USPI/URF/control1[1]:CLK
+  To: SPISDO
+  data required time                             N/C
+  data arrival time                          -   12.857
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     0.000          net: Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  0.000                        Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  0.000                        Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.634          net: FAB_CLK
+  0.634                        CORESPI_0/USPI/URF/control1[1]:CLK (r)
+               +     0.528          cell: ADLIB:DFN1E1C0
+  1.162                        CORESPI_0/USPI/URF/control1[1]:Q (r)
+               +     2.466          net: CORESPI_0/USPI/SPIMODE
+  3.628                        CORESPI_0/USPI/UCC/stxs_txzeros_RNIHHDG:B (r)
+               +     0.468          cell: ADLIB:NOR2
+  4.096                        CORESPI_0/USPI/UCC/stxs_txzeros_RNIHHDG:Y (f)
+               +     2.138          net: CORESPI_0/USPI/UCC/stxs_datareg_m_2[7]
+  6.234                        CORESPI_0/USPI/UCC/txfifo_datadelay_RNIORTK[7]:C (f)
+               +     0.584          cell: ADLIB:NOR3C
+  6.818                        CORESPI_0/USPI/UCC/txfifo_datadelay_RNIORTK[7]:Y (f)
+               +     0.285          net: CORESPI_0/USPI/UCC/txfifo_datadelay_m[7]
+  7.103                        CORESPI_0/USPI/UCC/stxs_datareg_RNIMJJS1[7]:A (f)
+               +     0.445          cell: ADLIB:OR3
+  7.548                        CORESPI_0/USPI/UCC/stxs_datareg_RNIMJJS1[7]:Y (f)
+               +     1.410          net: SPISDO_c
+  8.958                        SPISDO_pad/U0/U1:D (f)
+               +     0.530          cell: ADLIB:IOTRI_OB_EB
+  9.488                        SPISDO_pad/U0/U1:DOUT (f)
+               +     0.000          net: SPISDO_pad/U0/NET1
+  9.488                        SPISDO_pad/U0/U0:D (f)
+               +     3.369          cell: ADLIB:IOPAD_TRI
+  12.857                       SPISDO_pad/U0/U0:PAD (f)
+               +     0.000          net: SPISDO
+  12.857                       SPISDO (f)
+                                    
+  12.857                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla1
+               +     0.000          Clock source
+  N/C                          Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+                                    
+  N/C                          SPISDO (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_ccc_gla0
+
+Info: The maximum frequency of this clock domain is limited by the period of pin Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        MSS_RESET_N
+  To:                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+  Delay (ns):                  0.937
+  Slack (ns):
+  Arrival (ns):                0.937
+  Required (ns):
+  Setup (ns):                  -2.196
+  External Setup (ns):         -1.889
+
+
+Expanded Path 1
+  From: MSS_RESET_N
+  To: Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+  data required time                             N/C
+  data arrival time                          -   0.937
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        MSS_RESET_N (r)
+               +     0.000          net: MSS_RESET_N
+  0.000                        Dualshock_MSS_0/MSS_RESET_0_MSS_RESET_N:PAD (r)
+               +     0.937          cell: ADLIB:IOPAD_IN
+  0.937                        Dualshock_MSS_0/MSS_RESET_0_MSS_RESET_N:Y (r)
+               +     0.000          net: Dualshock_MSS_0/MSS_RESET_0_MSS_RESET_N_Y
+  0.937                        Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSRESETn (r)
+                                    
+  0.937                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla0
+               +     0.000          Clock source
+  N/C                          Dualshock_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLAMSS (r)
+               +     0.630          net: Dualshock_MSS_0/GLA0
+  N/C                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK (r)
+               -    -2.196          Library setup time: ADLIB:MSS_APB_IP
+  N/C                          Dualshock_MSS_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain Dualshock_MSS_0/MSS_CCC_0/I_XTLOSC:CLKOUT
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+No Path
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

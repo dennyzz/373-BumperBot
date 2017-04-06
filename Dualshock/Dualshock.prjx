@@ -29,19 +29,677 @@ KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
 KEY Vendor "Actel"
+KEY ActiveRoot "Dualshock::work"
 LIST REVISIONS
 VALUE="Impl1",NUM=1
 CURREV=1
 ENDLIST
+LIST LIBRARIES
+MSS_BFM_LIB
+COREAPB3_LIB
+CORESPI_LIB
+ENDLIST
+LIST LIBRARY_MSS_BFM_LIB
+ALIAS=..\component\Actel\SmartFusionMSS\MSS\2.5.200\mti\user_verilog\MSS_BFM_LIB
+COMPILE_OPTION=REFRESH_AND_COMPILE
+CUSTOMPATH=false
+ENDLIST
+LIST LIBRARY_COREAPB3_LIB
+ALIAS=COREAPB3_LIB
+COMPILE_OPTION=COMPILE
+CUSTOMPATH=false
+ENDLIST
+LIST LIBRARY_CORESPI_LIB
+ALIAS=CORESPI_LIB
+COMPILE_OPTION=COMPILE
+CUSTOMPATH=false
+ENDLIST
 LIST FileManager
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491428118"
+SIZE="2736"
+PARENT="<project>\component\work\Dualshock\Dualshock.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
+STATE="utd"
+TIME="1491428118"
+SIZE="1284"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
+STATE="utd"
+TIME="1491104481"
+SIZE="912"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="4636"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="9073"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="25129"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="36275"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="122456"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v,hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="29701"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v,hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="4465"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v,hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="5708"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="23651"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+MODULE_UNDER_TEST="testbench"
+SIMULATION_TIME="-all"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\CORESPI.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491428118"
+SIZE="2961"
+PARENT="<project>\component\work\Dualshock\Dualshock.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\mti\bfmtovec_compile.do,do"
+STATE="utd"
+TIME="1491283857"
+SIZE="922"
+PARENT="<project>\component\Actel\DirectCore\CORESPI\5.1.104\CORESPI.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\mti\wave.do,do"
+STATE="utd"
+TIME="1491283857"
+SIZE="3399"
+PARENT="<project>\component\Actel\DirectCore\CORESPI\5.1.104\CORESPI.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="6486"
+LIBRARY="CORESPI_LIB"
+PARENT="<project>\component\Actel\DirectCore\CORESPI\5.1.104\CORESPI.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="9201"
+LIBRARY="CORESPI_LIB"
+PARENT="<project>\component\Actel\DirectCore\CORESPI\5.1.104\CORESPI.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="197636"
+LIBRARY="CORESPI_LIB"
+PARENT="<project>\component\Actel\DirectCore\CORESPI\5.1.104\CORESPI.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_package.v,tb_hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="40025"
+LIBRARY="CORESPI_LIB"
+PARENT="<project>\component\Actel\DirectCore\CORESPI\5.1.104\CORESPI.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\corespi.v,hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="4528"
+LIBRARY="CORESPI_LIB"
+PARENT="<project>\component\Actel\DirectCore\CORESPI\5.1.104\CORESPI.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi.v,hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="12770"
+LIBRARY="CORESPI_LIB"
+PARENT="<project>\component\Actel\DirectCore\CORESPI\5.1.104\CORESPI.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_chanctrl.v,hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="39665"
+LIBRARY="CORESPI_LIB"
+PARENT="<project>\component\Actel\DirectCore\CORESPI\5.1.104\CORESPI.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_clockmux.v,hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="1034"
+LIBRARY="CORESPI_LIB"
+PARENT="<project>\component\Actel\DirectCore\CORESPI\5.1.104\CORESPI.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_control.v,hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="3070"
+LIBRARY="CORESPI_LIB"
+PARENT="<project>\component\Actel\DirectCore\CORESPI\5.1.104\CORESPI.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_fifo.v,hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="6157"
+LIBRARY="CORESPI_LIB"
+PARENT="<project>\component\Actel\DirectCore\CORESPI\5.1.104\CORESPI.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_rf.v,hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="8715"
+LIBRARY="CORESPI_LIB"
+PARENT="<project>\component\Actel\DirectCore\CORESPI\5.1.104\CORESPI.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\test\user\testbench.v,tb_hdl"
+STATE="utd"
+TIME="1491283857"
+SIZE="6636"
+LIBRARY="CORESPI_LIB"
+PARENT="<project>\component\Actel\DirectCore\CORESPI\5.1.104\CORESPI.cxf"
+MODULE_UNDER_TEST="testbench"
+SIMULATION_TIME="-all"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491427236"
+SIZE="945"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v,hdl"
+STATE="utd"
+TIME="1488658099"
+SIZE="11243"
+PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="SYNPLIFY7_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CCC\2.0.106\MSS_CCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491427234"
+SIZE="252"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491427234"
+SIZE="252"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_COM\1.0.200\MSS_COM.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491427234"
+SIZE="252"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_DMA\1.0.101\MSS_DMA.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491427234"
+SIZE="252"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ENVM\2.3.200\MSS_ENVM.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491427235"
+SIZE="253"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIC\1.0.101\MSS_FIC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491427235"
+SIZE="252"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIO\1.0.203\MSS_FIO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491427235"
+SIZE="252"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_GPIO\1.0.101\MSS_GPIO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491427235"
+SIZE="253"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_INTR\1.0.101\MSS_INTR.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491427235"
+SIZE="253"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RESET\1.0.101\MSS_RESET.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491427235"
+SIZE="254"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RTC\1.0.100\MSS_RTC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491427235"
+SIZE="252"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_TIMER\1.0.100\MSS_TIMER.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491427235"
+SIZE="254"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UART\1.0.101\MSS_UART.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491427235"
+SIZE="253"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UFROM\1.0.100\MSS_UFROM.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491427235"
+SIZE="254"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\work\Dualshock\Dualshock.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491428129"
+SIZE="4956"
+ENDFILE
+VALUE "<project>\component\work\Dualshock\Dualshock.pdc,pdc"
+STATE="utd"
+TIME="1491428118"
+SIZE="836"
+PARENT="<project>\component\work\Dualshock\Dualshock.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideDESIGNER"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Dualshock\Dualshock.v,hdl"
+STATE="utd"
+TIME="1491428118"
+SIZE="15386"
+PARENT="<project>\component\work\Dualshock\Dualshock.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491427237"
+SIZE="12554"
+ENDFILE
+VALUE "<project>\component\work\Dualshock_MSS\Dualshock_MSS.v,hdl"
+STATE="utd"
+TIME="1491427236"
+SIZE="20823"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Dualshock_MSS\MSS_CCC_0\Dualshock_MSS_tmp_MSS_CCC_0_MSS_CCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1491427234"
+SIZE="493"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\work\Dualshock_MSS\MSS_CCC_0\Dualshock_MSS_tmp_MSS_CCC_0_MSS_CCC.v,hdl"
+STATE="utd"
+TIME="1491427234"
+SIZE="2914"
+PARENT="<project>\component\work\Dualshock_MSS\MSS_CCC_0\Dualshock_MSS_tmp_MSS_CCC_0_MSS_CCC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Dualshock_MSS\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
+STATE="utd"
+TIME="1491427235"
+SIZE="16218"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Dualshock_MSS\mss_tshell.v,hdl"
+STATE="utd"
+TIME="1491427236"
+SIZE="12226"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="SYNPLIFY7_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Dualshock_MSS\mss_tshell_syn.sdc,sdc"
+STATE="utd"
+TIME="1491427236"
+SIZE="196"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="SYNPLIFY7_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\designer\impl1\Dualshock.adb,adb"
+STATE="utd"
+TIME="1491428161"
+SIZE="546816"
+ENDFILE
+VALUE "<project>\designer\impl1\Dualshock.fdb,fdb"
+STATE="utd"
+TIME="1491431597"
+SIZE="56965"
+ENDFILE
+VALUE "<project>\designer\impl1\Dualshock.ide_des,ide_des"
+STATE="utd"
+TIME="1491425747"
+SIZE="183"
+ENDFILE
+VALUE "<project>\designer\impl1\Dualshock_compile_log.rpt,log"
+STATE="utd"
+TIME="1491428161"
+SIZE="34188"
+ENDFILE
+VALUE "<project>\designer\impl1\Dualshock_fp\Dualshock.pdb,pdb"
+STATE="utd"
+TIME="1491428436"
+SIZE="62690"
+ENDFILE
+VALUE "<project>\designer\impl1\Dualshock_fp\Dualshock.pro,pro"
+STATE="utd"
+TIME="1491428434"
+SIZE="1983"
+ENDFILE
+VALUE "<project>\designer\impl1\Dualshock_fp\projectData\Dualshock.pdb,pdb"
+STATE="utd"
+TIME="1491429428"
+SIZE="62474"
+ENDFILE
+VALUE "<project>\designer\impl1\Dualshock_placeroute_log.rpt,log"
+STATE="utd"
+TIME="1491429366"
+SIZE="2594"
+ENDFILE
+VALUE "<project>\designer\impl1\Dualshock_prgdata_log.rpt,log"
+STATE="utd"
+TIME="1491431598"
+SIZE="608"
+ENDFILE
+VALUE "<project>\designer\impl1\Dualshock_verifytiming_log.rpt,log"
+STATE="utd"
+TIME="1491429370"
+SIZE="1130"
+ENDFILE
+VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
+STATE="utd"
+TIME="1491104481"
+SIZE="1229"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+ENDFILE
+VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
+STATE="utd"
+TIME="1488658099"
+SIZE="41"
+PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf"
+ENDFILE
+VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
+STATE="utd"
+TIME="1491104481"
+SIZE="8016"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+ENDFILE
+VALUE "<project>\simulation\subsystem.bfm,sim"
+STATE="utd"
+TIME="1491428118"
+SIZE="632"
+PARENT="<project>\component\work\Dualshock\Dualshock.cxf"
+ENDFILE
+VALUE "<project>\simulation\test.bfm,sim"
+STATE="utd"
+TIME="1491427235"
+SIZE="5496"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+ENDFILE
+VALUE "<project>\simulation\user.bfm,sim"
+STATE="utd"
+TIME="1491425844"
+SIZE="670"
+PARENT="<project>\component\work\Dualshock_MSS\Dualshock_MSS.cxf"
+ENDFILE
+VALUE "<project>\simulation\user_tb.bfm,sim"
+STATE="utd"
+TIME="1491283857"
+SIZE="6962"
+PARENT="<project>\component\Actel\DirectCore\CORESPI\5.1.104\CORESPI.cxf"
+ENDFILE
+VALUE "<project>\synthesis\Dualshock.edn,syn_edn"
+STATE="utd"
+TIME="1491428152"
+SIZE="546265"
+ENDFILE
+VALUE "<project>\synthesis\Dualshock.so,so"
+STATE="utd"
+TIME="1491428152"
+SIZE="210"
+ENDFILE
+VALUE "<project>\synthesis\Dualshock_sdc.sdc,syn_sdc"
+STATE="utd"
+TIME="1491428152"
+SIZE="546"
+ENDFILE
+VALUE "<project>\synthesis\Dualshock_syn.prj,prj"
+STATE="utd"
+TIME="1491428152"
+SIZE="3333"
+ENDFILE
 ENDLIST
 LIST UsedFile
 ENDLIST
 LIST NewModulesInfo
+LIST "Dualshock::work"
+FILE "<project>\component\work\Dualshock\Dualshock.v,hdl"
+LIST Other_Association
+VALUE "<project>\simulation\subsystem.bfm,sim"
+VALUE "<project>\component\work\Dualshock\Dualshock.pdc,pdc"
+ENDLIST
+LIST SynthesisConstraints
+VALUE "<project>\component\work\Dualshock_MSS\mss_tshell_syn.sdc,sdc"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Layout
+ideDESIGNER(<project>\designer\impl1\Dualshock.adb,adb)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\Dualshock.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl1\Dualshock_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl1\Dualshock_report_pin_bynumber.txt,log"
+ENDLIST
+ENDLIST
+LIST "Dualshock_MSS::work"
+FILE "<project>\component\work\Dualshock_MSS\Dualshock_MSS.v,hdl"
+LIST Other_Association
+VALUE "<project>\component\work\Dualshock_MSS\mss_tshell_syn.sdc,sdc"
+VALUE "<project>\simulation\user.bfm,sim"
+VALUE "<project>\simulation\test.bfm,sim"
+VALUE "<project>\component\work\Dualshock_MSS\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
+VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
+ENDLIST
+ENDLIST
+LIST "CoreAPB3::COREAPB3_LIB"
+FILE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v,hdl"
+LIST Other_Association
+VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
+VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
 ENDLIST
 LIST AssociatedStimulus
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+ENDLIST
+ENDLIST
+LIST "CORESPI::CORESPI_LIB"
+FILE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\corespi.v,hdl"
+LIST Other_Association
+VALUE "<project>\simulation\user_tb.bfm,sim"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_package.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\mti\bfmtovec_compile.do,do"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\mti\wave.do,do"
+ENDLIST
+LIST AssociatedStimulus
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_package.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\test\user\testbench.v,tb_hdl"
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+LIST CoreAPB3
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+ENDLIST
+LIST CORESPI
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_package.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\test\user\testbench.v,tb_hdl"
+ENDLIST
 ENDLIST
 LIST Other_Association
+LIST Dualshock
+VALUE "<project>\simulation\subsystem.bfm,sim"
+VALUE "<project>\component\work\Dualshock\Dualshock.pdc,pdc"
+ENDLIST
+LIST Dualshock_MSS
+VALUE "<project>\component\work\Dualshock_MSS\mss_tshell_syn.sdc,sdc"
+VALUE "<project>\simulation\user.bfm,sim"
+VALUE "<project>\simulation\test.bfm,sim"
+VALUE "<project>\component\work\Dualshock_MSS\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
+VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
+ENDLIST
+LIST CoreAPB3
+VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
+VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
+ENDLIST
+LIST CORESPI
+VALUE "<project>\simulation\user_tb.bfm,sim"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_package.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\mti\bfmtovec_compile.do,do"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\mti\wave.do,do"
+ENDLIST
 ENDLIST
 LIST SimulationOptions
 UseAutomaticDoFile=true
@@ -108,8 +766,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.7\\\Synplify\\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -142,6 +800,19 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
+LIST "Dualshock::work"
+LIST Impl1
+LiberoState=Post_Layout
+ideDESIGNER(<project>\designer\impl1\Dualshock.adb,adb)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\Dualshock.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -155,10 +826,117 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Generate Programming Data:Dualshock_prgdata_log.rpt
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+SmartDesign;Dualshock;0
+SmartDesign;Dualshock_MSS;0
+SmartDesign;DESIGN_FIRMWARE;0
+HDL;synthesis\Dualshock_sdc.sdc;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
+LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "BIBUF_OPEND_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "Dualshock::work","component\work\Dualshock\Dualshock.v","TRUE","FALSE"
+SUBBLOCK "Dualshock_MSS::work","component\work\Dualshock_MSS\Dualshock_MSS.v","TRUE","FALSE"
+SUBBLOCK "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v","FALSE","FALSE"
+SUBBLOCK "CORESPI::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\corespi.v","FALSE","FALSE"
+ENDLIST
+LIST "Dualshock_MSS::work","component\work\Dualshock_MSS\Dualshock_MSS.v","TRUE","FALSE"
+SUBBLOCK "Dualshock_MSS_tmp_MSS_CCC_0_MSS_CCC::work","component\work\Dualshock_MSS\MSS_CCC_0\Dualshock_MSS_tmp_MSS_CCC_0_MSS_CCC.v","FALSE","FALSE"
+SUBBLOCK "INBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+SUBBLOCK "MSS_APB::work","component\work\Dualshock_MSS\mss_tshell.v","FALSE","FALSE"
+SUBBLOCK "OUTBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "Dualshock_MSS_tmp_MSS_CCC_0_MSS_CCC::work","component\work\Dualshock_MSS\MSS_CCC_0\Dualshock_MSS_tmp_MSS_CCC_0_MSS_CCC.v","FALSE","FALSE"
+SUBBLOCK "MSS_CCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+SUBBLOCK "MSS_XTLOSC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "INBUF_LVDS_MCCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "INBUF_LVPECL_MCCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "INBUF_MCCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "INBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "MSS_ALL::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "MSS_APB::work","component\work\Dualshock_MSS\mss_tshell.v","FALSE","FALSE"
+ENDLIST
+LIST "MSS_CCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "MSS_LPXTLOSC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "MSS_XTLOSC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "MSSINT::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "OUTBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "TRIBUFF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v","FALSE","FALSE"
+SUBBLOCK "COREAPB3_MUXPTOB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v","FALSE","FALSE"
+SUBBLOCK "coreapb3_iaddr_reg::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v","FALSE","FALSE"
+ENDLIST
+LIST "coreapb3_iaddr_reg::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v","FALSE","FALSE"
+ENDLIST
+LIST "COREAPB3_MUXPTOB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v","FALSE","FALSE"
+ENDLIST
+LIST "BFM_APB::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v","FALSE","TRUE"
+SUBBLOCK "BFMA1l1OII::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
+SUBBLOCK "BFM_MAIN::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "BFM_APBSLAVE::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v","FALSE","TRUE"
+SUBBLOCK "BFM_APBSLAVEEXT::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v","FALSE","TRUE"
+ENDLIST
+LIST "BFM_APBSLAVEEXT::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v","FALSE","TRUE"
+ENDLIST
+LIST "BFM_MAIN::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "BFMA1l1OII::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
+ENDLIST
+LIST "testbench::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+SUBBLOCK "BFM_APB::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v","FALSE","TRUE"
+SUBBLOCK "BFM_APBSLAVE::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v","FALSE","TRUE"
+SUBBLOCK "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v","FALSE","FALSE"
+ENDLIST
+LIST "CORESPI::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\corespi.v","FALSE","FALSE"
+SUBBLOCK "spi::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi.v","FALSE","FALSE"
+ENDLIST
+LIST "spi::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi.v","FALSE","FALSE"
+SUBBLOCK "spi_chanctrl::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_chanctrl.v","FALSE","FALSE"
+SUBBLOCK "spi_control::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_control.v","FALSE","FALSE"
+SUBBLOCK "spi_fifo::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_fifo.v","FALSE","FALSE"
+SUBBLOCK "spi_rf::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_rf.v","FALSE","FALSE"
+ENDLIST
+LIST "spi_chanctrl::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_chanctrl.v","FALSE","FALSE"
+SUBBLOCK "spi_clockmux::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_clockmux.v","FALSE","FALSE"
+ENDLIST
+LIST "spi_clockmux::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_clockmux.v","FALSE","FALSE"
+ENDLIST
+LIST "spi_control::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_control.v","FALSE","FALSE"
+ENDLIST
+LIST "spi_fifo::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_fifo.v","FALSE","FALSE"
+ENDLIST
+LIST "spi_rf::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_rf.v","FALSE","FALSE"
+ENDLIST
+LIST "BFM_AHB2APB::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
+ENDLIST
+LIST "BFM_APB::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_apb.v","FALSE","TRUE"
+SUBBLOCK "BFM_AHB2APB::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
+SUBBLOCK "BFM_MAIN::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "BFM_MAIN::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "testbench::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+SUBBLOCK "BFM_APB::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\amba_bfm\bfm_apb.v","FALSE","TRUE"
+SUBBLOCK "CORESPI::CORESPI_LIB","component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\corespi.v","FALSE","FALSE"
+ENDLIST
 ENDLIST
 LIST ActiveTestBenchList
 ENDLIST
@@ -167,6 +945,7 @@ ENDLIST
 LIST FPTabList
 ENDLIST
 LIST TimingTabList
+VALUE "component\work\Dualshock_MSS\mss_tshell_syn.sdc"
 ENDLIST
 LIST FDCTabList
 ENDLIST

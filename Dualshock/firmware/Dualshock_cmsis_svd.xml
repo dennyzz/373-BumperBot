@@ -2,7 +2,7 @@
 <device>
   <name>Dualshock</name>
   <version>1.0</version>
-  <description>CMSIS description for Dualshock.  Created by Microsemi SmartDesign on Wed Apr 05 17:35:20 2017</description>
+  <description>CMSIS description for Dualshock.  Created by Microsemi SmartDesign on Wed Apr 05 21:46:47 2017</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>
@@ -1852,7 +1852,7 @@
     </peripheral>
     <peripheral>
       <name>CORESPI_0</name>
-      <baseAddress>0x40000000</baseAddress>
+      <baseAddress>0x40050000</baseAddress>
     </peripheral>
     <peripheral>
       <name>FPGA_FABRIC_BACKDOOR</name>

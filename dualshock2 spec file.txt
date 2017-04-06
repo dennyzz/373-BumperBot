@@ -1,0 +1,90 @@
+﻿Green  MISO
+Yellow MOSI
+Orange 9V power
+Red    GND
+Brown  3v3
+Black  CS
+White  SCK
+Gray   ACK
+
+
+
+
+
+
+
+
+
+
+verilog object is attempting to do what?
+
+We want to have a MMIO blob on the bus.
+It will have double buffered registers for data safety
+It will have a bunch of different 32-bit registers for the data. 
+controller count plugged in!.
+double buffered position elements for all controllers
+update and repeat.
+software will poll for the data coming in 
+
+secondary:
+interrupts for new data on all controllers?
+or for some controllers.
+controller presence
+controller interrupt statuses
+
+
+
+    Analogue Controller in Red Mode
+
+    BYTE    CMND    DATA
+
+     01     0x01    idle
+
+     02     0x42    0x73
+
+     03     idle    0x5A    Bit0 Bit1 Bit2 Bit3 Bit4 Bit5 Bit6 Bit7
+
+     04     idle    data    SLCT  JOYL  JOYR       STRT UP   RGHT DOWN LEFT
+
+     05     idle    data    L1   R1    L2  R2   /   O    X    |_|
+
+     06     idle    data    Right Joy 0x00 = Left  0xFF = Right
+
+     07     idle    data    Right Joy 0x00 = Up    0xFF = Down
+
+     08     idle    data    Left Joy  0x00 = Left  0xFF = Right
+
+     09     idle    data    Left Joy  0x00 = Up    0xFF = Down
+
+    All Buttons active low.
+
+
+
+
+// register mapping!
+reg1 status bits and interrupt status?
+--------------------------------------------------------
+| Addr     | byte1    | byte2    | byte3    | byte4    |
+--------------------------------------------------------
+| control  | int_stat | cnt_stat |   xxx    |   xxx    | 
+--------------------------------------------------------
+
+
+each controller requires 2 regs or 16 bytes for data
+each byte is a pressure value for the stick/button
+----------------------------------------
+| Addr     | byte1| byte2| byte3| byte4|
+----------------------------------------
+| offset-0 |  RX  |  RY  |  LX  |  LY  |  // 0x00 is LEFT/UP, 0xFF is RIGHT/DOWN 
+----------------------------------------------------------------------------------------------------------------------------
+| Bit field| SLCT | JOYL | JOYR | START|  UP  | RIGHT| DOWN | LEFT |  L1  |  R1  |  L2  |  R2  |  Δ   |  O   |  X   |  ☐   |
+----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+State diagram?
+
+Controller states?
+State per controller plug

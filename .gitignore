@@ -60,5 +60,6 @@
 */designer/*/*
 
 #softconsole 
-
 */.metadata/*
+*/.plugins/*
+*/.history/*

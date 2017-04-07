@@ -1,0 +1,302 @@
+Timing Violation Report Max Delay Analysis
+
+SmartTime Version v11.7 SP1.1
+Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
+Date: Thu Apr 06 14:55:45 2017
+
+
+Design: car
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+Temperature Range: 0 - 85 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 85 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+Path 1
+  From:                        APB_reader_0/PWM_DUTY_L[6]:CLK
+  To:                          pwm_gen_L/pwm:D
+  Delay (ns):                  24.738
+  Slack (ns):                  -15.235
+  Arrival (ns):                29.967
+  Required (ns):               14.732
+
+Path 2
+  From:                        APB_reader_0/PWM_DUTY_L[2]:CLK
+  To:                          pwm_gen_L/pwm:D
+  Delay (ns):                  24.636
+  Slack (ns):                  -15.133
+  Arrival (ns):                29.865
+  Required (ns):               14.732
+
+Path 3
+  From:                        APB_reader_0/PWM_DUTY_L[7]:CLK
+  To:                          pwm_gen_L/pwm:D
+  Delay (ns):                  24.420
+  Slack (ns):                  -14.897
+  Arrival (ns):                29.629
+  Required (ns):               14.732
+
+Path 4
+  From:                        APB_reader_0/PWM_DUTY_L[1]:CLK
+  To:                          pwm_gen_L/pwm:D
+  Delay (ns):                  24.100
+  Slack (ns):                  -14.597
+  Arrival (ns):                29.329
+  Required (ns):               14.732
+
+Path 5
+  From:                        APB_reader_0/PWM_DUTY_L[5]:CLK
+  To:                          pwm_gen_L/pwm:D
+  Delay (ns):                  24.000
+  Slack (ns):                  -14.477
+  Arrival (ns):                29.209
+  Required (ns):               14.732
+
+Path 6
+  From:                        APB_reader_0/PWM_DUTY_L[4]:CLK
+  To:                          pwm_gen_L/pwm:D
+  Delay (ns):                  23.921
+  Slack (ns):                  -14.418
+  Arrival (ns):                29.150
+  Required (ns):               14.732
+
+Path 7
+  From:                        APB_reader_0/PWM_DUTY_L[3]:CLK
+  To:                          pwm_gen_L/pwm:D
+  Delay (ns):                  23.845
+  Slack (ns):                  -14.342
+  Arrival (ns):                29.074
+  Required (ns):               14.732
+
+Path 8
+  From:                        APB_reader_0/PWM_DUTY_L[0]:CLK
+  To:                          pwm_gen_L/pwm:D
+  Delay (ns):                  23.246
+  Slack (ns):                  -13.743
+  Arrival (ns):                28.475
+  Required (ns):               14.732
+
+Path 9
+  From:                        APB_reader_0/PWM_DUTY_R[5]:CLK
+  To:                          pwm_gen_R/pwm:D
+  Delay (ns):                  22.804
+  Slack (ns):                  -13.316
+  Arrival (ns):                28.048
+  Required (ns):               14.732
+
+Path 10
+  From:                        APB_reader_0/PWM_DUTY_R[6]:CLK
+  To:                          pwm_gen_R/pwm:D
+  Delay (ns):                  22.557
+  Slack (ns):                  -13.063
+  Arrival (ns):                27.795
+  Required (ns):               14.732
+
+Path 11
+  From:                        APB_reader_0/PWM_DUTY_R[7]:CLK
+  To:                          pwm_gen_R/pwm:D
+  Delay (ns):                  22.381
+  Slack (ns):                  -12.893
+  Arrival (ns):                27.625
+  Required (ns):               14.732
+
+Path 12
+  From:                        APB_reader_0/PWM_DUTY_R[4]:CLK
+  To:                          pwm_gen_R/pwm:D
+  Delay (ns):                  22.379
+  Slack (ns):                  -12.891
+  Arrival (ns):                27.623
+  Required (ns):               14.732
+
+Path 13
+  From:                        APB_reader_0/PWM_DUTY_R[3]:CLK
+  To:                          pwm_gen_R/pwm:D
+  Delay (ns):                  22.310
+  Slack (ns):                  -12.816
+  Arrival (ns):                27.548
+  Required (ns):               14.732
+
+Path 14
+  From:                        APB_reader_0/PWM_DUTY_R[1]:CLK
+  To:                          pwm_gen_R/pwm:D
+  Delay (ns):                  22.143
+  Slack (ns):                  -12.649
+  Arrival (ns):                27.381
+  Required (ns):               14.732
+
+Path 15
+  From:                        APB_reader_0/PWM_DUTY_R[2]:CLK
+  To:                          pwm_gen_R/pwm:D
+  Delay (ns):                  21.736
+  Slack (ns):                  -12.242
+  Arrival (ns):                26.974
+  Required (ns):               14.732
+
+Path 16
+  From:                        APB_reader_0/PWM_DUTY_R[0]:CLK
+  To:                          pwm_gen_R/pwm:D
+  Delay (ns):                  21.479
+  Slack (ns):                  -11.991
+  Arrival (ns):                26.723
+  Required (ns):               14.732
+
+Path 17
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          APB_reader_0/PWM_DUTY_L[4]:D
+  Delay (ns):                  12.858
+  Slack (ns):                  -1.674
+  Arrival (ns):                16.413
+  Required (ns):               14.739
+
+Path 18
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          APB_reader_0/PWM_DUTY_L[0]:D
+  Delay (ns):                  12.554
+  Slack (ns):                  -1.370
+  Arrival (ns):                16.109
+  Required (ns):               14.739
+
+Path 19
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          APB_reader_0/PWM_DUTY_L[5]:D
+  Delay (ns):                  12.454
+  Slack (ns):                  -1.290
+  Arrival (ns):                16.009
+  Required (ns):               14.719
+
+Path 20
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          APB_reader_0/PWM_DUTY_R[0]:D
+  Delay (ns):                  12.193
+  Slack (ns):                  -0.994
+  Arrival (ns):                15.748
+  Required (ns):               14.754
+
+Path 21
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          APB_reader_0/PWM_DUTY_L[6]:D
+  Delay (ns):                  11.805
+  Slack (ns):                  -0.621
+  Arrival (ns):                15.360
+  Required (ns):               14.739
+
+Path 22
+  From:                        pwm_gen_R/count[6]:CLK
+  To:                          pwm_gen_R/pwm:D
+  Delay (ns):                  10.035
+  Slack (ns):                  -0.515
+  Arrival (ns):                15.247
+  Required (ns):               14.732
+
+Path 23
+  From:                        pwm_gen_R/count[16]:CLK
+  To:                          pwm_gen_R/count[18]:D
+  Delay (ns):                  9.968
+  Slack (ns):                  -0.493
+  Arrival (ns):                15.181
+  Required (ns):               14.688
+
+Path 24
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          APB_reader_0/PWM_DUTY_L[1]:D
+  Delay (ns):                  11.652
+  Slack (ns):                  -0.468
+  Arrival (ns):                15.207
+  Required (ns):               14.739
+
+Path 25
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          APB_reader_0/PWM_DUTY_L[2]:D
+  Delay (ns):                  11.546
+  Slack (ns):                  -0.362
+  Arrival (ns):                15.101
+  Required (ns):               14.739
+
+Path 26
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          APB_reader_0/PWM_DUTY_L[7]:D
+  Delay (ns):                  11.515
+  Slack (ns):                  -0.351
+  Arrival (ns):                15.070
+  Required (ns):               14.719
+
+Path 27
+  From:                        pwm_gen_L/count[0]:CLK
+  To:                          pwm_gen_L/pwm:D
+  Delay (ns):                  9.826
+  Slack (ns):                  -0.343
+  Arrival (ns):                15.075
+  Required (ns):               14.732
+
+Path 28
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          APB_reader_0/PWM_DUTY_R[6]:D
+  Delay (ns):                  11.468
+  Slack (ns):                  -0.275
+  Arrival (ns):                15.023
+  Required (ns):               14.748
+
+Path 29
+  From:                        pwm_gen_R/count[5]:CLK
+  To:                          pwm_gen_R/pwm:D
+  Delay (ns):                  9.754
+  Slack (ns):                  -0.231
+  Arrival (ns):                14.963
+  Required (ns):               14.732
+
+Path 30
+  From:                        pwm_gen_L/count[1]:CLK
+  To:                          pwm_gen_L/pwm:D
+  Delay (ns):                  9.732
+  Slack (ns):                  -0.231
+  Arrival (ns):                14.963
+  Required (ns):               14.732
+
+Path 31
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          APB_reader_0/PWM_DUTY_R[4]:D
+  Delay (ns):                  11.395
+  Slack (ns):                  -0.196
+  Arrival (ns):                14.950
+  Required (ns):               14.754
+
+Path 32
+  From:                        pwm_gen_R/count[1]:CLK
+  To:                          pwm_gen_R/pwm:D
+  Delay (ns):                  9.636
+  Slack (ns):                  -0.155
+  Arrival (ns):                14.887
+  Required (ns):               14.732
+
+Path 33
+  From:                        pwm_gen_L/count[11]:CLK
+  To:                          pwm_gen_L/pwm:D
+  Delay (ns):                  9.622
+  Slack (ns):                  -0.139
+  Arrival (ns):                14.871
+  Required (ns):               14.732
+
+Path 34
+  From:                        pwm_gen_R/count[16]:CLK
+  To:                          pwm_gen_R/count[12]:D
+  Delay (ns):                  9.577
+  Slack (ns):                  -0.109
+  Arrival (ns):                14.790
+  Required (ns):               14.681
+
+Path 35
+  From:                        pwm_gen_R/count[11]:CLK
+  To:                          pwm_gen_R/pwm:D
+  Delay (ns):                  9.605
+  Slack (ns):                  -0.095
+  Arrival (ns):                14.827
+  Required (ns):               14.732
+

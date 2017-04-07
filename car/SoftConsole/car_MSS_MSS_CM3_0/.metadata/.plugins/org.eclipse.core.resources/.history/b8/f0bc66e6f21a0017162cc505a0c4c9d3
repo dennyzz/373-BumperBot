@@ -1,0 +1,27 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 3, 2017
+ *      Author: weeyizhi
+ */
+
+#include "pwm.h"
+#include "car.h"
+#include <stdio.h>
+#include <inttypes.h>
+
+int main()
+{
+	//receive from XBEE UART
+	uint16_t rx_buff[3];
+	rx_buff[0] = 0x00ff;
+	rx_buff[1] = 0xff00;
+	rx_buff[2] = 0xffff;
+
+	initMotor();
+	while( 1 )
+	{
+		initMotor();
+		//setMotorAPB(rx_buff);
+	}
+}

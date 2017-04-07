@@ -1,0 +1,39 @@
+/*
+ * car.c
+ *
+ *  Created on: Apr 3, 2017
+ *      Author: weeyizhi
+ */
+
+
+#include "car.h"
+#include "pwm.h"
+#include <math.h>
+
+void initMotor( void ) {
+	uint32_t *addr_ptr = (uint32_t *)APB_WR_ADDR;
+	*addr_ptr = 0x0000;
+}
+
+void setMotorAPB(uint16_t *rx_buff) {
+	uint32_t output = 0;
+	uint32_t *addr_ptr = (uint32_t *)APB_WR_ADDR;
+	uint16_t *input = rx_buff + CAR_ID * sizeof(uint16_t);
+	uint8_t *input_R = (uint8_t *)input;
+	uint8_t *input_L = (uint8_t *)(input + sizeof(uint8_t));
+
+	// must change get the en and dir from rx_buff
+	uint8_t en_R = getEn(*input_R);
+	uint8_t dir_R = getDir(*input_R);
+	uint8_t en_L = getEn(*input_L);
+	uint8_t dir_L = getDir(*input_L);
+
+	//must change to use caclWidth and rxbuff to find duty
+	uint8_t duty_R = getDuty(*input_R);
+	uint8_t duty_L = getDuty(*input_L);
+
+	output |= setBridgeCtrl(en_R, dir_R, en_L, dir_L);
+	output |= setPWMDuty(duty_R, duty_L);
+
+	*addr_ptr = output;
+}

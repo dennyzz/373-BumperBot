@@ -1,0 +1,916 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version v11.7 SP1.1
+Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
+Date: Thu Apr 06 14:55:45 2017
+
+
+Design: car
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+Temperature Range: 0 - 85 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 85 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               mss_aclk
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_fabric_interface_clock
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_pclk1
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_ccc_gla1
+Period (ns):                25.235
+Frequency (MHz):            39.628
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      6.278
+Max Clock-To-Out (ns):      13.680
+
+Clock Domain:               mss_ccc_gla0
+Period (ns):                12.500
+Frequency (MHz):            80.000
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        -4.814
+External Hold (ns):         3.700
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               car_MSS_0/MSS_CCC_0/I_RCOSC:CLKOUT
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+                            Input to Output
+Min Delay (ns):             N/A
+Max Delay (ns):             N/A
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain mss_aclk
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_fabric_interface_clock
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_pclk1
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_ccc_gla1
+
+SET Register to Register
+
+Path 1
+  From:                        APB_reader_0/PWM_DUTY_L[6]:CLK
+  To:                          pwm_gen_L/pwm:D
+  Delay (ns):                  24.738
+  Slack (ns):                  -15.235
+  Arrival (ns):                29.967
+  Required (ns):               14.732
+  Setup (ns):                  0.490
+  Minimum Period (ns):         25.235
+
+Path 2
+  From:                        APB_reader_0/PWM_DUTY_L[2]:CLK
+  To:                          pwm_gen_L/pwm:D
+  Delay (ns):                  24.636
+  Slack (ns):                  -15.133
+  Arrival (ns):                29.865
+  Required (ns):               14.732
+  Setup (ns):                  0.490
+  Minimum Period (ns):         25.133
+
+Path 3
+  From:                        APB_reader_0/PWM_DUTY_L[7]:CLK
+  To:                          pwm_gen_L/pwm:D
+  Delay (ns):                  24.420
+  Slack (ns):                  -14.897
+  Arrival (ns):                29.629
+  Required (ns):               14.732
+  Setup (ns):                  0.490
+  Minimum Period (ns):         24.897
+
+Path 4
+  From:                        APB_reader_0/PWM_DUTY_L[1]:CLK
+  To:                          pwm_gen_L/pwm:D
+  Delay (ns):                  24.100
+  Slack (ns):                  -14.597
+  Arrival (ns):                29.329
+  Required (ns):               14.732
+  Setup (ns):                  0.490
+  Minimum Period (ns):         24.597
+
+Path 5
+  From:                        APB_reader_0/PWM_DUTY_L[5]:CLK
+  To:                          pwm_gen_L/pwm:D
+  Delay (ns):                  24.000
+  Slack (ns):                  -14.477
+  Arrival (ns):                29.209
+  Required (ns):               14.732
+  Setup (ns):                  0.490
+  Minimum Period (ns):         24.477
+
+
+Expanded Path 1
+  From: APB_reader_0/PWM_DUTY_L[6]:CLK
+  To: pwm_gen_L/pwm:D
+  data required time                             14.732
+  data arrival time                          -   29.967
+  slack                                          -15.235
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        car_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  4.630
+               +     0.000          net: car_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  4.630                        car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  4.630                        car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.599          net: FAB_CLK
+  5.229                        APB_reader_0/PWM_DUTY_L[6]:CLK (r)
+               +     0.528          cell: ADLIB:DFN1
+  5.757                        APB_reader_0/PWM_DUTY_L[6]:Q (r)
+               +     1.316          net: APB_reader_0_PWM_DUTY_L_0[6]
+  7.073                        pwm_gen_L/width_0_30:A (r)
+               +     0.850          cell: ADLIB:OA1
+  7.923                        pwm_gen_L/width_0_30:Y (r)
+               +     0.306          net: pwm_gen_L/width_0_17
+  8.229                        pwm_gen_L/width_0_33:C (r)
+               +     0.596          cell: ADLIB:AO1
+  8.825                        pwm_gen_L/width_0_33:Y (r)
+               +     1.942          net: pwm_gen_L/N_123
+  10.767                       pwm_gen_L/width_0_85_ADD_17x17_fast_I4_G0N:C (r)
+               +     0.587          cell: ADLIB:XA1
+  11.354                       pwm_gen_L/width_0_85_ADD_17x17_fast_I4_G0N:Y (r)
+               +     0.365          net: pwm_gen_L/N240
+  11.719                       pwm_gen_L/width_0_85_ADD_17x17_fast_I33_Y:A (r)
+               +     0.478          cell: ADLIB:MAJ3
+  12.197                       pwm_gen_L/width_0_85_ADD_17x17_fast_I33_Y:Y (r)
+               +     1.413          net: pwm_gen_L/N293
+  13.610                       pwm_gen_L/width_0_85_ADD_17x17_fast_I60_Y:A (r)
+               +     0.473          cell: ADLIB:AO1
+  14.083                       pwm_gen_L/width_0_85_ADD_17x17_fast_I60_Y:Y (r)
+               +     0.306          net: pwm_gen_L/N326
+  14.389                       pwm_gen_L/width_0_85_ADD_17x17_fast_I82_un1_Y:C (r)
+               +     0.606          cell: ADLIB:NOR3C
+  14.995                       pwm_gen_L/width_0_85_ADD_17x17_fast_I82_un1_Y:Y (r)
+               +     0.306          net: pwm_gen_L/I82_un1_Y
+  15.301                       pwm_gen_L/width_0_85_ADD_17x17_fast_I150_Y:A (r)
+               +     0.622          cell: ADLIB:AX1D
+  15.923                       pwm_gen_L/width_0_85_ADD_17x17_fast_I150_Y:Y (r)
+               +     0.822          net: pwm_gen_L/width[16]
+  16.745                       pwm_gen_L/safe_width13_0lto16_0:A (r)
+               +     0.424          cell: ADLIB:NOR2
+  17.169                       pwm_gen_L/safe_width13_0lto16_0:Y (f)
+               +     1.138          net: pwm_gen_L/safe_width13_0lto16_0
+  18.307                       pwm_gen_L/safe_m2_e_5_0:A (f)
+               +     0.468          cell: ADLIB:NOR2B
+  18.775                       pwm_gen_L/safe_m2_e_5_0:Y (f)
+               +     0.437          net: pwm_gen_L/safe_m2_e_5_0
+  19.212                       pwm_gen_L/safe_m2_e_5:A (f)
+               +     0.574          cell: ADLIB:NOR2A
+  19.786                       pwm_gen_L/safe_m2_e_5:Y (f)
+               +     0.503          net: pwm_gen_L/safe_N_5_mux_5
+  20.289                       pwm_gen_L/safe_width_2:C (f)
+               +     0.568          cell: ADLIB:NOR3A
+  20.857                       pwm_gen_L/safe_width_2:Y (r)
+               +     1.242          net: pwm_gen_L/safe_width_0[1]
+  22.099                       pwm_gen_L/pwm6_0_0_I_64:A (r)
+               +     0.489          cell: ADLIB:OR2A
+  22.588                       pwm_gen_L/pwm6_0_0_I_64:Y (f)
+               +     0.306          net: pwm_gen_L/N_2
+  22.894                       pwm_gen_L/pwm6_0_0_I_70:C (f)
+               +     0.641          cell: ADLIB:AO1C
+  23.535                       pwm_gen_L/pwm6_0_0_I_70:Y (r)
+               +     0.296          net: pwm_gen_L/N_8_0
+  23.831                       pwm_gen_L/pwm6_0_0_I_73:B (r)
+               +     0.829          cell: ADLIB:OA1A
+  24.660                       pwm_gen_L/pwm6_0_0_I_73:Y (r)
+               +     0.317          net: pwm_gen_L/N_11_0
+  24.977                       pwm_gen_L/pwm6_0_0_I_74:A (r)
+               +     0.895          cell: ADLIB:OA1
+  25.872                       pwm_gen_L/pwm6_0_0_I_74:Y (r)
+               +     0.984          net: pwm_gen_L/DWACT_CMPLE_PO2_DWACT_COMP0_E[2]
+  26.856                       pwm_gen_L/pwm6_0_0_I_75:B (r)
+               +     0.516          cell: ADLIB:AO1
+  27.372                       pwm_gen_L/pwm6_0_0_I_75:Y (r)
+               +     0.950          net: pwm_gen_L/DWACT_COMP0_E[2]
+  28.322                       pwm_gen_L/pwm6_0_0_I_76:B (r)
+               +     0.516          cell: ADLIB:AO1
+  28.838                       pwm_gen_L/pwm6_0_0_I_76:Y (r)
+               +     0.306          net: pwm_gen_L/pwm60
+  29.144                       pwm_gen_L/pwm6_m:A (r)
+               +     0.517          cell: ADLIB:MX2
+  29.661                       pwm_gen_L/pwm6_m:Y (r)
+               +     0.306          net: pwm_gen_L/pwm6
+  29.967                       pwm_gen_L/pwm:D (r)
+                                    
+  29.967                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       mss_ccc_gla1
+               +     0.000          Clock source
+  10.000                       car_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  14.630
+               +     0.000          net: car_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  14.630                       car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  14.630                       car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.592          net: FAB_CLK
+  15.222                       pwm_gen_L/pwm:CLK (r)
+               -     0.490          Library setup time: ADLIB:DFN1
+  14.732                       pwm_gen_L/pwm:D
+                                    
+  14.732                       data required time
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        pwm_gen_L/pwm:CLK
+  To:                          h_bridge_in_2_L
+  Delay (ns):                  8.458
+  Slack (ns):
+  Arrival (ns):                13.680
+  Required (ns):
+  Clock to Out (ns):           13.680
+
+Path 2
+  From:                        pwm_gen_L/pwm:CLK
+  To:                          h_bridge_in_1_L
+  Delay (ns):                  8.456
+  Slack (ns):
+  Arrival (ns):                13.678
+  Required (ns):
+  Clock to Out (ns):           13.678
+
+Path 3
+  From:                        pwm_gen_R/pwm:CLK
+  To:                          h_bridge_in_1_R
+  Delay (ns):                  7.736
+  Slack (ns):
+  Arrival (ns):                12.958
+  Required (ns):
+  Clock to Out (ns):           12.958
+
+Path 4
+  From:                        pwm_gen_R/pwm:CLK
+  To:                          h_bridge_in_2_R
+  Delay (ns):                  7.398
+  Slack (ns):
+  Arrival (ns):                12.620
+  Required (ns):
+  Clock to Out (ns):           12.620
+
+Path 5
+  From:                        APB_reader_0/PWM_EN_R:CLK
+  To:                          EN_R
+  Delay (ns):                  7.119
+  Slack (ns):
+  Arrival (ns):                12.342
+  Required (ns):
+  Clock to Out (ns):           12.342
+
+
+Expanded Path 1
+  From: pwm_gen_L/pwm:CLK
+  To: h_bridge_in_2_L
+  data required time                             N/C
+  data arrival time                          -   13.680
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        car_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  4.630
+               +     0.000          net: car_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  4.630                        car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  4.630                        car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.592          net: FAB_CLK
+  5.222                        pwm_gen_L/pwm:CLK (r)
+               +     0.671          cell: ADLIB:DFN1
+  5.893                        pwm_gen_L/pwm:Q (f)
+               +     2.279          net: pwm_gen_B_pwm
+  8.172                        dir_sel_L/bridge_en_1__RNI3N5R:B (f)
+               +     0.574          cell: ADLIB:NOR2B
+  8.746                        dir_sel_L/bridge_en_1__RNI3N5R:Y (f)
+               +     1.035          net: h_bridge_in_2_L_c
+  9.781                        h_bridge_in_2_L_pad/U0/U1:D (f)
+               +     0.530          cell: ADLIB:IOTRI_OB_EB
+  10.311                       h_bridge_in_2_L_pad/U0/U1:DOUT (f)
+               +     0.000          net: h_bridge_in_2_L_pad/U0/NET1
+  10.311                       h_bridge_in_2_L_pad/U0/U0:D (f)
+               +     3.369          cell: ADLIB:IOPAD_TRI
+  13.680                       h_bridge_in_2_L_pad/U0/U0:PAD (f)
+               +     0.000          net: h_bridge_in_2_L
+  13.680                       h_bridge_in_2_L (f)
+                                    
+  13.680                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla1
+               +     0.000          Clock source
+  N/C                          car_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  N/C
+                                    
+  N/C                          h_bridge_in_2_L (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET mss_fabric_interface_clock to mss_ccc_gla1
+
+Path 1
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          APB_reader_0/PWM_DUTY_L[4]:D
+  Delay (ns):                  12.858
+  Slack (ns):                  -1.674
+  Arrival (ns):                16.413
+  Required (ns):               14.739
+  Setup (ns):                  0.490
+
+Path 2
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          APB_reader_0/PWM_DUTY_L[0]:D
+  Delay (ns):                  12.554
+  Slack (ns):                  -1.370
+  Arrival (ns):                16.109
+  Required (ns):               14.739
+  Setup (ns):                  0.490
+
+Path 3
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          APB_reader_0/PWM_DUTY_L[5]:D
+  Delay (ns):                  12.454
+  Slack (ns):                  -1.290
+  Arrival (ns):                16.009
+  Required (ns):               14.719
+  Setup (ns):                  0.490
+
+Path 4
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          APB_reader_0/PWM_DUTY_R[0]:D
+  Delay (ns):                  12.193
+  Slack (ns):                  -0.994
+  Arrival (ns):                15.748
+  Required (ns):               14.754
+  Setup (ns):                  0.490
+
+Path 5
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          APB_reader_0/PWM_DUTY_L[6]:D
+  Delay (ns):                  11.805
+  Slack (ns):                  -0.621
+  Arrival (ns):                15.360
+  Required (ns):               14.739
+  Setup (ns):                  0.490
+
+
+Expanded Path 1
+  From: car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To: APB_reader_0/PWM_DUTY_L[4]:D
+  data required time                             14.739
+  data arrival time                          -   16.413
+  slack                                          -1.674
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_fabric_interface_clock
+               +     0.000          Clock source
+  0.000                        car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB (r)
+               +     3.555          Clock generation
+  3.555
+               +     3.586          cell: ADLIB:MSS_APB_IP
+  7.141                        car_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPADDR[11] (f)
+               +     0.157          net: car_MSS_0/MSS_ADLIB_INST/MSSPADDR[11]INT_NET
+  7.298                        car_MSS_0/MSS_ADLIB_INST/U_33:PIN3INT (f)
+               +     0.086          cell: ADLIB:MSS_IF
+  7.384                        car_MSS_0/MSS_ADLIB_INST/U_33:PIN3 (f)
+               +     0.324          net: car_MSS_0_MSS_MASTER_APB_PADDR[11]
+  7.708                        APB_reader_0/write_1:B (f)
+               +     0.588          cell: ADLIB:NOR2
+  8.296                        APB_reader_0/write_1:Y (r)
+               +     1.209          net: APB_reader_0/write_1
+  9.505                        APB_reader_0/write_4:C (r)
+               +     0.606          cell: ADLIB:NOR3C
+  10.111                       APB_reader_0/write_4:Y (r)
+               +     0.306          net: APB_reader_0/write_4
+  10.417                       APB_reader_0/write:C (r)
+               +     0.606          cell: ADLIB:NOR3C
+  11.023                       APB_reader_0/write:Y (r)
+               +     2.767          net: APB_reader_0/write
+  13.790                       APB_reader_0/PWM_DUTY_L_RNO_0[4]:S (r)
+               +     0.339          cell: ADLIB:MX2
+  14.129                       APB_reader_0/PWM_DUTY_L_RNO_0[4]:Y (f)
+               +     0.285          net: APB_reader_0/N_61
+  14.414                       APB_reader_0/PWM_DUTY_L_RNO[4]:A (f)
+               +     0.468          cell: ADLIB:NOR2B
+  14.882                       APB_reader_0/PWM_DUTY_L_RNO[4]:Y (f)
+               +     1.531          net: APB_reader_0/PWM_DUTY_L_RNO[4]
+  16.413                       APB_reader_0/PWM_DUTY_L[4]:D (f)
+                                    
+  16.413                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       mss_ccc_gla1
+               +     0.000          Clock source
+  10.000                       car_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  14.630
+               +     0.000          net: car_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  14.630                       car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  14.630                       car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.599          net: FAB_CLK
+  15.229                       APB_reader_0/PWM_DUTY_L[4]:CLK (r)
+               -     0.490          Library setup time: ADLIB:DFN1
+  14.739                       APB_reader_0/PWM_DUTY_L[4]:D
+                                    
+  14.739                       data required time
+
+
+END SET mss_fabric_interface_clock to mss_ccc_gla1
+
+----------------------------------------------------
+
+SET mss_ccc_gla0 to mss_ccc_gla1
+
+Path 1
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          APB_reader_0/PWM_DUTY_R[5]:D
+  Delay (ns):                  7.181
+  Slack (ns):                  3.986
+  Arrival (ns):                10.736
+  Required (ns):               14.722
+  Setup (ns):                  0.522
+
+Path 2
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          APB_reader_0/PWM_DUTY_L[6]:D
+  Delay (ns):                  7.136
+  Slack (ns):                  4.016
+  Arrival (ns):                10.691
+  Required (ns):               14.707
+  Setup (ns):                  0.522
+
+Path 3
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          APB_reader_0/PWM_DUTY_R[3]:D
+  Delay (ns):                  7.111
+  Slack (ns):                  4.050
+  Arrival (ns):                10.666
+  Required (ns):               14.716
+  Setup (ns):                  0.522
+
+Path 4
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          APB_reader_0/PWM_DUTY_L[0]:D
+  Delay (ns):                  7.083
+  Slack (ns):                  4.069
+  Arrival (ns):                10.638
+  Required (ns):               14.707
+  Setup (ns):                  0.522
+
+Path 5
+  From:                        car_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          APB_reader_0/PWM_DUTY_R[6]:D
+  Delay (ns):                  7.091
+  Slack (ns):                  4.070
+  Arrival (ns):                10.646
+  Required (ns):               14.716
+  Setup (ns):                  0.522
+
+
+Expanded Path 1
+  From: car_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To: APB_reader_0/PWM_DUTY_R[5]:D
+  data required time                             14.722
+  data arrival time                          -   10.736
+  slack                                          3.986
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla0
+               +     0.000          Clock source
+  0.000                        car_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLAMSS (r)
+               +     2.925          Clock generation
+  2.925
+               +     0.630          net: car_MSS_0/GLA0
+  3.555                        car_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK (r)
+               +     3.632          cell: ADLIB:MSS_APB_IP
+  7.187                        car_MSS_0/MSS_ADLIB_INST/U_CORE:M2FRESETn (r)
+               +     0.122          net: car_MSS_0/MSS_ADLIB_INST/M2FRESETnINT_NET
+  7.309                        car_MSS_0/MSS_ADLIB_INST/U_46:PIN2INT (r)
+               +     0.095          cell: ADLIB:MSS_IF
+  7.404                        car_MSS_0/MSS_ADLIB_INST/U_46:PIN2 (r)
+               +     1.804          net: car_MSS_0_M2F_RESET_N
+  9.208                        APB_reader_0/PWM_DUTY_R_RNO[5]:B (r)
+               +     0.470          cell: ADLIB:NOR2B
+  9.678                        APB_reader_0/PWM_DUTY_R_RNO[5]:Y (r)
+               +     1.058          net: APB_reader_0/PWM_DUTY_R_RNO[5]
+  10.736                       APB_reader_0/PWM_DUTY_R[5]:D (r)
+                                    
+  10.736                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       mss_ccc_gla1
+               +     0.000          Clock source
+  10.000                       car_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  14.630
+               +     0.000          net: car_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  14.630                       car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  14.630                       car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.614          net: FAB_CLK
+  15.244                       APB_reader_0/PWM_DUTY_R[5]:CLK (r)
+               -     0.522          Library setup time: ADLIB:DFN1
+  14.722                       APB_reader_0/PWM_DUTY_R[5]:D
+                                    
+  14.722                       data required time
+
+
+END SET mss_ccc_gla0 to mss_ccc_gla1
+
+----------------------------------------------------
+
+Clock Domain mss_ccc_gla0
+
+Info: The maximum frequency of this clock domain is limited by the period of pin car_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        MSS_RESET_N
+  To:                          car_MSS_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+  Delay (ns):                  0.937
+  Slack (ns):
+  Arrival (ns):                0.937
+  Required (ns):
+  Setup (ns):                  -2.196
+  External Setup (ns):         -4.814
+
+
+Expanded Path 1
+  From: MSS_RESET_N
+  To: car_MSS_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+  data required time                             N/C
+  data arrival time                          -   0.937
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        MSS_RESET_N (r)
+               +     0.000          net: MSS_RESET_N
+  0.000                        car_MSS_0/MSS_RESET_0_MSS_RESET_N:PAD (r)
+               +     0.937          cell: ADLIB:IOPAD_IN
+  0.937                        car_MSS_0/MSS_RESET_0_MSS_RESET_N:Y (r)
+               +     0.000          net: car_MSS_0/MSS_RESET_0_MSS_RESET_N_Y
+  0.937                        car_MSS_0/MSS_ADLIB_INST/U_CORE:MSSRESETn (r)
+                                    
+  0.937                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla0
+               +     0.000          Clock source
+  N/C                          car_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLAMSS (r)
+               +     2.925          Clock generation
+  N/C
+               +     0.630          net: car_MSS_0/GLA0
+  N/C                          car_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK (r)
+               -    -2.196          Library setup time: ADLIB:MSS_APB_IP
+  N/C                          car_MSS_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain car_MSS_0/MSS_CCC_0/I_RCOSC:CLKOUT
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+No Path
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

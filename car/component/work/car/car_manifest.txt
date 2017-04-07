@@ -1,0 +1,17 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
+
+Date      :  Thu Apr 06 14:53:56 2017
+Project   :  C:\Users\weeyizhi\Downloads\car
+Component :  car
+Family    :  SmartFusion
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/weeyizhi/Downloads/car/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3.v
+    C:/Users/weeyizhi/Downloads/car/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_iaddr_reg.v
+    C:/Users/weeyizhi/Downloads/car/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_muxptob3.v
+    C:/Users/weeyizhi/Downloads/car/component/work/car/car.v
+
+Stimulus files for all Simulation tools:
+    C:/Users/weeyizhi/Downloads/car/component/work/car/subsystem.bfm
+

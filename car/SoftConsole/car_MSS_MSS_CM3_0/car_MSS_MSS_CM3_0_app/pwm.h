@@ -14,7 +14,7 @@
 #include <assert.h>
 
 //configure PWM, make sure to change pwm_gen.v too
-#define MIN_DUTY	0.4
+#define MIN_DUTY	0.5
 #define MAX_DUTY	0.9
 #define SLOPE 		(MAX_DUTY - MIN_DUTY)
 

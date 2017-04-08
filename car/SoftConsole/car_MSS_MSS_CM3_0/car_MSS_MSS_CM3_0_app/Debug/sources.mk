@@ -23,7 +23,7 @@ SUBDIRS := \
 # Microsemi SoftConsole IDE Variables
 ################################################################################
 
-BUILDCMD = arm-none-eabi-gcc -mthumb -mcpu=cortex-m3  -L"C:\Users\weeyizhi\Downloads\car\SoftConsole\car_MSS_MSS_CM3_0\car_MSS_MSS_CM3_0_hw_platform\Debug" -TC:\Users\weeyizhi\Downloads\car\SoftConsole\car_MSS_MSS_CM3_0\car_MSS_MSS_CM3_0_hw_platform\CMSIS\startup_gcc\debug-in-actel-smartfusion-esram.ld -Wl,-Map=$(EXECUTABLE).map -Xlinker -gc-sections 
+BUILDCMD = arm-none-eabi-gcc -mthumb -mcpu=cortex-m3  -L"C:\Users\WYZ\Documents\GitHub\373_Repo\373-BumperBot\car\SoftConsole\car_MSS_MSS_CM3_0\car_MSS_MSS_CM3_0_hw_platform\Debug" -TC:\Users\WYZ\Documents\GitHub\373_Repo\373-BumperBot\car\SoftConsole\car_MSS_MSS_CM3_0\car_MSS_MSS_CM3_0_hw_platform\CMSIS\startup_gcc\debug-in-actel-smartfusion-envm.ld -Wl,-Map=$(EXECUTABLE).map -Xlinker -gc-sections 
 SHELL := cmd.exe
 EXECUTABLE := car_MSS_MSS_CM3_0_app
 

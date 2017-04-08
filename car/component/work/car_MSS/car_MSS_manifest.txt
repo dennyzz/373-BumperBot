@@ -1,22 +1,22 @@
 Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
 
-Date      :  Thu Apr 06 14:05:42 2017
-Project   :  C:\Users\weeyizhi\Desktop\car_aprl_4\car_aprl_4\car
+Date      :  Fri Apr 07 20:29:43 2017
+Project   :  C:\Users\WYZ\Documents\GitHub\373_Repo\373-BumperBot\car
 Component :  car_MSS
 Family    :  SmartFusion
 
 
 HDL source files for all Synthesis and Simulation tools:
-    C:/Users/weeyizhi/Desktop/car_aprl_4/car_aprl_4/car/component/work/car_MSS/MSS_CCC_0/car_MSS_tmp_MSS_CCC_0_MSS_CCC.v
-    C:/Users/weeyizhi/Desktop/car_aprl_4/car_aprl_4/car/component/work/car_MSS/car_MSS.v
+    C:/Users/WYZ/Documents/GitHub/373_Repo/373-BumperBot/car/component/work/car_MSS/MSS_CCC_0/car_MSS_tmp_MSS_CCC_0_MSS_CCC.v
+    C:/Users/WYZ/Documents/GitHub/373_Repo/373-BumperBot/car/component/work/car_MSS/car_MSS.v
 
 HDL source files for Synopsys SynplifyPro Synthesis tool:
-    C:/Users/weeyizhi/Desktop/car_aprl_4/car_aprl_4/car/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v
-    C:/Users/weeyizhi/Desktop/car_aprl_4/car_aprl_4/car/component/work/car_MSS/mss_tshell.v
-    C:/Users/weeyizhi/Desktop/car_aprl_4/car_aprl_4/car/component/work/car_MSS/mss_tshell_syn.sdc
+    C:/Users/WYZ/Documents/GitHub/373_Repo/373-BumperBot/car/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v
+    C:/Users/WYZ/Documents/GitHub/373_Repo/373-BumperBot/car/component/work/car_MSS/mss_tshell.v
+    C:/Users/WYZ/Documents/GitHub/373_Repo/373-BumperBot/car/component/work/car_MSS/mss_tshell_syn.sdc
 
 Stimulus files for all Simulation tools:
-    C:/Users/weeyizhi/Desktop/car_aprl_4/car_aprl_4/car/component/Actel/SmartFusionMSS/MSS/2.5.200/CompileDssBfm.tcl
-    C:/Users/weeyizhi/Desktop/car_aprl_4/car_aprl_4/car/component/Actel/SmartFusionMSS/MSS/2.5.200/bfmtovec.exe
-    C:/Users/weeyizhi/Desktop/car_aprl_4/car_aprl_4/car/component/work/car_MSS/MSS_ENVM_0/test.bfm
+    C:/Users/WYZ/Documents/GitHub/373_Repo/373-BumperBot/car/component/Actel/SmartFusionMSS/MSS/2.5.200/CompileDssBfm.tcl
+    C:/Users/WYZ/Documents/GitHub/373_Repo/373-BumperBot/car/component/Actel/SmartFusionMSS/MSS/2.5.200/bfmtovec.exe
+    C:/Users/WYZ/Documents/GitHub/373_Repo/373-BumperBot/car/component/work/car_MSS/MSS_ENVM_0/test.bfm
 

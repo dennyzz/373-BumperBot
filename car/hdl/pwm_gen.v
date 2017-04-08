@@ -1,7 +1,7 @@
 //configure PWM
 //make sure to change pwm.h as well
 `define period  	400000          //number of clock cycles for a period, should be a power of 2
-`define min_width   160000	        //min clock cycles to be high (40% duty)
+`define min_width   200000	        //min clock cycles to be high (50% duty)
 `define max_width   360000	        //max clock cycles to be high (90% duty)
 //configuration end
 

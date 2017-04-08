@@ -1,4 +1,4 @@
-KEY IDE_DES_TOOL "Designer"
+KEY IDE_DES_TOOL "Ide"
 KEY IDE_DES_FAMILY "SmartFusion"
 KEY IDE_DES_DIE "IP4X3M1"
 KEY IDE_DES_PACKAGE "fg484"
@@ -20,10 +20,10 @@ KEY IDE_DES_BLOCK_PUBLISH "FALSE"
 KEY IDE_DES_BA_EXPORTED "FALSE"
 KEY IDE_DES_INTERACTIVE "FALSE"
 KEY IDE_DES_ERROR_FOUND "FALSE"
-KEY IDE_DES_ADB_PATH "C:\Users\weeyizhi\Downloads\car\designer\impl1\car.adb"
+KEY IDE_DES_ADB_PATH "C:\Users\WYZ\Documents\GitHub\373_Repo\373-BumperBot\car\designer\impl1\car.adb"
 LIST SOURCE_FILES
-VALUE "C:\Users\weeyizhi\Downloads\car\synthesis\car.edn;edn"
-VALUE "C:\Users\weeyizhi\Downloads\car\component\work\car\car.pdc;pdc"
+VALUE "C:\Users\WYZ\Documents\GitHub\373_Repo\373-BumperBot\car\synthesis\car.edn;edn"
+VALUE "C:\Users\WYZ\Documents\GitHub\373_Repo\373-BumperBot\car\component\work\car\car.pdc;pdc"
 ENDLIST
 LIST OPTIONAL_FILES
 ENDLIST

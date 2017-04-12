@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Thu Apr 06 14:53:48 2017
+// Created by SmartDesign Wed Apr 12 03:45:10 2017
 // Version: v11.7 SP1 11.7.1.14
 //////////////////////////////////////////////////////////////////////
 
@@ -10,10 +10,12 @@ module car(
     // Inputs
     MSS_RESET_N,
     UART_0_RXD,
+    UART_1_RXD,
     // Outputs
     EN_L,
     EN_R,
     UART_0_TXD,
+    UART_1_TXD,
     h_bridge_in_1_L,
     h_bridge_in_1_R,
     h_bridge_in_2_L,
@@ -25,12 +27,14 @@ module car(
 //--------------------------------------------------------------------
 input  MSS_RESET_N;
 input  UART_0_RXD;
+input  UART_1_RXD;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
 output EN_L;
 output EN_R;
 output UART_0_TXD;
+output UART_1_TXD;
 output h_bridge_in_1_L;
 output h_bridge_in_1_R;
 output h_bridge_in_2_L;
@@ -69,14 +73,17 @@ wire          MSS_RESET_N;
 wire          pwm_gen_A_pwm;
 wire          pwm_gen_B_pwm;
 wire          UART_0_RXD;
-wire          UART_0_TXD_0;
+wire          UART_0_TXD_1;
+wire          UART_1_RXD;
+wire          UART_1_TXD_0;
 wire          EN_R_net_1;
 wire          EN_L_net_1;
 wire          h_bridge_in_1_R_net_1;
 wire          h_bridge_in_2_R_net_1;
 wire          h_bridge_in_2_L_net_1;
 wire          h_bridge_in_1_L_net_1;
-wire          UART_0_TXD_0_net_0;
+wire          UART_0_TXD_1_net_0;
+wire          UART_1_TXD_0_net_0;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -143,8 +150,10 @@ assign h_bridge_in_2_L_net_1 = h_bridge_in_2_L_net_0;
 assign h_bridge_in_2_L       = h_bridge_in_2_L_net_1;
 assign h_bridge_in_1_L_net_1 = h_bridge_in_1_L_net_0;
 assign h_bridge_in_1_L       = h_bridge_in_1_L_net_1;
-assign UART_0_TXD_0_net_0    = UART_0_TXD_0;
-assign UART_0_TXD            = UART_0_TXD_0_net_0;
+assign UART_0_TXD_1_net_0    = UART_0_TXD_1;
+assign UART_0_TXD            = UART_0_TXD_1_net_0;
+assign UART_1_TXD_0_net_0    = UART_1_TXD_0;
+assign UART_1_TXD            = UART_1_TXD_0_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -183,6 +192,7 @@ car_MSS car_MSS_0(
         .MSS_RESET_N ( MSS_RESET_N ),
         .MSSPREADY   ( car_MSS_0_MSS_MASTER_APB_PREADY ),
         .MSSPSLVERR  ( car_MSS_0_MSS_MASTER_APB_PSLVERR ),
+        .UART_1_RXD  ( UART_1_RXD ),
         .UART_0_RXD  ( UART_0_RXD ),
         .MSSPRDATA   ( car_MSS_0_MSS_MASTER_APB_PRDATA ),
         // Outputs
@@ -191,7 +201,8 @@ car_MSS car_MSS_0(
         .MSSPWRITE   ( car_MSS_0_MSS_MASTER_APB_PWRITE ),
         .FAB_CLK     ( car_MSS_0_FAB_CLK ),
         .M2F_RESET_N ( car_MSS_0_M2F_RESET_N ),
-        .UART_0_TXD  ( UART_0_TXD_0 ),
+        .UART_1_TXD  ( UART_1_TXD_0 ),
+        .UART_0_TXD  ( UART_0_TXD_1 ),
         .MSSPADDR    ( car_MSS_0_MSS_MASTER_APB_PADDR ),
         .MSSPWDATA   ( car_MSS_0_MSS_MASTER_APB_PWDATA ) 
         );

@@ -4,9 +4,9 @@
 <scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="cdt.managedbuild.config.gnu.cross.cortexm3.exe.debug.856371552;cdt.managedbuild.config.gnu.cross.cortexm3.exe.debug.856371552.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="c:\program files (x86)\microsemi\softconsole v3.4\sourcery-g++\bin\../lib/gcc/arm-none-eabi/4.4.1/include"/>
-<includePath path="c:\program files (x86)\microsemi\softconsole v3.4\sourcery-g++\bin\../lib/gcc/arm-none-eabi/4.4.1/include-fixed"/>
-<includePath path="c:\program files (x86)\microsemi\softconsole v3.4\sourcery-g++\bin\../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/include"/>
+<includePath path="c:\program files (x86)\microsemi\softconsole v3.3\sourcery-g++\bin\../lib/gcc/arm-none-eabi/4.4.1/include"/>
+<includePath path="c:\program files (x86)\microsemi\softconsole v3.3\sourcery-g++\bin\../lib/gcc/arm-none-eabi/4.4.1/include-fixed"/>
+<includePath path="c:\program files (x86)\microsemi\softconsole v3.3\sourcery-g++\bin\../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/include"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_HOSTED__=1"/>
 <definedSymbol symbol="__GNUC__=4"/>

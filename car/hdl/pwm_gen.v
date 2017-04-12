@@ -15,6 +15,7 @@ module pwm_gen(
     reg [$clog2(`period)-1:0] count;
     reg [$clog2(`period)-1:0] width;
     reg [$clog2(`period)-1:0] safe_width;
+    reg [$clog2(`period)-1:0] used_width;
  
     //hardware safety net to make sure we don't go across our limited PWM duty
     always @* begin
@@ -31,10 +32,11 @@ module pwm_gen(
     always @(posedge clk) begin
         if (count == `period) begin
             count <= 0;
+            used_width <= safe_width;   //only change the used_width when we are done with this cycle
         end else begin
             count <= count + 1;
         end
-        if (count < safe_width) begin
+        if (count < used_width) begin
             pwm <= 1;
         end else begin
             pwm <= 0;

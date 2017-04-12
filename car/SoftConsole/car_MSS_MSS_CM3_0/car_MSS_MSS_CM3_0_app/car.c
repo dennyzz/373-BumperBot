@@ -15,14 +15,14 @@ void initMotor( void ) {
 	*addr_ptr = 0x0000;
 }
 
-void setMotorAPB(uint16_t *rx_buff) {
+void setMotorAPB(uint8_t *rx_buff) {
 	uint32_t output = 0;
 	uint32_t *addr_ptr = (uint32_t *)APB_WR_ADDR;
 
 	//select the values for the car
-	uint16_t *input = (rx_buff + CAR_ID);
+	uint16_t *input = (uint16_t *)(rx_buff) + CAR_ID;
 	uint8_t *input_R = (uint8_t *)input;
-	uint8_t *input_L = (uint8_t *)(input)+1;
+	uint8_t *input_L = (uint8_t *)(input) + 1;
 
 	printf("\rinput: %x\n", *input);
 	printf("\rinput_R: %x\n", *input_R);

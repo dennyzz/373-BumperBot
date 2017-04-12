@@ -20,10 +20,10 @@ KEY IDE_DES_BLOCK_PUBLISH "FALSE"
 KEY IDE_DES_BA_EXPORTED "FALSE"
 KEY IDE_DES_INTERACTIVE "FALSE"
 KEY IDE_DES_ERROR_FOUND "FALSE"
-KEY IDE_DES_ADB_PATH "C:\Users\WYZ\Documents\GitHub\373_Repo\373-BumperBot\car\designer\impl1\car.adb"
+KEY IDE_DES_ADB_PATH "C:\Users\WYZ\Desktop\car_aprl7\car\designer\impl1\car.adb"
 LIST SOURCE_FILES
-VALUE "C:\Users\WYZ\Documents\GitHub\373_Repo\373-BumperBot\car\synthesis\car.edn;edn"
-VALUE "C:\Users\WYZ\Documents\GitHub\373_Repo\373-BumperBot\car\component\work\car\car.pdc;pdc"
+VALUE "C:\Users\WYZ\Desktop\car_aprl7\car\synthesis\car.edn;edn"
+VALUE "C:\Users\WYZ\Desktop\car_aprl7\car\component\work\car\car.pdc;pdc"
 ENDLIST
 LIST OPTIONAL_FILES
 ENDLIST

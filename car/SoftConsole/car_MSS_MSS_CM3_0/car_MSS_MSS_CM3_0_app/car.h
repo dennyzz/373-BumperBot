@@ -15,13 +15,13 @@
 #include <stdlib.h>
 #include <assert.h>
 
-#define CAR_ID 		1	//0-2
+#define CAR_ID 		0	//0-2
 
 
 //Initialize the PWM width, EN, and DIR to zero
 void initMotor( void );
 
 // Write MMIO via APB
-void setMotorAPB(uint16_t *rx_buff);
+void setMotorAPB(uint8_t *rx_buff);
 
 #endif

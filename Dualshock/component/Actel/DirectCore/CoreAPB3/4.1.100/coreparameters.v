@@ -1,12 +1,12 @@
 //--------------------------------------------------------------------
-// Created by Microsemi SmartDesign Thu Apr 06 01:24:08 2017
+// Created by Microsemi SmartDesign Thu Apr 13 17:23:27 2017
 // Parameters for CoreAPB3
 //--------------------------------------------------------------------
 
 
 parameter APB_DWIDTH = 32;
 parameter APBSLOT0ENABLE = 1;
-parameter APBSLOT1ENABLE = 0;
+parameter APBSLOT1ENABLE = 1;
 parameter APBSLOT2ENABLE = 0;
 parameter APBSLOT3ENABLE = 0;
 parameter APBSLOT4ENABLE = 0;

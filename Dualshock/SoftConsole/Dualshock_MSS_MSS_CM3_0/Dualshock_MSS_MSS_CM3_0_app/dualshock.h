@@ -17,9 +17,12 @@ typedef struct dualshock{
 	uint8_t mode;
 	uint8_t response;
 	uint8_t data[6];
+	uint8_t ctrl_mode;
 }dualshock;
 
 enum DS_modes {MODE_DISC = 0xFF, MODE_DIGITAL = 0x41, MODE_CONF = 0xF3, MODE_ANALOG = 0x73};
+enum DS_ctrl_modes {TANK = 0xAA, STD = 0xBB};
+
 
 // place command into buffer, incoming data will overwrite the buffer
 void transceive_frame(spi_instance_t* spi, mss_gpio_id_t gpio, uint8_t* buffer, uint16_t size);
@@ -30,7 +33,7 @@ void ds_configure(dualshock* ctrl, uint8_t* buffer);
 void ds_config_exit(dualshock* ctrl, uint8_t* buffer);
 uint8_t ds_digital_poll(dualshock* ctrl, uint8_t* buffer);
 uint8_t ds_analog_poll(dualshock* ctrl, uint8_t* buffer);
-
+uint8_t ds_get_drivevals(dualshock* ctrl, uint8_t* left, uint8_t* right);
 uint8_t ds_parse(dualshock* ctrl, uint8_t* buffer);
 
 

@@ -5,7 +5,7 @@
 Product: Designer
 Release: v11.7 SP3
 Version: 11.7.3.8
-Date: Thu Apr 06 01:24:49 2017
+Date: Thu Apr 13 17:25:35 2017
 Design Name: Dualshock  Family: SmartFusion  Die: A2F200M3F  Package: 484 FBGA
 
 
@@ -20,9 +20,9 @@ Global Nets Information:
         |------------------------------------------------------------|
         |Name                       |Core      |IO        |RAM       |
         |------------------------------------------------------------|
-        |Dualshock_MSS_0_M2F_RESET_N|      179 |        0 |        0 |
+        |Dualshock_MSS_0_M2F_RESET_N|      305 |        0 |       64 |
         |------------------------------------------------------------|
-        |FAB_CLK                    |      251 |        0 |        0 |
+        |FAB_CLK                    |      393 |        0 |       64 |
         |------------------------------------------------------------|
 
 Nets Sharing Loads:

@@ -79,6 +79,7 @@ void ds_update(dualshock* ctrl, uint8_t* buffer){
 
 		switch(ctrl->mode){
 			case MODE_DISC:
+				memset(ctrl->data, 0x80, 6); // clear the data when disconnected
 				exit = 1;
 				break;
 			case MODE_CONF:
@@ -89,6 +90,12 @@ void ds_update(dualshock* ctrl, uint8_t* buffer){
 			case MODE_ANALOG:
 				for(i = 0; i < rxbytes; i++){
 					ctrl->data[i] = buffer[i+3];
+				}
+				if(ctrl->data[2] & 1<<6){ // std mode
+					ctrl->ctrl_mode = TANK;
+				}
+				else if (ctrl->data[2] & 1<<5){
+					ctrl->ctrl_mode = STD;
 				}
 				exit = 1;
 				break;
@@ -102,6 +109,29 @@ void ds_update(dualshock* ctrl, uint8_t* buffer){
 
 
 
+
+uint8_t ds_get_drivevals(dualshock* ctrl, uint8_t* left, uint8_t* right){
+	if(ctrl->mode == MODE_DISC){
+		*left = 0x80;
+		*right = 0x80;
+		return 1;
+	}
+	else{
+		if(ctrl->ctrl_mode == TANK){
+			*left = ctrl->data[5];
+			*right = ctrl->data[3];
+		}
+		else if (ctrl->ctrl_mode == STD){
+			*left = ctrl->data[5];
+			*right = ctrl->data[3];
+		}
+		else{
+			*left = ctrl->data[5];
+			*right = ctrl->data[3];
+		}
+		return 0;
+	}
+}
 
 
 

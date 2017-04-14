@@ -1,6 +1,6 @@
 <project name="Dualshock" version="1.1">
     <ProjectDirectory>
-        E:\BumperBot\Dualshock\designer\impl1\Dualshock_fp
+        C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\designer\impl1\Dualshock_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,7 +9,7 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        E:\BumperBot\Dualshock\designer\impl1\Dualshock_fp\Dualshock.log
+        C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\designer\impl1\Dualshock_fp\Dualshock.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -74,7 +74,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                E:\BumperBot\Dualshock\designer\impl1\Dualshock_fp\Dualshock.pdb
+                C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\designer\impl1\Dualshock_fp\Dualshock.pdb
             </filename>
             <local>
                 projectData\Dualshock.pdb

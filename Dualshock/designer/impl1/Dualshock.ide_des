@@ -20,10 +20,10 @@ KEY IDE_DES_BLOCK_PUBLISH "FALSE"
 KEY IDE_DES_BA_EXPORTED "FALSE"
 KEY IDE_DES_INTERACTIVE "FALSE"
 KEY IDE_DES_ERROR_FOUND "FALSE"
-KEY IDE_DES_ADB_PATH "E:\BumperBot\Dualshock\designer\impl1\Dualshock.adb"
+KEY IDE_DES_ADB_PATH "C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\designer\impl1\Dualshock.adb"
 LIST SOURCE_FILES
-VALUE "E:\BumperBot\Dualshock\synthesis\Dualshock.edn;edn"
-VALUE "E:\BumperBot\Dualshock\component\work\Dualshock\Dualshock.pdc;pdc"
+VALUE "C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\synthesis\Dualshock.edn;edn"
+VALUE "C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\work\Dualshock\Dualshock.pdc;pdc"
 ENDLIST
 LIST OPTIONAL_FILES
 ENDLIST

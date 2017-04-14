@@ -1,7 +1,4 @@
-# (OPEN DESIGN)
-
-open_design "E:/BumperBot/Dualshock/designer/impl1/Dualshock.adb"
-export -format "FDB" {E:/BumperBot/Dualshock/designer/impl1/Dualshock.fdb}
-
-save_design "E:/BumperBot/Dualshock/designer/impl1/Dualshock.adb"
+set_defvar "IDE_DESIGNERVIEW_ROOTDIR" {C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\designer}
+open_design Dualshock.adb
+open_tool mvn_ioedit
 

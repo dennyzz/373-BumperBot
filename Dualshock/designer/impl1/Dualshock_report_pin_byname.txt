@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Thu Apr 06 01:24:50 2017 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Thu Apr 13 17:25:36 2017 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.7 SP3
 Version: 11.7.3.8
@@ -16,8 +16,12 @@ GPIO_14_OUT  AB3   Yes    GPIO_14/IO35RSB4V0  LVTTL    8                  High  
 GPIO_15_OUT  Y3    Yes    GPIO_15/IO34RSB4V0  LVTTL    8                  High  None           ---              No    35                No           Yes
 MAINXIN      AA16  Fixed  MAINXIN
 MSS_RESET_N  R1    Yes    MSS_RESET_N         LVTTL    ---                ---   None           No               ---   ---               No           Yes
+RX           F1    Yes    GFB1/IO65PPB5V0     LVTTL    ---                ---   None           No               ---   ---               No           No
 SPISCLKO     G4    Yes    GFC1/IO66PPB5V0     LVTTL    12                 High  None           ---              No    35                No           No
-SPISDI       E3    Yes    GFA2/IO68PDB5V0     LVTTL    ---                ---   Up             No               ---   ---               No           No
+SPISDI       E3    Yes    GFA2/IO68PDB5V0     LVTTL    ---                ---   None           No               ---   ---               No           No
 SPISDO       F3    Yes    GFB2/IO68NDB5V0     LVTTL    12                 High  None           ---              No    35                No           No
+TX           C22   Yes    GBB2/IO20NDB1V0     LVTTL    12                 High  None           ---              No    35                No           No
 UART_0_RXD   U18   Yes    UART_0_RXD/GPIO_21  LVTTL    ---                ---   None           No               ---   ---               No           Yes
 UART_0_TXD   Y22   Yes    UART_0_TXD/GPIO_20  LVTTL    8                  High  None           ---              No    35                No           Yes
+UART_1_RXD   W22   Yes    UART_1_RXD/GPIO_29  LVTTL    ---                ---   None           No               ---   ---               No           Yes
+UART_1_TXD   V20   Yes    UART_1_TXD/GPIO_28  LVTTL    8                  High  None           ---              No    35                No           Yes

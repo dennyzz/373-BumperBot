@@ -1,5 +1,5 @@
 //--------------------------------------------------------------------
-// Created by Microsemi SmartDesign Thu Apr 06 01:24:08 2017
+// Created by Microsemi SmartDesign Thu Apr 13 17:23:27 2017
 // Parameters for CORESPI
 //--------------------------------------------------------------------
 

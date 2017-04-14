@@ -2,17 +2,21 @@ Microsemi Libero Software
 Version: 11.7.3.8
 Release: v11.7 SP3
 
-Info: The design E:/BumperBot/Dualshock/designer/impl1/Dualshock.adb was last modified by
-      software version 11.7.3.8.
-Opened an existing Libero design E:/BumperBot/Dualshock/designer/impl1/Dualshock.adb.
+Info: The design
+      C:/Users/Denny/Documents/Git/373-BumperBot/Dualshock/designer/impl1/Dualshock.adb was last
+      modified by software version 11.7.3.8.
+Opened an existing Libero design
+C:/Users/Denny/Documents/Git/373-BumperBot/Dualshock/designer/impl1/Dualshock.adb.
 
-The Export-map command succeeded ( 00:00:05 )
-CHECKSUM: E1F5
-Wrote to the file: E:\BumperBot\Dualshock\designer\impl1\Dualshock.fdb
+The Export-map command succeeded ( 00:00:12 )
+CHECKSUM: FFF2
+Wrote to the file:
+C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\designer\impl1\Dualshock.fdb
 
-The Export command succeeded ( 00:00:06 )
-Design saved to file E:/BumperBot/Dualshock/designer/impl1/Dualshock.adb.
+The Export command succeeded ( 00:00:14 )
+Design saved to file
+C:/Users/Denny/Documents/Git/373-BumperBot/Dualshock/designer/impl1/Dualshock.adb.
 
-The Execute Script command succeeded ( 00:00:07 )
+The Execute Script command succeeded ( 00:00:15 )
 Design closed.
 

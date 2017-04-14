@@ -13,14 +13,16 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="star" key="selection"/>
+		<item value="update" key="selection"/>
 		<list key="findhistory">
+			<item value="update"/>
+			<item value="udpate"/>
+			<item value="printf"/>
+			<item value="interrupt"/>
+			<item value="MSS_UART_polled_tx"/>
+			<item value="tx"/>
+			<item value="uart tx"/>
 			<item value="star"/>
-			<item value="clear"/>
-			<item value="init"/>
-			<item value="configure"/>
-			<item value="gpio_in"/>
-			<item value="gpio_int"/>
 		</list>
 		<list key="replacehistory">
 		</list>

@@ -11,33 +11,39 @@
     <hdl-type>Verilog</hdl-type>
     <project-description>
     </project-description>
-    <location>E:/BumperBot/Dualshock/component/work/Dualshock</location>
-    <state>GENERATED ( Thu Apr 06 01:24:11 2017 )</state>
-    <swide-toolchain>SoftConsole workspace generated to E:\BumperBot\Dualshock\SoftConsole</swide-toolchain>
+    <location>C:/Users/Denny/Documents/Git/373-BumperBot/Dualshock/component/work/Dualshock</location>
+    <state>GENERATED ( Thu Apr 13 17:23:33 2017 )</state>
+    <swide-toolchain>SoftConsole workspace generated to C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
   </site-map>
   <fileset>
     <name>HDL File(s)</name>
-    <file>E:\BumperBot\Dualshock\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v</file>
-    <file>E:\BumperBot\Dualshock\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v</file>
-    <file>E:\BumperBot\Dualshock\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v</file>
-    <file>E:\BumperBot\Dualshock\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\corespi.v</file>
-    <file>E:\BumperBot\Dualshock\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi.v</file>
-    <file>E:\BumperBot\Dualshock\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_chanctrl.v</file>
-    <file>E:\BumperBot\Dualshock\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_clockmux.v</file>
-    <file>E:\BumperBot\Dualshock\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_control.v</file>
-    <file>E:\BumperBot\Dualshock\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_fifo.v</file>
-    <file>E:\BumperBot\Dualshock\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_rf.v</file>
-    <file>E:\BumperBot\Dualshock\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v</file>
-    <file>E:\BumperBot\Dualshock\component\work\Dualshock\Dualshock.v</file>
-    <file>E:\BumperBot\Dualshock\component\work\Dualshock_MSS\Dualshock_MSS.v</file>
-    <file>E:\BumperBot\Dualshock\component\work\Dualshock_MSS\MSS_CCC_0\Dualshock_MSS_tmp_MSS_CCC_0_MSS_CCC.v</file>
-    <file>E:\BumperBot\Dualshock\component\work\Dualshock_MSS\mss_tshell.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\corespi.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_chanctrl.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_clockmux.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_control.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_fifo.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_rf.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\work\Dualshock\CoreUARTapb_0\rtl\vlog\core\Clock_gen.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\work\Dualshock\CoreUARTapb_0\rtl\vlog\core\CoreUART.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\work\Dualshock\CoreUARTapb_0\rtl\vlog\core\CoreUARTapb.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\work\Dualshock\CoreUARTapb_0\rtl\vlog\core\fifo_256x8_smartfusion.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\work\Dualshock\CoreUARTapb_0\rtl\vlog\core\Rx_async.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\work\Dualshock\CoreUARTapb_0\rtl\vlog\core\Tx_async.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\work\Dualshock\Dualshock.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\work\Dualshock_MSS\Dualshock_MSS.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\work\Dualshock_MSS\MSS_CCC_0\Dualshock_MSS_tmp_MSS_CCC_0_MSS_CCC.v</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\work\Dualshock_MSS\mss_tshell.v</file>
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>E:\BumperBot\Dualshock\component\work\E:/BumperBot/Dualshock/component/work/Dualshock_MSS/MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>C:\Users\Denny\Documents\Git\373-BumperBot\Dualshock\component\work\C:/Users/Denny/Documents/Git/373-BumperBot/Dualshock/component/work/Dualshock_MSS/MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
   <io>
     <port-name>MSS_RESET_N</port-name>
@@ -46,8 +52,20 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
+    <port-name>RX</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
     <port-name>SPISDI</port-name>
     <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>TX</port-name>
+    <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
@@ -64,7 +82,19 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
+    <port-name>UART_1_RXD</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
     <port-name>GPIO_13_OUT</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>UART_1_TXD</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -134,9 +164,9 @@ There is one APB3 Master interface.
     </core-param>
     <core-param>
       <param-name>Slot 1:</param-name>
-      <param-value>false</param-value>
+      <param-value>true</param-value>
       <param-hdlname>APBSLOT1ENABLE</param-hdlname>
-      <param-hdlvalue>0</param-hdlvalue>
+      <param-hdlvalue>1</param-hdlvalue>
       <param-tag>spirit:hwParameter</param-tag>
     </core-param>
     <core-param>
@@ -474,10 +504,90 @@ There is one APB3 Master interface.
     </core-param>
     <core-name>CORESPI_0</core-name>
   </core>
+  <core type="SpiritModule">
+    <core-exttype>IP</core-exttype>
+    <core-type>SpiritModule</core-type>
+    <core-vendor>Actel</core-vendor>
+    <core-lib>DirectCore</core-lib>
+    <core-intname>CoreUARTapb</core-intname>
+    <core-ver>5.6.102</core-ver>
+    <core-desc>CoreUARTapb is a serial communication controller with a flexible serial data interface that is intended primarily for embedded systems. The controller operates as an asynchronous (UART) with a control register interface and APB wrapper.</core-desc>
+    <core-param>
+      <param-name>Fractional Part of Baud Value:</param-name>
+      <param-value>+0.75</param-value>
+      <param-hdlname>BAUD_VAL_FRCTN</param-hdlname>
+      <param-hdlvalue>6</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>Enable Extra Precision:</param-name>
+      <param-value>true</param-value>
+      <param-hdlname>BAUD_VAL_FRCTN_EN</param-hdlname>
+      <param-hdlvalue>1</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>Baud Value:</param-name>
+      <param-value>21</param-value>
+      <param-hdlname>BAUD_VALUE</param-hdlname>
+      <param-hdlvalue>21</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>FPGA Family:</param-name>
+      <param-value>SmartFusion</param-value>
+      <param-hdlname>FAMILY</param-hdlname>
+      <param-hdlvalue>18</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>Configuration:</param-name>
+      <param-value>Fixed</param-value>
+      <param-hdlname>FIXEDMODE</param-hdlname>
+      <param-hdlvalue>1</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>Character Size:</param-name>
+      <param-value>8 bits</param-value>
+      <param-hdlname>PRG_BIT8</param-hdlname>
+      <param-hdlvalue>1</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>Parity:</param-name>
+      <param-value>Parity Disabled</param-value>
+      <param-hdlname>PRG_PARITY</param-hdlname>
+      <param-hdlvalue>0</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>RX FIFO:</param-name>
+      <param-value>Enable RX FIFO</param-value>
+      <param-hdlname>RX_FIFO</param-hdlname>
+      <param-hdlvalue>1</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>RX Legacy Mode:</param-name>
+      <param-value>Disabled</param-value>
+      <param-hdlname>RX_LEGACY_MODE</param-hdlname>
+      <param-hdlvalue>0</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>TX FIFO:</param-name>
+      <param-value>Enable TX FIFO</param-value>
+      <param-hdlname>TX_FIFO</param-hdlname>
+      <param-hdlvalue>1</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-name>CoreUARTapb_0</core-name>
+  </core>
   <core type="ComponentModule">
     <core-type>ComponentModule</core-type>
     <core-exttype>HierSpiritDesign</core-exttype>
-    <core-location>E:/BumperBot/Dualshock/component/work/Dualshock_MSS</core-location>
+    <core-location>C:/Users/Denny/Documents/Git/373-BumperBot/Dualshock/component/work/Dualshock_MSS</core-location>
     <core-name>Dualshock_MSS_0</core-name>
   </core>
   <firmware_core type="FirmWareModule">
@@ -489,6 +599,17 @@ There is one APB3 Master interface.
     <core-ver>3.1.100</core-ver>
     <core-desc>Bare metal software driver for CoreSPI.</core-desc>
     <core-name>CoreSPI_Driver_0</core-name>
+  </firmware_core>
+  <firmware_core type="FirmWareModule">
+    <core-exttype>IP</core-exttype>
+    <core-type>FirmWareModule</core-type>
+    <core-vendor>Actel</core-vendor>
+    <core-lib>Firmware</core-lib>
+    <core-intname>CoreUARTapb_Driver</core-intname>
+    <core-ver>3.1.100</core-ver>
+    <core-desc>Bare metal software driver for CoreUARTapb IP.
+</core-desc>
+    <core-name>CoreUARTapb_Driver_0</core-name>
   </firmware_core>
   <firmware_core type="FirmWareModule">
     <core-exttype>IP</core-exttype>
@@ -592,6 +713,18 @@ This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
 
 This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
     <core-name>MSS_UART_Driver_0</core-name>
+  </firmware_core>
+  <firmware_core type="FirmWareModule">
+    <core-exttype>IP</core-exttype>
+    <core-type>FirmWareModule</core-type>
+    <core-vendor>Actel</core-vendor>
+    <core-lib>Firmware</core-lib>
+    <core-intname>MSS_UART_Driver</core-intname>
+    <core-ver>2.4.101</core-ver>
+    <core-desc>SmartFusion microcontroller subsystem (MSS) UART bare metal software driver.
+
+This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
+    <core-name>MSS_UART_Driver_1</core-name>
   </firmware_core>
   <firmware_core type="FirmWareModule">
     <core-exttype>IP</core-exttype>
@@ -2510,6 +2643,13 @@ These files are required by the SmartFusion bare metal peripheral drivers to bui
           <range>0x00001000</range>
         </slave>
         <slave>
+          <name>CoreUARTapb_0</name>
+          <fullPinName>CoreUARTapb_0:APB_bif</fullPinName>
+          <remapAddress>0x40051000</remapAddress>
+          <fullAddressSpace>0x40051000 - 0x40051FFF</fullAddressSpace>
+          <range>0x00001000</range>
+        </slave>
+        <slave>
           <name>FPGA_FABRIC_BACKDOOR</name>
           <fullPinName>
           </fullPinName>
@@ -4252,6 +4392,331 @@ These files are required by the SmartFusion bare metal peripheral drivers to bui
                 <field>
                   <name>OUTPUT</name>
                   <bitNumber>30:0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+            </addressBlock>
+          </memoryMap>
+        </slave>
+        <slave>
+          <name>UART_1</name>
+          <fullPinName>
+          </fullPinName>
+          <remapAddress>0x40010000</remapAddress>
+          <fullAddressSpace>0x40010000 - 0x40010FFF</fullAddressSpace>
+          <range>0x1000</range>
+          <memoryMap>
+            <name>RegisterMap</name>
+            <addressBlock>
+              <baseAddress>0x0</baseAddress>
+              <range format="long">0x1000</range>
+              <width format="long" id="width">32</width>
+              <register>
+                <name>RECEIVE_BUFFER</name>
+                <addressOffset>0x0</addressOffset>
+                <absoluteAddress>0x40010000</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>RBR</name>
+                  <bitNumber>7:0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>DIVISOR_LATCH_MSB</name>
+                <addressOffset>0x4</addressOffset>
+                <absoluteAddress>0x40010004</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>DMR</name>
+                  <bitNumber>7:0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>INTERRUPT_IDENTIFICATION</name>
+                <addressOffset>0x8</addressOffset>
+                <absoluteAddress>0x40010008</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>MODE</name>
+                  <bitNumber>7:6</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RESERVED</name>
+                  <bitNumber>5:4</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>IIR</name>
+                  <bitNumber>3:0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>LINE_CONTROL</name>
+                <addressOffset>0xC</addressOffset>
+                <absoluteAddress>0x4001000C</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>DLAB</name>
+                  <bitNumber>7</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>SB</name>
+                  <bitNumber>6</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>SP</name>
+                  <bitNumber>5</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>EPS</name>
+                  <bitNumber>4</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>PEN</name>
+                  <bitNumber>3</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>STB</name>
+                  <bitNumber>2</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>WLS</name>
+                  <bitNumber>1:0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>MODEM_CONTROL</name>
+                <addressOffset>0x10</addressOffset>
+                <absoluteAddress>0x40010010</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>RESERVED</name>
+                  <bitNumber>7:5</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>LOOP</name>
+                  <bitNumber>4</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>OUT2</name>
+                  <bitNumber>3</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>OUT1</name>
+                  <bitNumber>2</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RTS</name>
+                  <bitNumber>1</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>DTR</name>
+                  <bitNumber>0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>LINE_STATUS</name>
+                <addressOffset>0x14</addressOffset>
+                <absoluteAddress>0x40010014</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>FIER</name>
+                  <bitNumber>7</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>TEMT</name>
+                  <bitNumber>6</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>THRE</name>
+                  <bitNumber>5</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>BI</name>
+                  <bitNumber>4</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>FE</name>
+                  <bitNumber>3</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>PE</name>
+                  <bitNumber>2</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>OE</name>
+                  <bitNumber>1</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>DR</name>
+                  <bitNumber>0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>MODEM_STATUS</name>
+                <addressOffset>0x18</addressOffset>
+                <absoluteAddress>0x40010018</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>DCD</name>
+                  <bitNumber>7</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RI</name>
+                  <bitNumber>6</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>DSR</name>
+                  <bitNumber>5</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>CTS</name>
+                  <bitNumber>4</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>DDCD</name>
+                  <bitNumber>3</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>TERI</name>
+                  <bitNumber>2</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>DDSR</name>
+                  <bitNumber>1</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>DCTS</name>
+                  <bitNumber>0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>SCRATCH</name>
+                <addressOffset>0x1C</addressOffset>
+                <absoluteAddress>0x4001001C</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>SCR</name>
+                  <bitNumber>7:0</bitNumber>
                   <access>R/W</access>
                   <description>
                   </description>

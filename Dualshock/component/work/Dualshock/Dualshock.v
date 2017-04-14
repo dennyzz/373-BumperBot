@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Thu Apr 06 01:24:08 2017
+// Created by SmartDesign Thu Apr 13 17:23:27 2017
 // Version: v11.7 SP3 11.7.3.8
 //////////////////////////////////////////////////////////////////////
 
@@ -10,8 +10,10 @@ module Dualshock(
     // Inputs
     MAINXIN,
     MSS_RESET_N,
+    RX,
     SPISDI,
     UART_0_RXD,
+    UART_1_RXD,
     // Outputs
     GPIO_0_OUT,
     GPIO_13_OUT,
@@ -19,7 +21,9 @@ module Dualshock(
     GPIO_15_OUT,
     SPISCLKO,
     SPISDO,
-    UART_0_TXD
+    TX,
+    UART_0_TXD,
+    UART_1_TXD
 );
 
 //--------------------------------------------------------------------
@@ -27,8 +31,10 @@ module Dualshock(
 //--------------------------------------------------------------------
 input  MAINXIN;
 input  MSS_RESET_N;
+input  RX;
 input  SPISDI;
 input  UART_0_RXD;
+input  UART_1_RXD;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
@@ -38,7 +44,9 @@ output GPIO_14_OUT;
 output GPIO_15_OUT;
 output SPISCLKO;
 output SPISDO;
+output TX;
 output UART_0_TXD;
+output UART_1_TXD;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
@@ -47,8 +55,11 @@ wire   [31:0] CoreAPB3_0_APBmslave0_PRDATA;
 wire          CoreAPB3_0_APBmslave0_PREADY;
 wire          CoreAPB3_0_APBmslave0_PSELx;
 wire          CoreAPB3_0_APBmslave0_PSLVERR;
-wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
 wire          CoreAPB3_0_APBmslave0_PWRITE;
+wire          CoreAPB3_0_APBmslave1_PREADY;
+wire          CoreAPB3_0_APBmslave1_PSELx;
+wire          CoreAPB3_0_APBmslave1_PSLVERR;
+wire          CoreUARTapb_0_RXRDY;
 wire          Dualshock_MSS_0_FAB_CLK;
 wire          Dualshock_MSS_0_M2F_RESET_N;
 wire          Dualshock_MSS_0_MSS_MASTER_APB_PENABLE;
@@ -64,11 +75,15 @@ wire          GPIO_14_OUT_net_0;
 wire          GPIO_15_OUT_net_0;
 wire          MAINXIN;
 wire          MSS_RESET_N;
+wire          RX;
 wire          SPISCLKO_net_0;
 wire          SPISDI;
 wire          SPISDO_net_0;
+wire          TX_net_0;
 wire          UART_0_RXD;
 wire          UART_0_TXD_net_0;
+wire          UART_1_RXD;
+wire          UART_1_TXD_1;
 wire          UART_0_TXD_net_1;
 wire          GPIO_15_OUT_net_1;
 wire          GPIO_14_OUT_net_1;
@@ -76,13 +91,14 @@ wire          GPIO_13_OUT_net_1;
 wire          SPISDO_net_1;
 wire          SPISCLKO_net_1;
 wire          GPIO_0_OUT_net_1;
+wire          UART_1_TXD_1_net_0;
+wire          TX_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
 wire          GND_net;
 wire          VCC_net;
 wire   [31:0] IADDR_const_net_0;
-wire   [31:0] PRDATAS1_const_net_0;
 wire   [31:0] PRDATAS2_const_net_0;
 wire   [31:0] PRDATAS3_const_net_0;
 wire   [31:0] PRDATAS4_const_net_0;
@@ -101,9 +117,18 @@ wire   [31:0] PRDATAS16_const_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
-wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
 wire   [6:0]  CoreAPB3_0_APBmslave0_PADDR_0_6to0;
 wire   [6:0]  CoreAPB3_0_APBmslave0_PADDR_0;
+wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1_4to0;
+wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1;
+wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
+wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
+wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0_7to0;
+wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0;
+wire   [31:8] CoreAPB3_0_APBmslave1_PRDATA_0_31to8;
+wire   [7:0]  CoreAPB3_0_APBmslave1_PRDATA_0_7to0;
+wire   [31:0] CoreAPB3_0_APBmslave1_PRDATA_0;
+wire   [7:0]  CoreAPB3_0_APBmslave1_PRDATA;
 wire   [31:20]Dualshock_MSS_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] Dualshock_MSS_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] Dualshock_MSS_0_MSS_MASTER_APB_PADDR_0;
@@ -114,7 +139,6 @@ wire   [19:0] Dualshock_MSS_0_MSS_MASTER_APB_PADDR;
 assign GND_net               = 1'b0;
 assign VCC_net               = 1'b1;
 assign IADDR_const_net_0     = 32'h00000000;
-assign PRDATAS1_const_net_0  = 32'h00000000;
 assign PRDATAS2_const_net_0  = 32'h00000000;
 assign PRDATAS3_const_net_0  = 32'h00000000;
 assign PRDATAS4_const_net_0  = 32'h00000000;
@@ -133,25 +157,38 @@ assign PRDATAS16_const_net_0 = 32'h00000000;
 //--------------------------------------------------------------------
 // Top level output port assignments
 //--------------------------------------------------------------------
-assign UART_0_TXD_net_1  = UART_0_TXD_net_0;
-assign UART_0_TXD        = UART_0_TXD_net_1;
-assign GPIO_15_OUT_net_1 = GPIO_15_OUT_net_0;
-assign GPIO_15_OUT       = GPIO_15_OUT_net_1;
-assign GPIO_14_OUT_net_1 = GPIO_14_OUT_net_0;
-assign GPIO_14_OUT       = GPIO_14_OUT_net_1;
-assign GPIO_13_OUT_net_1 = GPIO_13_OUT_net_0;
-assign GPIO_13_OUT       = GPIO_13_OUT_net_1;
-assign SPISDO_net_1      = SPISDO_net_0;
-assign SPISDO            = SPISDO_net_1;
-assign SPISCLKO_net_1    = SPISCLKO_net_0;
-assign SPISCLKO          = SPISCLKO_net_1;
-assign GPIO_0_OUT_net_1  = GPIO_0_OUT_net_0;
-assign GPIO_0_OUT        = GPIO_0_OUT_net_1;
+assign UART_0_TXD_net_1   = UART_0_TXD_net_0;
+assign UART_0_TXD         = UART_0_TXD_net_1;
+assign GPIO_15_OUT_net_1  = GPIO_15_OUT_net_0;
+assign GPIO_15_OUT        = GPIO_15_OUT_net_1;
+assign GPIO_14_OUT_net_1  = GPIO_14_OUT_net_0;
+assign GPIO_14_OUT        = GPIO_14_OUT_net_1;
+assign GPIO_13_OUT_net_1  = GPIO_13_OUT_net_0;
+assign GPIO_13_OUT        = GPIO_13_OUT_net_1;
+assign SPISDO_net_1       = SPISDO_net_0;
+assign SPISDO             = SPISDO_net_1;
+assign SPISCLKO_net_1     = SPISCLKO_net_0;
+assign SPISCLKO           = SPISCLKO_net_1;
+assign GPIO_0_OUT_net_1   = GPIO_0_OUT_net_0;
+assign GPIO_0_OUT         = GPIO_0_OUT_net_1;
+assign UART_1_TXD_1_net_0 = UART_1_TXD_1;
+assign UART_1_TXD         = UART_1_TXD_1_net_0;
+assign TX_net_1           = TX_net_0;
+assign TX                 = TX_net_1;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
 assign CoreAPB3_0_APBmslave0_PADDR_0_6to0 = CoreAPB3_0_APBmslave0_PADDR[6:0];
 assign CoreAPB3_0_APBmslave0_PADDR_0 = { CoreAPB3_0_APBmslave0_PADDR_0_6to0 };
+assign CoreAPB3_0_APBmslave0_PADDR_1_4to0 = CoreAPB3_0_APBmslave0_PADDR[4:0];
+assign CoreAPB3_0_APBmslave0_PADDR_1 = { CoreAPB3_0_APBmslave0_PADDR_1_4to0 };
+
+assign CoreAPB3_0_APBmslave0_PWDATA_0_7to0 = CoreAPB3_0_APBmslave0_PWDATA[7:0];
+assign CoreAPB3_0_APBmslave0_PWDATA_0 = { CoreAPB3_0_APBmslave0_PWDATA_0_7to0 };
+
+assign CoreAPB3_0_APBmslave1_PRDATA_0_31to8 = 24'h0;
+assign CoreAPB3_0_APBmslave1_PRDATA_0_7to0 = CoreAPB3_0_APBmslave1_PRDATA[7:0];
+assign CoreAPB3_0_APBmslave1_PRDATA_0 = { CoreAPB3_0_APBmslave1_PRDATA_0_31to8, CoreAPB3_0_APBmslave1_PRDATA_0_7to0 };
 
 assign Dualshock_MSS_0_MSS_MASTER_APB_PADDR_0_31to20 = 12'h0;
 assign Dualshock_MSS_0_MSS_MASTER_APB_PADDR_0_19to0 = Dualshock_MSS_0_MSS_MASTER_APB_PADDR[19:0];
@@ -164,7 +201,7 @@ assign Dualshock_MSS_0_MSS_MASTER_APB_PADDR_0 = { Dualshock_MSS_0_MSS_MASTER_APB
 CoreAPB3 #( 
         .APB_DWIDTH      ( 32 ),
         .APBSLOT0ENABLE  ( 1 ),
-        .APBSLOT1ENABLE  ( 0 ),
+        .APBSLOT1ENABLE  ( 1 ),
         .APBSLOT2ENABLE  ( 0 ),
         .APBSLOT3ENABLE  ( 0 ),
         .APBSLOT4ENABLE  ( 0 ),
@@ -208,8 +245,8 @@ CoreAPB3_0(
         .PSEL       ( Dualshock_MSS_0_MSS_MASTER_APB_PSELx ),
         .PREADYS0   ( CoreAPB3_0_APBmslave0_PREADY ),
         .PSLVERRS0  ( CoreAPB3_0_APBmslave0_PSLVERR ),
-        .PREADYS1   ( VCC_net ), // tied to 1'b1 from definition
-        .PSLVERRS1  ( GND_net ), // tied to 1'b0 from definition
+        .PREADYS1   ( CoreAPB3_0_APBmslave1_PREADY ),
+        .PSLVERRS1  ( CoreAPB3_0_APBmslave1_PSLVERR ),
         .PREADYS2   ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS2  ( GND_net ), // tied to 1'b0 from definition
         .PREADYS3   ( VCC_net ), // tied to 1'b1 from definition
@@ -243,7 +280,7 @@ CoreAPB3_0(
         .PADDR      ( Dualshock_MSS_0_MSS_MASTER_APB_PADDR_0 ),
         .PWDATA     ( Dualshock_MSS_0_MSS_MASTER_APB_PWDATA ),
         .PRDATAS0   ( CoreAPB3_0_APBmslave0_PRDATA ),
-        .PRDATAS1   ( PRDATAS1_const_net_0 ), // tied to 32'h00000000 from definition
+        .PRDATAS1   ( CoreAPB3_0_APBmslave1_PRDATA_0 ),
         .PRDATAS2   ( PRDATAS2_const_net_0 ), // tied to 32'h00000000 from definition
         .PRDATAS3   ( PRDATAS3_const_net_0 ), // tied to 32'h00000000 from definition
         .PRDATAS4   ( PRDATAS4_const_net_0 ), // tied to 32'h00000000 from definition
@@ -266,7 +303,7 @@ CoreAPB3_0(
         .PWRITES    ( CoreAPB3_0_APBmslave0_PWRITE ),
         .PENABLES   ( CoreAPB3_0_APBmslave0_PENABLE ),
         .PSELS0     ( CoreAPB3_0_APBmslave0_PSELx ),
-        .PSELS1     (  ),
+        .PSELS1     ( CoreAPB3_0_APBmslave1_PSELx ),
         .PSELS2     (  ),
         .PSELS3     (  ),
         .PSELS4     (  ),
@@ -327,6 +364,40 @@ CORESPI_0(
         .SPISS      (  ) 
         );
 
+//--------Dualshock_CoreUARTapb_0_CoreUARTapb   -   Actel:DirectCore:CoreUARTapb:5.6.102
+Dualshock_CoreUARTapb_0_CoreUARTapb #( 
+        .BAUD_VAL_FRCTN    ( 6 ),
+        .BAUD_VAL_FRCTN_EN ( 1 ),
+        .BAUD_VALUE        ( 21 ),
+        .FAMILY            ( 18 ),
+        .FIXEDMODE         ( 1 ),
+        .PRG_BIT8          ( 1 ),
+        .PRG_PARITY        ( 0 ),
+        .RX_FIFO           ( 1 ),
+        .RX_LEGACY_MODE    ( 0 ),
+        .TX_FIFO           ( 1 ) )
+CoreUARTapb_0(
+        // Inputs
+        .PCLK        ( Dualshock_MSS_0_FAB_CLK ),
+        .PRESETN     ( Dualshock_MSS_0_M2F_RESET_N ),
+        .PSEL        ( CoreAPB3_0_APBmslave1_PSELx ),
+        .PENABLE     ( CoreAPB3_0_APBmslave0_PENABLE ),
+        .PWRITE      ( CoreAPB3_0_APBmslave0_PWRITE ),
+        .RX          ( RX ),
+        .PADDR       ( CoreAPB3_0_APBmslave0_PADDR_1 ),
+        .PWDATA      ( CoreAPB3_0_APBmslave0_PWDATA_0 ),
+        // Outputs
+        .TXRDY       (  ),
+        .RXRDY       ( CoreUARTapb_0_RXRDY ),
+        .PARITY_ERR  (  ),
+        .OVERFLOW    (  ),
+        .TX          ( TX_net_0 ),
+        .PREADY      ( CoreAPB3_0_APBmslave1_PREADY ),
+        .PSLVERR     ( CoreAPB3_0_APBmslave1_PSLVERR ),
+        .FRAMING_ERR (  ),
+        .PRDATA      ( CoreAPB3_0_APBmslave1_PRDATA ) 
+        );
+
 //--------Dualshock_MSS
 Dualshock_MSS Dualshock_MSS_0(
         // Inputs
@@ -335,7 +406,9 @@ Dualshock_MSS Dualshock_MSS_0(
         .MSSPREADY   ( Dualshock_MSS_0_MSS_MASTER_APB_PREADY ),
         .MSSPSLVERR  ( Dualshock_MSS_0_MSS_MASTER_APB_PSLVERR ),
         .MAINXIN     ( MAINXIN ),
+        .UART_1_RXD  ( UART_1_RXD ),
         .MSSPRDATA   ( Dualshock_MSS_0_MSS_MASTER_APB_PRDATA ),
+        .FABINT      ( CoreUARTapb_0_RXRDY ),
         // Outputs
         .UART_0_TXD  ( UART_0_TXD_net_0 ),
         .MSSPSEL     ( Dualshock_MSS_0_MSS_MASTER_APB_PSELx ),
@@ -346,9 +419,10 @@ Dualshock_MSS Dualshock_MSS_0(
         .GPIO_13_OUT ( GPIO_13_OUT_net_0 ),
         .FAB_CLK     ( Dualshock_MSS_0_FAB_CLK ),
         .M2F_RESET_N ( Dualshock_MSS_0_M2F_RESET_N ),
+        .GPIO_0_OUT  ( GPIO_0_OUT_net_0 ),
+        .UART_1_TXD  ( UART_1_TXD_1 ),
         .MSSPADDR    ( Dualshock_MSS_0_MSS_MASTER_APB_PADDR ),
-        .MSSPWDATA   ( Dualshock_MSS_0_MSS_MASTER_APB_PWDATA ),
-        .GPIO_0_OUT  ( GPIO_0_OUT_net_0 ) 
+        .MSSPWDATA   ( Dualshock_MSS_0_MSS_MASTER_APB_PWDATA ) 
         );
 
 

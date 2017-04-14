@@ -2,23 +2,18 @@ Microsemi Libero Software
 Version: 11.7.1.14
 Release: v11.7 SP1.1
 
-'IDE_DESIGNERVIEW_ROOTDIR' set to
-'C:\Users\niechris\Documents\373_project\373-BumperBot-master\373-BumperBot-master\car\designer'
+'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\weeyizhi\Desktop\car_aprl7\car\designer'
 Info: The design car.adb was last modified by software version 11.7.1.14.
 Opened an existing Libero design car.adb.
 
-The Execute Script command succeeded ( 00:00:28 )
-Design saved to file
-C:\Users\niechris\Documents\373_project\373-BumperBot-master\373-BumperBot-master\car\designer\\
-impl1\car.adb.
+The Execute Script command succeeded ( 00:00:30 )
+Design saved to file C:\Users\weeyizhi\Desktop\car_aprl7\car\designer\impl1\car.adb.
 Wrote pin report to file:
-C:\Users\niechris\Documents\373_project\373-BumperBot-master\373-BumperBot-master\car\designer\\
-impl1\car_report_pin_byname.txt
+C:\Users\weeyizhi\Desktop\car_aprl7\car\designer\impl1\car_report_pin_byname.txt
 
 The Report command succeeded ( 00:00:01 )
 Wrote pin report to file:
-C:\Users\niechris\Documents\373_project\373-BumperBot-master\373-BumperBot-master\car\designer\\
-impl1\car_report_pin_bynumber.txt
+C:\Users\weeyizhi\Desktop\car_aprl7\car\designer\impl1\car_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:01 )
 

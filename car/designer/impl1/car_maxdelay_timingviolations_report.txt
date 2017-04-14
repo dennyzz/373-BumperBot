@@ -1,0 +1,822 @@
+Timing Violation Report Max Delay Analysis
+
+SmartTime Version v11.7 SP1.1
+Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
+Date: Thu Apr 13 20:47:46 2017
+
+
+Design: car
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+Temperature Range: 0 - 85 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 85 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+Path 1
+  From:                        APB_reader_0/PWM_DUTY_L[6]:CLK
+  To:                          pwm_gen_L/used_width[8]:D
+  Delay (ns):                  15.643
+  Slack (ns):                  -6.144
+  Arrival (ns):                20.898
+  Required (ns):               14.754
+
+Path 2
+  From:                        APB_reader_0/PWM_DUTY_L[1]:CLK
+  To:                          pwm_gen_L/used_width[8]:D
+  Delay (ns):                  15.646
+  Slack (ns):                  -6.123
+  Arrival (ns):                20.877
+  Required (ns):               14.754
+
+Path 3
+  From:                        APB_reader_0/PWM_DUTY_L_0_0[4]:CLK
+  To:                          pwm_gen_L/used_width[8]:D
+  Delay (ns):                  15.593
+  Slack (ns):                  -6.094
+  Arrival (ns):                20.848
+  Required (ns):               14.754
+
+Path 4
+  From:                        APB_reader_0/PWM_DUTY_L_0_0[7]:CLK
+  To:                          pwm_gen_L/used_width[8]:D
+  Delay (ns):                  15.462
+  Slack (ns):                  -5.939
+  Arrival (ns):                20.693
+  Required (ns):               14.754
+
+Path 5
+  From:                        APB_reader_0/PWM_DUTY_L_0_0[6]:CLK
+  To:                          pwm_gen_L/used_width[8]:D
+  Delay (ns):                  15.420
+  Slack (ns):                  -5.921
+  Arrival (ns):                20.675
+  Required (ns):               14.754
+
+Path 6
+  From:                        APB_reader_0/PWM_DUTY_L[2]:CLK
+  To:                          pwm_gen_L/used_width[8]:D
+  Delay (ns):                  15.407
+  Slack (ns):                  -5.908
+  Arrival (ns):                20.662
+  Required (ns):               14.754
+
+Path 7
+  From:                        APB_reader_0/PWM_DUTY_L[3]:CLK
+  To:                          pwm_gen_L/used_width[8]:D
+  Delay (ns):                  15.239
+  Slack (ns):                  -5.740
+  Arrival (ns):                20.494
+  Required (ns):               14.754
+
+Path 8
+  From:                        APB_reader_0/PWM_DUTY_L_0_0[5]:CLK
+  To:                          pwm_gen_L/used_width[8]:D
+  Delay (ns):                  15.118
+  Slack (ns):                  -5.595
+  Arrival (ns):                20.349
+  Required (ns):               14.754
+
+Path 9
+  From:                        APB_reader_0/PWM_DUTY_L[7]:CLK
+  To:                          pwm_gen_L/used_width[8]:D
+  Delay (ns):                  15.085
+  Slack (ns):                  -5.586
+  Arrival (ns):                20.340
+  Required (ns):               14.754
+
+Path 10
+  From:                        APB_reader_0/PWM_DUTY_L[2]:CLK
+  To:                          pwm_gen_L/used_width[6]:D
+  Delay (ns):                  15.008
+  Slack (ns):                  -5.557
+  Arrival (ns):                20.263
+  Required (ns):               14.706
+
+Path 11
+  From:                        APB_reader_0/PWM_DUTY_L[4]:CLK
+  To:                          pwm_gen_L/used_width[8]:D
+  Delay (ns):                  14.987
+  Slack (ns):                  -5.461
+  Arrival (ns):                20.215
+  Required (ns):               14.754
+
+Path 12
+  From:                        APB_reader_0/PWM_DUTY_R_0_0[6]:CLK
+  To:                          pwm_gen_R/used_width[8]:D
+  Delay (ns):                  14.801
+  Slack (ns):                  -5.276
+  Arrival (ns):                20.029
+  Required (ns):               14.753
+
+Path 13
+  From:                        APB_reader_0/PWM_DUTY_R[5]:CLK
+  To:                          pwm_gen_R/used_width[13]:D
+  Delay (ns):                  14.750
+  Slack (ns):                  -5.267
+  Arrival (ns):                19.988
+  Required (ns):               14.721
+
+Path 14
+  From:                        APB_reader_0/PWM_DUTY_R[5]:CLK
+  To:                          pwm_gen_R/used_width[3]:D
+  Delay (ns):                  14.767
+  Slack (ns):                  -5.264
+  Arrival (ns):                20.005
+  Required (ns):               14.741
+
+Path 15
+  From:                        APB_reader_0/PWM_DUTY_R_0_0[3]:CLK
+  To:                          pwm_gen_R/used_width[3]:D
+  Delay (ns):                  14.775
+  Slack (ns):                  -5.254
+  Arrival (ns):                20.027
+  Required (ns):               14.773
+
+Path 16
+  From:                        APB_reader_0/PWM_DUTY_R[2]:CLK
+  To:                          pwm_gen_R/used_width[3]:D
+  Delay (ns):                  14.765
+  Slack (ns):                  -5.230
+  Arrival (ns):                20.003
+  Required (ns):               14.773
+
+Path 17
+  From:                        APB_reader_0/PWM_DUTY_R_0_0[3]:CLK
+  To:                          pwm_gen_R/used_width[13]:D
+  Delay (ns):                  14.724
+  Slack (ns):                  -5.223
+  Arrival (ns):                19.976
+  Required (ns):               14.753
+
+Path 18
+  From:                        APB_reader_0/PWM_DUTY_L_0_0[6]:CLK
+  To:                          pwm_gen_L/used_width[6]:D
+  Delay (ns):                  14.690
+  Slack (ns):                  -5.207
+  Arrival (ns):                19.945
+  Required (ns):               14.738
+
+Path 19
+  From:                        APB_reader_0/PWM_DUTY_R[2]:CLK
+  To:                          pwm_gen_R/used_width[13]:D
+  Delay (ns):                  14.714
+  Slack (ns):                  -5.199
+  Arrival (ns):                19.952
+  Required (ns):               14.753
+
+Path 20
+  From:                        APB_reader_0/PWM_DUTY_R[3]:CLK
+  To:                          pwm_gen_R/used_width[3]:D
+  Delay (ns):                  14.732
+  Slack (ns):                  -5.182
+  Arrival (ns):                19.955
+  Required (ns):               14.773
+
+Path 21
+  From:                        APB_reader_0/PWM_DUTY_L[6]:CLK
+  To:                          pwm_gen_L/used_width[6]:D
+  Delay (ns):                  14.638
+  Slack (ns):                  -5.155
+  Arrival (ns):                19.893
+  Required (ns):               14.738
+
+Path 22
+  From:                        APB_reader_0/PWM_DUTY_R[3]:CLK
+  To:                          pwm_gen_R/used_width[13]:D
+  Delay (ns):                  14.681
+  Slack (ns):                  -5.151
+  Arrival (ns):                19.904
+  Required (ns):               14.753
+
+Path 23
+  From:                        APB_reader_0/PWM_DUTY_R[7]:CLK
+  To:                          pwm_gen_R/used_width[3]:D
+  Delay (ns):                  14.645
+  Slack (ns):                  -5.124
+  Arrival (ns):                19.897
+  Required (ns):               14.773
+
+Path 24
+  From:                        APB_reader_0/PWM_DUTY_R[7]:CLK
+  To:                          pwm_gen_R/used_width[8]:D
+  Delay (ns):                  14.624
+  Slack (ns):                  -5.123
+  Arrival (ns):                19.876
+  Required (ns):               14.753
+
+Path 25
+  From:                        APB_reader_0/PWM_DUTY_L[0]:CLK
+  To:                          pwm_gen_L/used_width[8]:D
+  Delay (ns):                  14.609
+  Slack (ns):                  -5.110
+  Arrival (ns):                19.864
+  Required (ns):               14.754
+
+Path 26
+  From:                        APB_reader_0/PWM_DUTY_L[2]:CLK
+  To:                          pwm_gen_L/used_width[9]:D
+  Delay (ns):                  14.593
+  Slack (ns):                  -5.106
+  Arrival (ns):                19.848
+  Required (ns):               14.742
+
+Path 27
+  From:                        APB_reader_0/PWM_DUTY_R_0_0[3]:CLK
+  To:                          pwm_gen_R/used_width[5]:D
+  Delay (ns):                  14.616
+  Slack (ns):                  -5.093
+  Arrival (ns):                19.868
+  Required (ns):               14.775
+
+Path 28
+  From:                        APB_reader_0/PWM_DUTY_R[7]:CLK
+  To:                          pwm_gen_R/used_width[13]:D
+  Delay (ns):                  14.594
+  Slack (ns):                  -5.093
+  Arrival (ns):                19.846
+  Required (ns):               14.753
+
+Path 29
+  From:                        APB_reader_0/PWM_DUTY_R[5]:CLK
+  To:                          pwm_gen_R/used_width[5]:D
+  Delay (ns):                  14.593
+  Slack (ns):                  -5.088
+  Arrival (ns):                19.831
+  Required (ns):               14.743
+
+Path 30
+  From:                        APB_reader_0/PWM_DUTY_R_0_0[6]:CLK
+  To:                          pwm_gen_R/used_width[3]:D
+  Delay (ns):                  14.618
+  Slack (ns):                  -5.073
+  Arrival (ns):                19.846
+  Required (ns):               14.773
+
+Path 31
+  From:                        APB_reader_0/PWM_DUTY_R[2]:CLK
+  To:                          pwm_gen_R/used_width[5]:D
+  Delay (ns):                  14.606
+  Slack (ns):                  -5.069
+  Arrival (ns):                19.844
+  Required (ns):               14.775
+
+Path 32
+  From:                        APB_reader_0/PWM_DUTY_R[0]:CLK
+  To:                          pwm_gen_R/used_width[13]:D
+  Delay (ns):                  14.526
+  Slack (ns):                  -5.046
+  Arrival (ns):                19.767
+  Required (ns):               14.721
+
+Path 33
+  From:                        APB_reader_0/PWM_DUTY_R[0]:CLK
+  To:                          pwm_gen_R/used_width[3]:D
+  Delay (ns):                  14.543
+  Slack (ns):                  -5.043
+  Arrival (ns):                19.784
+  Required (ns):               14.741
+
+Path 34
+  From:                        APB_reader_0/PWM_DUTY_R_0_0[6]:CLK
+  To:                          pwm_gen_R/used_width[13]:D
+  Delay (ns):                  14.567
+  Slack (ns):                  -5.042
+  Arrival (ns):                19.795
+  Required (ns):               14.753
+
+Path 35
+  From:                        APB_reader_0/PWM_DUTY_R[5]:CLK
+  To:                          pwm_gen_R/used_width[8]:D
+  Delay (ns):                  14.549
+  Slack (ns):                  -5.034
+  Arrival (ns):                19.787
+  Required (ns):               14.753
+
+Path 36
+  From:                        APB_reader_0/PWM_DUTY_R[3]:CLK
+  To:                          pwm_gen_R/used_width[5]:D
+  Delay (ns):                  14.573
+  Slack (ns):                  -5.021
+  Arrival (ns):                19.796
+  Required (ns):               14.775
+
+Path 37
+  From:                        APB_reader_0/PWM_DUTY_L[2]:CLK
+  To:                          pwm_gen_L/used_width[12]:D
+  Delay (ns):                  14.495
+  Slack (ns):                  -4.996
+  Arrival (ns):                19.750
+  Required (ns):               14.754
+
+Path 38
+  From:                        APB_reader_0/PWM_DUTY_L[1]:CLK
+  To:                          pwm_gen_L/used_width[6]:D
+  Delay (ns):                  14.490
+  Slack (ns):                  -4.983
+  Arrival (ns):                19.721
+  Required (ns):               14.738
+
+Path 39
+  From:                        APB_reader_0/PWM_DUTY_L[2]:CLK
+  To:                          pwm_gen_L/used_width[14]:D
+  Delay (ns):                  14.495
+  Slack (ns):                  -4.976
+  Arrival (ns):                19.750
+  Required (ns):               14.774
+
+Path 40
+  From:                        APB_reader_0/PWM_DUTY_L_0_0[7]:CLK
+  To:                          pwm_gen_L/used_width[6]:D
+  Delay (ns):                  14.475
+  Slack (ns):                  -4.968
+  Arrival (ns):                19.706
+  Required (ns):               14.738
+
+Path 41
+  From:                        APB_reader_0/PWM_DUTY_R_0_0[3]:CLK
+  To:                          pwm_gen_R/used_width[8]:D
+  Delay (ns):                  14.468
+  Slack (ns):                  -4.967
+  Arrival (ns):                19.720
+  Required (ns):               14.753
+
+Path 42
+  From:                        APB_reader_0/PWM_DUTY_R[7]:CLK
+  To:                          pwm_gen_R/used_width[5]:D
+  Delay (ns):                  14.486
+  Slack (ns):                  -4.963
+  Arrival (ns):                19.738
+  Required (ns):               14.775
+
+Path 43
+  From:                        APB_reader_0/PWM_DUTY_L[2]:CLK
+  To:                          pwm_gen_L/used_width[10]:D
+  Delay (ns):                  14.402
+  Slack (ns):                  -4.951
+  Arrival (ns):                19.657
+  Required (ns):               14.706
+
+Path 44
+  From:                        APB_reader_0/PWM_DUTY_L[2]:CLK
+  To:                          pwm_gen_L/used_width[7]:D
+  Delay (ns):                  14.420
+  Slack (ns):                  -4.943
+  Arrival (ns):                19.675
+  Required (ns):               14.732
+
+Path 45
+  From:                        APB_reader_0/PWM_DUTY_R[2]:CLK
+  To:                          pwm_gen_R/used_width[8]:D
+  Delay (ns):                  14.458
+  Slack (ns):                  -4.943
+  Arrival (ns):                19.696
+  Required (ns):               14.753
+
+Path 46
+  From:                        APB_reader_0/PWM_DUTY_R_0_0[5]:CLK
+  To:                          pwm_gen_R/used_width[3]:D
+  Delay (ns):                  14.484
+  Slack (ns):                  -4.939
+  Arrival (ns):                19.712
+  Required (ns):               14.773
+
+Path 47
+  From:                        APB_reader_0/PWM_DUTY_R[6]:CLK
+  To:                          pwm_gen_R/used_width[3]:D
+  Delay (ns):                  14.443
+  Slack (ns):                  -4.922
+  Arrival (ns):                19.695
+  Required (ns):               14.773
+
+Path 48
+  From:                        APB_reader_0/PWM_DUTY_L[2]:CLK
+  To:                          pwm_gen_L/used_width[5]:D
+  Delay (ns):                  14.360
+  Slack (ns):                  -4.914
+  Arrival (ns):                19.615
+  Required (ns):               14.701
+
+Path 49
+  From:                        APB_reader_0/PWM_DUTY_R_0_0[6]:CLK
+  To:                          pwm_gen_R/used_width[5]:D
+  Delay (ns):                  14.459
+  Slack (ns):                  -4.912
+  Arrival (ns):                19.687
+  Required (ns):               14.775
+
+Path 50
+  From:                        APB_reader_0/PWM_DUTY_R[3]:CLK
+  To:                          pwm_gen_R/used_width[8]:D
+  Delay (ns):                  14.440
+  Slack (ns):                  -4.910
+  Arrival (ns):                19.663
+  Required (ns):               14.753
+
+Path 51
+  From:                        APB_reader_0/PWM_DUTY_R_0_0[5]:CLK
+  To:                          pwm_gen_R/used_width[13]:D
+  Delay (ns):                  14.433
+  Slack (ns):                  -4.908
+  Arrival (ns):                19.661
+  Required (ns):               14.753
+
+Path 52
+  From:                        APB_reader_0/PWM_DUTY_R[6]:CLK
+  To:                          pwm_gen_R/used_width[13]:D
+  Delay (ns):                  14.392
+  Slack (ns):                  -4.891
+  Arrival (ns):                19.644
+  Required (ns):               14.753
+
+Path 53
+  From:                        APB_reader_0/PWM_DUTY_R[0]:CLK
+  To:                          pwm_gen_R/used_width[5]:D
+  Delay (ns):                  14.369
+  Slack (ns):                  -4.867
+  Arrival (ns):                19.610
+  Required (ns):               14.743
+
+Path 54
+  From:                        APB_reader_0/PWM_DUTY_R[4]:CLK
+  To:                          pwm_gen_R/used_width[8]:D
+  Delay (ns):                  14.374
+  Slack (ns):                  -4.859
+  Arrival (ns):                19.612
+  Required (ns):               14.753
+
+Path 55
+  From:                        APB_reader_0/PWM_DUTY_L[2]:CLK
+  To:                          pwm_gen_L/used_width[0]:D
+  Delay (ns):                  14.369
+  Slack (ns):                  -4.850
+  Arrival (ns):                19.624
+  Required (ns):               14.774
+
+Path 56
+  From:                        APB_reader_0/PWM_DUTY_L_0_0[5]:CLK
+  To:                          pwm_gen_L/used_width[6]:D
+  Delay (ns):                  14.342
+  Slack (ns):                  -4.835
+  Arrival (ns):                19.573
+  Required (ns):               14.738
+
+Path 57
+  From:                        APB_reader_0/PWM_DUTY_R[0]:CLK
+  To:                          pwm_gen_R/used_width[8]:D
+  Delay (ns):                  14.332
+  Slack (ns):                  -4.820
+  Arrival (ns):                19.573
+  Required (ns):               14.753
+
+Path 58
+  From:                        APB_reader_0/PWM_DUTY_L[3]:CLK
+  To:                          pwm_gen_L/used_width[6]:D
+  Delay (ns):                  14.270
+  Slack (ns):                  -4.819
+  Arrival (ns):                19.525
+  Required (ns):               14.706
+
+Path 59
+  From:                        APB_reader_0/PWM_DUTY_R_0_0[3]:CLK
+  To:                          pwm_gen_R/used_width[2]:D
+  Delay (ns):                  14.321
+  Slack (ns):                  -4.800
+  Arrival (ns):                19.573
+  Required (ns):               14.773
+
+Path 60
+  From:                        APB_reader_0/PWM_DUTY_R_0_0[5]:CLK
+  To:                          pwm_gen_R/used_width[5]:D
+  Delay (ns):                  14.325
+  Slack (ns):                  -4.778
+  Arrival (ns):                19.553
+  Required (ns):               14.775
+
+Path 61
+  From:                        APB_reader_0/PWM_DUTY_R[2]:CLK
+  To:                          pwm_gen_R/used_width[2]:D
+  Delay (ns):                  14.311
+  Slack (ns):                  -4.776
+  Arrival (ns):                19.549
+  Required (ns):               14.773
+
+Path 62
+  From:                        APB_reader_0/PWM_DUTY_L_0_0[6]:CLK
+  To:                          pwm_gen_L/used_width[9]:D
+  Delay (ns):                  14.282
+  Slack (ns):                  -4.763
+  Arrival (ns):                19.537
+  Required (ns):               14.774
+
+Path 63
+  From:                        APB_reader_0/PWM_DUTY_R[6]:CLK
+  To:                          pwm_gen_R/used_width[5]:D
+  Delay (ns):                  14.284
+  Slack (ns):                  -4.761
+  Arrival (ns):                19.536
+  Required (ns):               14.775
+
+Path 64
+  From:                        APB_reader_0/PWM_DUTY_L[2]:CLK
+  To:                          pwm_gen_L/used_width[2]:D
+  Delay (ns):                  14.222
+  Slack (ns):                  -4.755
+  Arrival (ns):                19.477
+  Required (ns):               14.722
+
+Path 65
+  From:                        APB_reader_0/PWM_DUTY_R[5]:CLK
+  To:                          pwm_gen_R/used_width[2]:D
+  Delay (ns):                  14.288
+  Slack (ns):                  -4.753
+  Arrival (ns):                19.526
+  Required (ns):               14.773
+
+Path 66
+  From:                        APB_reader_0/PWM_DUTY_L[2]:CLK
+  To:                          pwm_gen_L/used_width[3]:D
+  Delay (ns):                  14.222
+  Slack (ns):                  -4.735
+  Arrival (ns):                19.477
+  Required (ns):               14.742
+
+Path 67
+  From:                        APB_reader_0/PWM_DUTY_R[3]:CLK
+  To:                          pwm_gen_R/used_width[2]:D
+  Delay (ns):                  14.278
+  Slack (ns):                  -4.728
+  Arrival (ns):                19.501
+  Required (ns):               14.773
+
+Path 68
+  From:                        APB_reader_0/PWM_DUTY_R[4]:CLK
+  To:                          pwm_gen_R/used_width[13]:D
+  Delay (ns):                  14.206
+  Slack (ns):                  -4.723
+  Arrival (ns):                19.444
+  Required (ns):               14.721
+
+Path 69
+  From:                        APB_reader_0/PWM_DUTY_R[4]:CLK
+  To:                          pwm_gen_R/used_width[3]:D
+  Delay (ns):                  14.223
+  Slack (ns):                  -4.720
+  Arrival (ns):                19.461
+  Required (ns):               14.741
+
+Path 70
+  From:                        APB_reader_0/PWM_DUTY_L_0_0[6]:CLK
+  To:                          pwm_gen_L/used_width[12]:D
+  Delay (ns):                  14.181
+  Slack (ns):                  -4.714
+  Arrival (ns):                19.436
+  Required (ns):               14.722
+
+Path 71
+  From:                        APB_reader_0/PWM_DUTY_L[6]:CLK
+  To:                          pwm_gen_L/used_width[9]:D
+  Delay (ns):                  14.230
+  Slack (ns):                  -4.711
+  Arrival (ns):                19.485
+  Required (ns):               14.774
+
+Path 72
+  From:                        APB_reader_0/PWM_DUTY_R_0_0[3]:CLK
+  To:                          pwm_gen_R/used_width[6]:D
+  Delay (ns):                  14.226
+  Slack (ns):                  -4.703
+  Arrival (ns):                19.478
+  Required (ns):               14.775
+
+Path 73
+  From:                        APB_reader_0/PWM_DUTY_L_0_0[6]:CLK
+  To:                          pwm_gen_L/used_width[14]:D
+  Delay (ns):                  14.181
+  Slack (ns):                  -4.694
+  Arrival (ns):                19.436
+  Required (ns):               14.742
+
+Path 74
+  From:                        APB_reader_0/PWM_DUTY_R[1]:CLK
+  To:                          pwm_gen_R/used_width[3]:D
+  Delay (ns):                  14.200
+  Slack (ns):                  -4.679
+  Arrival (ns):                19.452
+  Required (ns):               14.773
+
+Path 75
+  From:                        APB_reader_0/PWM_DUTY_R[2]:CLK
+  To:                          pwm_gen_R/used_width[6]:D
+  Delay (ns):                  14.216
+  Slack (ns):                  -4.679
+  Arrival (ns):                19.454
+  Required (ns):               14.775
+
+Path 76
+  From:                        APB_reader_0/PWM_DUTY_R[7]:CLK
+  To:                          pwm_gen_R/used_width[2]:D
+  Delay (ns):                  14.191
+  Slack (ns):                  -4.670
+  Arrival (ns):                19.443
+  Required (ns):               14.773
+
+Path 77
+  From:                        APB_reader_0/PWM_DUTY_L[6]:CLK
+  To:                          pwm_gen_L/used_width[12]:D
+  Delay (ns):                  14.129
+  Slack (ns):                  -4.662
+  Arrival (ns):                19.384
+  Required (ns):               14.722
+
+Path 78
+  From:                        APB_reader_0/PWM_DUTY_R[5]:CLK
+  To:                          pwm_gen_R/used_width[6]:D
+  Delay (ns):                  14.193
+  Slack (ns):                  -4.656
+  Arrival (ns):                19.431
+  Required (ns):               14.775
+
+Path 79
+  From:                        APB_reader_0/PWM_DUTY_R_0_0[5]:CLK
+  To:                          pwm_gen_R/used_width[8]:D
+  Delay (ns):                  14.177
+  Slack (ns):                  -4.652
+  Arrival (ns):                19.405
+  Required (ns):               14.753
+
+Path 80
+  From:                        APB_reader_0/PWM_DUTY_L_0_0[6]:CLK
+  To:                          pwm_gen_L/used_width[10]:D
+  Delay (ns):                  14.133
+  Slack (ns):                  -4.650
+  Arrival (ns):                19.388
+  Required (ns):               14.738
+
+Path 81
+  From:                        APB_reader_0/PWM_DUTY_R[1]:CLK
+  To:                          pwm_gen_R/used_width[13]:D
+  Delay (ns):                  14.149
+  Slack (ns):                  -4.648
+  Arrival (ns):                19.401
+  Required (ns):               14.753
+
+Path 82
+  From:                        APB_reader_0/PWM_DUTY_L[6]:CLK
+  To:                          pwm_gen_L/used_width[14]:D
+  Delay (ns):                  14.129
+  Slack (ns):                  -4.642
+  Arrival (ns):                19.384
+  Required (ns):               14.742
+
+Path 83
+  From:                        APB_reader_0/PWM_DUTY_R[6]:CLK
+  To:                          pwm_gen_R/used_width[8]:D
+  Delay (ns):                  14.136
+  Slack (ns):                  -4.635
+  Arrival (ns):                19.388
+  Required (ns):               14.753
+
+Path 84
+  From:                        APB_reader_0/PWM_DUTY_L[2]:CLK
+  To:                          pwm_gen_L/used_width[13]:D
+  Delay (ns):                  14.119
+  Slack (ns):                  -4.632
+  Arrival (ns):                19.374
+  Required (ns):               14.742
+
+Path 85
+  From:                        APB_reader_0/PWM_DUTY_R[3]:CLK
+  To:                          pwm_gen_R/used_width[6]:D
+  Delay (ns):                  14.183
+  Slack (ns):                  -4.631
+  Arrival (ns):                19.406
+  Required (ns):               14.775
+
+Path 86
+  From:                        APB_reader_0/PWM_DUTY_R_0_0[6]:CLK
+  To:                          pwm_gen_R/used_width[2]:D
+  Delay (ns):                  14.164
+  Slack (ns):                  -4.619
+  Arrival (ns):                19.392
+  Required (ns):               14.773
+
+Path 87
+  From:                        APB_reader_0/PWM_DUTY_L_0_0[6]:CLK
+  To:                          pwm_gen_L/used_width[5]:D
+  Delay (ns):                  14.083
+  Slack (ns):                  -4.605
+  Arrival (ns):                19.338
+  Required (ns):               14.733
+
+Path 88
+  From:                        APB_reader_0/PWM_DUTY_L[6]:CLK
+  To:                          pwm_gen_L/used_width[10]:D
+  Delay (ns):                  14.081
+  Slack (ns):                  -4.598
+  Arrival (ns):                19.336
+  Required (ns):               14.738
+
+Path 89
+  From:                        APB_reader_0/PWM_DUTY_L_0_0[6]:CLK
+  To:                          pwm_gen_L/used_width[7]:D
+  Delay (ns):                  14.042
+  Slack (ns):                  -4.597
+  Arrival (ns):                19.297
+  Required (ns):               14.700
+
+Path 90
+  From:                        APB_reader_0/PWM_DUTY_R[7]:CLK
+  To:                          pwm_gen_R/used_width[6]:D
+  Delay (ns):                  14.096
+  Slack (ns):                  -4.573
+  Arrival (ns):                19.348
+  Required (ns):               14.775
+
+Path 91
+  From:                        APB_reader_0/PWM_DUTY_L[6]:CLK
+  To:                          pwm_gen_L/used_width[5]:D
+  Delay (ns):                  14.031
+  Slack (ns):                  -4.553
+  Arrival (ns):                19.286
+  Required (ns):               14.733
+
+Path 92
+  From:                        APB_reader_0/PWM_DUTY_R_0_0[3]:CLK
+  To:                          pwm_gen_R/used_width[1]:D
+  Delay (ns):                  14.041
+  Slack (ns):                  -4.546
+  Arrival (ns):                19.293
+  Required (ns):               14.747
+
+Path 93
+  From:                        APB_reader_0/PWM_DUTY_L[6]:CLK
+  To:                          pwm_gen_L/used_width[7]:D
+  Delay (ns):                  13.990
+  Slack (ns):                  -4.545
+  Arrival (ns):                19.245
+  Required (ns):               14.700
+
+Path 94
+  From:                        APB_reader_0/PWM_DUTY_R[4]:CLK
+  To:                          pwm_gen_R/used_width[5]:D
+  Delay (ns):                  14.049
+  Slack (ns):                  -4.544
+  Arrival (ns):                19.287
+  Required (ns):               14.743
+
+Path 95
+  From:                        APB_reader_0/PWM_DUTY_L[1]:CLK
+  To:                          pwm_gen_L/used_width[9]:D
+  Delay (ns):                  14.082
+  Slack (ns):                  -4.539
+  Arrival (ns):                19.313
+  Required (ns):               14.774
+
+Path 96
+  From:                        APB_reader_0/PWM_DUTY_L_0_0[7]:CLK
+  To:                          pwm_gen_L/used_width[9]:D
+  Delay (ns):                  14.067
+  Slack (ns):                  -4.524
+  Arrival (ns):                19.298
+  Required (ns):               14.774
+
+Path 97
+  From:                        APB_reader_0/PWM_DUTY_R_0_0[6]:CLK
+  To:                          pwm_gen_R/used_width[6]:D
+  Delay (ns):                  14.069
+  Slack (ns):                  -4.522
+  Arrival (ns):                19.297
+  Required (ns):               14.775
+
+Path 98
+  From:                        APB_reader_0/PWM_DUTY_R[2]:CLK
+  To:                          pwm_gen_R/used_width[1]:D
+  Delay (ns):                  14.031
+  Slack (ns):                  -4.522
+  Arrival (ns):                19.269
+  Required (ns):               14.747
+
+Path 99
+  From:                        APB_reader_0/PWM_DUTY_R[0]:CLK
+  To:                          pwm_gen_R/used_width[2]:D
+  Delay (ns):                  14.019
+  Slack (ns):                  -4.519
+  Arrival (ns):                19.260
+  Required (ns):               14.741
+
+Path 100
+  From:                        APB_reader_0/PWM_DUTY_R[1]:CLK
+  To:                          pwm_gen_R/used_width[5]:D
+  Delay (ns):                  14.041
+  Slack (ns):                  -4.518
+  Arrival (ns):                19.293
+  Required (ns):               14.775
+

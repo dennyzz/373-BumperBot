@@ -1,7 +1,7 @@
 //number of cycles we store the value from APB
 //if it exceeds this time, means that the PS controller stopped sending signal for too long
 //reset the values in the register to zero so that the car stops
-`define store_count  	100000000     //wait for 1 second 
+`define store_count  	50000000     //wait for 0.5 second
 
 module APB_reader(
     /*** APB3 BUS INTERFACE ***/
@@ -26,7 +26,7 @@ module APB_reader(
     ); 
 
     wire write;
-    reg [$clog2(`store_count)-1:0] count;
+    reg [$clog2(`store_count):0] count;
 
     assign PSLVERR = 0;
     assign PREADY  = 1;
@@ -58,7 +58,8 @@ module APB_reader(
             PWM_DUTY_R <= PWDATA[15:8]; 
             PWM_DUTY_L <= PWDATA[23:16];
             count <= 0;
-        end else if (count > `store_count) begin
+        end 
+        else if (count > `store_count) begin
             PWM_DUTY_R <= 0; //default nothing
             PWM_DUTY_L <= 0;
             PWM_EN_R <= 0;

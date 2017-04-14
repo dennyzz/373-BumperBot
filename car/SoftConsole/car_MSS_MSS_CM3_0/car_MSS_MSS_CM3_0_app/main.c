@@ -12,7 +12,6 @@
 #include <inttypes.h>
 
 
-
 void uart1_rx_handler( mss_uart_instance_t * this_uart )
 {
 	static uint8_t rx_buff[8] = {128, 128, 128, 128, 128, 128, 128, 128};
@@ -24,8 +23,8 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart )
 //	printf("\rrx_buff3: %x\n", rx_buff[3]);
 //	printf("\rrx_buff4: %x\n", rx_buff[4]);
 //	printf("\rrx_buff5: %x\n", rx_buff[5]);
-//	printf("\rrx_buff5: %x\n", rx_buff[6]);
-//	printf("\rrx_buff5: %x\n", rx_buff[7]);
+//	printf("\rrx_buff6: %x\n", rx_buff[6]);
+//	printf("\rrx_buff7: %x\n", rx_buff[7]);
 
 	setMotorAPB(rx_buff);
 
@@ -34,6 +33,8 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart )
 
 int main()
 {
+	printf("main started");
+
 	initMotor();
 
 	MSS_UART_init(&g_mss_uart1, MSS_UART_57600_BAUD, MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT);
@@ -42,16 +43,19 @@ int main()
 
 	while( 1 )
 	{
-//		static uint8_t rx_buff[8] = {255, 255, 255, 255, 255, 255, 255, 255};
+		//printf("\rin while loop\n");
+
+//		uint8_t buff[8] = {0, 255, 128, 128, 128, 128, 128, 128};
 //
-//		printf("\rrx_buff0: %x\n", rx_buff[0]);
-//		printf("\rrx_buff1: %x\n", rx_buff[1]);
-//		printf("\rrx_buff2: %x\n", rx_buff[2]);
-//		printf("\rrx_buff3: %x\n", rx_buff[3]);
-//		printf("\rrx_buff4: %x\n", rx_buff[4]);
-//		printf("\rrx_buff5: %x\n", rx_buff[5]);
-//		printf("\rrx_buff5: %x\n", rx_buff[6]);
-//		printf("\rrx_buff5: %x\n", rx_buff[7]);
-//		setMotorAPB(rx_buff);
+//		printf("\rrx_buff0: %x\n", buff[0]);
+//		printf("\rrx_buff1: %x\n", buff[1]);
+//		printf("\rrx_buff2: %x\n", buff[2]);
+//		printf("\rrx_buff3: %x\n", buff[3]);
+//		printf("\rrx_buff4: %x\n", buff[4]);
+//		printf("\rrx_buff5: %x\n", buff[5]);
+//		printf("\rrx_buff6: %x\n", buff[6]);
+//		printf("\rrx_buff7: %x\n", buff[7]);
+//
+//		setMotorAPB(buff);
 	}
 }

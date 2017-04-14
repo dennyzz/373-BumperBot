@@ -11,29 +11,29 @@
     <hdl-type>Verilog</hdl-type>
     <project-description>
     </project-description>
-    <location>C:/Users/WYZ/Desktop/car_aprl7/car/component/work/car</location>
-    <state>GENERATED ( Wed Apr 12 03:45:15 2017 )</state>
-    <swide-toolchain>SoftConsole workspace generated to C:\Users\WYZ\Desktop\car_aprl7\car\SoftConsole</swide-toolchain>
+    <location>C:/Users/weeyizhi/Desktop/car_aprl7/car/component/work/car</location>
+    <state>GENERATED ( Thu Apr 13 20:46:09 2017 )</state>
+    <swide-toolchain>SoftConsole workspace generated to C:\Users\weeyizhi\Desktop\car_aprl7\car\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
   </site-map>
   <fileset>
     <name>HDL File(s)</name>
-    <file>C:\Users\WYZ\Desktop\car_aprl7\car\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v</file>
-    <file>C:\Users\WYZ\Desktop\car_aprl7\car\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v</file>
-    <file>C:\Users\WYZ\Desktop\car_aprl7\car\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v</file>
-    <file>C:\Users\WYZ\Desktop\car_aprl7\car\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v</file>
-    <file>C:\Users\WYZ\Desktop\car_aprl7\car\component\work\car\car.v</file>
-    <file>C:\Users\WYZ\Desktop\car_aprl7\car\component\work\car_MSS\car_MSS.v</file>
-    <file>C:\Users\WYZ\Desktop\car_aprl7\car\component\work\car_MSS\MSS_CCC_0\car_MSS_tmp_MSS_CCC_0_MSS_CCC.v</file>
-    <file>C:\Users\WYZ\Desktop\car_aprl7\car\component\work\car_MSS\mss_tshell.v</file>
-    <file>C:\Users\WYZ\Desktop\car_aprl7\car\hdl\APB_reader.v</file>
-    <file>C:\Users\WYZ\Desktop\car_aprl7\car\hdl\dir_sel.v</file>
-    <file>C:\Users\WYZ\Desktop\car_aprl7\car\hdl\pwm_gen.v</file>
+    <file>C:\Users\weeyizhi\Desktop\car_aprl7\car\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v</file>
+    <file>C:\Users\weeyizhi\Desktop\car_aprl7\car\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v</file>
+    <file>C:\Users\weeyizhi\Desktop\car_aprl7\car\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v</file>
+    <file>C:\Users\weeyizhi\Desktop\car_aprl7\car\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v</file>
+    <file>C:\Users\weeyizhi\Desktop\car_aprl7\car\component\work\car\car.v</file>
+    <file>C:\Users\weeyizhi\Desktop\car_aprl7\car\component\work\car_MSS\car_MSS.v</file>
+    <file>C:\Users\weeyizhi\Desktop\car_aprl7\car\component\work\car_MSS\MSS_CCC_0\car_MSS_tmp_MSS_CCC_0_MSS_CCC.v</file>
+    <file>C:\Users\weeyizhi\Desktop\car_aprl7\car\component\work\car_MSS\mss_tshell.v</file>
+    <file>C:\Users\weeyizhi\Desktop\car_aprl7\car\hdl\APB_reader.v</file>
+    <file>C:\Users\weeyizhi\Desktop\car_aprl7\car\hdl\dir_sel.v</file>
+    <file>C:\Users\weeyizhi\Desktop\car_aprl7\car\hdl\pwm_gen.v</file>
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>C:\Users\WYZ\Desktop\car_aprl7\car\component\work\./MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>C:\Users\weeyizhi\Desktop\car_aprl7\car\component\work\./MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
   <io>
     <port-name>h_bridge_in_2_R</port-name>
@@ -107,7 +107,7 @@
   <core type="ComponentModule">
     <core-type>ComponentModule</core-type>
     <core-exttype>HierSpiritDesign</core-exttype>
-    <core-location>C:/Users/WYZ/Desktop/car_aprl7/car/component/work/car_MSS</core-location>
+    <core-location>C:/Users/weeyizhi/Desktop/car_aprl7/car/component/work/car_MSS</core-location>
     <core-name>car_MSS_0</core-name>
   </core>
   <core type="SpiritModule">
@@ -499,12 +499,28 @@ This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
 This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
     <core-name>MSS_Timer_Driver_0</core-name>
   </firmware_core>
-  <firmware_core>
+  <firmware_core type="FirmWareModule">
     <core-exttype>IP</core-exttype>
+    <core-type>FirmWareModule</core-type>
+    <core-vendor>Actel</core-vendor>
+    <core-lib>Firmware</core-lib>
+    <core-intname>MSS_UART_Driver</core-intname>
+    <core-ver>2.4.101</core-ver>
+    <core-desc>SmartFusion microcontroller subsystem (MSS) UART bare metal software driver.
+
+This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
     <core-name>MSS_UART_Driver_0</core-name>
   </firmware_core>
-  <firmware_core>
+  <firmware_core type="FirmWareModule">
     <core-exttype>IP</core-exttype>
+    <core-type>FirmWareModule</core-type>
+    <core-vendor>Actel</core-vendor>
+    <core-lib>Firmware</core-lib>
+    <core-intname>MSS_UART_Driver</core-intname>
+    <core-ver>2.4.101</core-ver>
+    <core-desc>SmartFusion microcontroller subsystem (MSS) UART bare metal software driver.
+
+This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
     <core-name>MSS_UART_Driver_1</core-name>
   </firmware_core>
   <firmware_core type="FirmWareModule">

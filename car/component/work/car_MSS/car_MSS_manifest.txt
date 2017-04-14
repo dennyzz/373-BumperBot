@@ -1,22 +1,22 @@
 Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
 
-Date      :  Fri Apr 07 20:53:15 2017
-Project   :  C:\Users\niechris\Documents\373_project\373-BumperBot-master\373-BumperBot-master\car
+Date      :  Sat Apr 08 21:26:00 2017
+Project   :  C:\Users\weeyizhi\Desktop\car_aprl7\car
 Component :  car_MSS
 Family    :  SmartFusion
 
 
 HDL source files for all Synthesis and Simulation tools:
-    C:/Users/niechris/Documents/373_project/373-BumperBot-master/373-BumperBot-master/car/component/work/car_MSS/MSS_CCC_0/car_MSS_tmp_MSS_CCC_0_MSS_CCC.v
-    C:/Users/niechris/Documents/373_project/373-BumperBot-master/373-BumperBot-master/car/component/work/car_MSS/car_MSS.v
+    C:/Users/weeyizhi/Desktop/car_aprl7/car/component/work/car_MSS/MSS_CCC_0/car_MSS_tmp_MSS_CCC_0_MSS_CCC.v
+    C:/Users/weeyizhi/Desktop/car_aprl7/car/component/work/car_MSS/car_MSS.v
 
 HDL source files for Synopsys SynplifyPro Synthesis tool:
-    C:/Users/niechris/Documents/373_project/373-BumperBot-master/373-BumperBot-master/car/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v
-    C:/Users/niechris/Documents/373_project/373-BumperBot-master/373-BumperBot-master/car/component/work/car_MSS/mss_tshell.v
-    C:/Users/niechris/Documents/373_project/373-BumperBot-master/373-BumperBot-master/car/component/work/car_MSS/mss_tshell_syn.sdc
+    C:/Users/weeyizhi/Desktop/car_aprl7/car/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v
+    C:/Users/weeyizhi/Desktop/car_aprl7/car/component/work/car_MSS/mss_tshell.v
+    C:/Users/weeyizhi/Desktop/car_aprl7/car/component/work/car_MSS/mss_tshell_syn.sdc
 
 Stimulus files for all Simulation tools:
-    C:/Users/niechris/Documents/373_project/373-BumperBot-master/373-BumperBot-master/car/component/Actel/SmartFusionMSS/MSS/2.5.200/CompileDssBfm.tcl
-    C:/Users/niechris/Documents/373_project/373-BumperBot-master/373-BumperBot-master/car/component/Actel/SmartFusionMSS/MSS/2.5.200/bfmtovec.exe
-    C:/Users/niechris/Documents/373_project/373-BumperBot-master/373-BumperBot-master/car/component/work/car_MSS/MSS_ENVM_0/test.bfm
+    C:/Users/weeyizhi/Desktop/car_aprl7/car/component/Actel/SmartFusionMSS/MSS/2.5.200/CompileDssBfm.tcl
+    C:/Users/weeyizhi/Desktop/car_aprl7/car/component/Actel/SmartFusionMSS/MSS/2.5.200/bfmtovec.exe
+    C:/Users/weeyizhi/Desktop/car_aprl7/car/component/work/car_MSS/MSS_ENVM_0/test.bfm
 

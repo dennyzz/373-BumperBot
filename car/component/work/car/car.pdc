@@ -3,7 +3,7 @@
 
 # Version: v11.7 SP1 11.7.1.14
 # Family: SmartFusion , Die: A2F200M3F , Package: 484 FBGA
-# Date generated: Wed Apr 12 03:45:09 2017 
+# Date generated: Thu Apr 13 20:46:02 2017 
 
 
 # 
@@ -86,7 +86,8 @@ set_io UART_1_TXD            \
 # Old IO constraints, commented out for reference
 #
 
-# set_io UART_0_RXD -GROUP_NAME UART_0_PADs -DIRECTION INPUT 
-# set_io UART_0_TXD -GROUP_NAME UART_0_PADs -DIRECTION OUTPUT 
-# set_io UART_1_RXD -GROUP_NAME UART_1_PADs -DIRECTION INPUT 
-# set_io UART_1_TXD -GROUP_NAME UART_1_PADs -DIRECTION OUTPUT 
+# set_io MSS_RESET_N -iostd LVTTL -DIRECTION INPUT 
+# set_io UART_0_RXD -iostd LVTTL -GROUP_NAME UART_0_PADs -DIRECTION INPUT 
+# set_io UART_0_TXD -iostd LVTTL -GROUP_NAME UART_0_PADs -DIRECTION OUTPUT 
+# set_io UART_1_RXD -iostd LVTTL -GROUP_NAME UART_1_PADs -DIRECTION INPUT 
+# set_io UART_1_TXD -iostd LVTTL -GROUP_NAME UART_1_PADs -DIRECTION OUTPUT 

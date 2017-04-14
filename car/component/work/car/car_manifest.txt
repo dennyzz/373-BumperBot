@@ -1,17 +1,17 @@
 Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
 
-Date      :  Wed Apr 12 03:45:17 2017
-Project   :  C:\Users\WYZ\Desktop\car_aprl7\car
+Date      :  Thu Apr 13 20:46:12 2017
+Project   :  C:\Users\weeyizhi\Desktop\car_aprl7\car
 Component :  car
 Family    :  SmartFusion
 
 
 HDL source files for all Synthesis and Simulation tools:
-    C:/Users/WYZ/Desktop/car_aprl7/car/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3.v
-    C:/Users/WYZ/Desktop/car_aprl7/car/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_iaddr_reg.v
-    C:/Users/WYZ/Desktop/car_aprl7/car/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_muxptob3.v
-    C:/Users/WYZ/Desktop/car_aprl7/car/component/work/car/car.v
+    C:/Users/weeyizhi/Desktop/car_aprl7/car/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3.v
+    C:/Users/weeyizhi/Desktop/car_aprl7/car/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_iaddr_reg.v
+    C:/Users/weeyizhi/Desktop/car_aprl7/car/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_muxptob3.v
+    C:/Users/weeyizhi/Desktop/car_aprl7/car/component/work/car/car.v
 
 Stimulus files for all Simulation tools:
-    C:/Users/WYZ/Desktop/car_aprl7/car/component/work/car/subsystem.bfm
+    C:/Users/weeyizhi/Desktop/car_aprl7/car/component/work/car/subsystem.bfm
 

@@ -1,7 +1,7 @@
 //number of cycles we store the value from APB
 //if it exceeds this time, means that the PS controller stopped sending signal for too long
 //reset the values in the register to zero so that the car stops
-`define store_count  	50000000     //wait for 0.5 second
+`define store_count  	100000000     //wait for 1 second
 
 module APB_reader(
     /*** APB3 BUS INTERFACE ***/

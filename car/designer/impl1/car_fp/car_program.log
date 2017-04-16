@@ -3,41 +3,42 @@ Version: 11.7.1.14
 Release: v11.7 SP1.1
 
 Software Version: 11.7.1.14
-PDB file 'C:\Users\weeyizhi\Desktop\car_aprl7\car\designer\impl1\car_fp\car.pdb' has been loaded
+PDB file 'C:\Users\weeyizhi\Desktop\car_final\car\designer\impl1\car_fp\car.pdb' has been loaded
 successfully.
-DESIGN : car;  CHECKSUM : A6E9;  PDB_VERSION : 1.9
+DESIGN : car;  CHECKSUM : 73B7;  PDB_VERSION : 1.9
 Driver : 3.0.0 build 1
-programmer '79439' : FlashPro3
-Opened 'C:\Users\weeyizhi\Desktop\car_aprl7\car\designer\impl1\car_fp\car.pro'
+programmer '80256' : FlashPro3
+Warning: The programmer with id '79439' in the project file cannot be detected and connected.
+Opened 'C:\Users\weeyizhi\Desktop\car_final\car\designer\impl1\car_fp\car.pro'
 The 'open_project' command succeeded.
 The 'set_programming_file' command succeeded.
 The 'set_device_type' command succeeded.
 The 'set_device_package' command succeeded.
 Info: Adding Flash Memory data from file
-      C:\Users\weeyizhi\Desktop\car_aprl7\car\component\work\car_MSS\MSS_ENVM_0\MSS_ENVM_0.efc.
+      C:\Users\weeyizhi\Desktop\car_final\car\component\work\car_MSS\MSS_ENVM_0\MSS_ENVM_0.efc.
 Info: Adding FPGA Array data from file
-      C:\Users\weeyizhi\Desktop\car_aprl7\car\designer\impl1\car.fdb.
-PDB file 'C:\Users\weeyizhi\Desktop\car_aprl7\car\designer\impl1\car_fp\car.pdb' has been loaded
+      C:\Users\weeyizhi\Desktop\car_final\car\designer\impl1\car.fdb.
+PDB file 'C:\Users\weeyizhi\Desktop\car_final\car\designer\impl1\car_fp\car.pdb' has been loaded
 successfully.
-DESIGN : car;  CHECKSUM : 7E0B;  PDB_VERSION : 1.9
+DESIGN : car;  CHECKSUM : 73B7;  PDB_VERSION : 1.9
 The 'update_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
-programmer '79439' : Scan Chain...
-Warning: programmer '79439' : Vpump has been selected on programmer AND an externally provided
+programmer '80256' : Scan Chain...
+Warning: programmer '80256' : Vpump has been selected on programmer AND an externally provided
          Vpump has also been detected. Using externally provided Vpump voltage source.
-programmer '79439' : Scan Chain PASSED.
-programmer '79439' : Executing action PROGRAM
-programmer '79439' : EXPORT FSN[48] = 014b3e64b06c
-programmer '79439' : Erase ...
-programmer '79439' : Completed erase
-programmer '79439' : EXPORT CHECKSUM: [16] = 7e0b
-programmer '79439' : Programming FPGA Array
-programmer '79439' : Verifying FPGA Array
-programmer '79439' :         Verifying FPGA Array -- pass
-programmer '79439' : Program System Init and Boot Clients...
-programmer '79439' : Verify System Init and Boot Clients...
-programmer '79439' : Finished: Thu Apr 13 20:49:04 2017 (Elapsed time 00:00:38)
-programmer '79439' : Executing action PROGRAM PASSED.
+programmer '80256' : Scan Chain PASSED.
+programmer '80256' : Executing action PROGRAM
+programmer '80256' : EXPORT FSN[48] = 014b3e64ac64
+programmer '80256' : Erase ...
+programmer '80256' : Completed erase
+programmer '80256' : EXPORT CHECKSUM: [16] = 73b7
+programmer '80256' : Programming FPGA Array
+programmer '80256' : Verifying FPGA Array
+programmer '80256' :         Verifying FPGA Array -- pass
+programmer '80256' : Program System Init and Boot Clients...
+programmer '80256' : Verify System Init and Boot Clients...
+programmer '80256' : Finished: Sat Apr 15 14:53:17 2017 (Elapsed time 00:00:39)
+programmer '80256' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o
 

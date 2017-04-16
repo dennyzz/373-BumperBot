@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Thu Apr 13 20:47:38 2017 ***************************************************************************
+                          Fri Apr 14 21:43:28 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.7 SP1.1
 Version: 11.7.1.14
 File Name: C:\Users\weeyizhi\Desktop\car_aprl7\car\designer\impl1\car.adb
 Design Name: car  Design State: layout
-Last Saved: Thu Apr 13 20:47:00 2017
+Last Saved: Fri Apr 14 21:42:51 2017
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Thu Apr 13 20:46:45 2017:
+Source File(s) Imported on Fri Apr 14 21:42:36 2017:
         C:\Users\weeyizhi\Desktop\car_aprl7\car\synthesis\car.edn
         C:\Users\weeyizhi\Desktop\car_aprl7\car\component\work\car\car.pdc
 
@@ -391,9 +391,9 @@ Optimized macros:
   - Buffers:                0
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        38
+  - Logic combining:        53
 
-    Total macros optimized  38
+    Total macros optimized  53
 
 There were 0 error(s) and 304 warning(s) in this design.
 =====================================================================
@@ -415,7 +415,7 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:    978  Total:   4608   (21.22%)
+    Fabric                     Used:    925  Total:   4608   (20.07%)
     Fabric IO (W/ clocks)      Used:      6  Total:     94   (6.38%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
@@ -444,8 +444,8 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 842          | 842
-    SEQ     | 136          | 136
+    COMB    | 792          | 792
+    SEQ     | 133          | 133
 
 I/O Function:
 
@@ -477,57 +477,57 @@ Net information report:
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    137     CLK_NET       Net   : FAB_CLK
+    134     CLK_NET       Net   : FAB_CLK
                           Driver: car_MSS_0/MSS_CCC_0/I_MSSCCC
                           Source: ESSENTIAL
 
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    24      INT_NET       Net   : APB_reader_0_PWM_DUTY_L_0[3]
-                          Driver: APB_reader_0/PWM_DUTY_L[3]
-    24      INT_NET       Net   : APB_reader_0_PWM_DUTY_R_0[7]
-                          Driver: APB_reader_0/PWM_DUTY_R[7]
     24      INT_NET       Net   : APB_reader_0/un1_write_1_0_0
-                          Driver: APB_reader_0/count_RNITMF28[25]
-    23      INT_NET       Net   : APB_reader_0_PWM_DUTY_R_0[2]
-                          Driver: APB_reader_0/PWM_DUTY_R[2]
-    23      INT_NET       Net   : APB_reader_0_PWM_DUTY_L_0[2]
-                          Driver: APB_reader_0/PWM_DUTY_L[2]
-    23      INT_NET       Net   : APB_reader_0/un1_write_1
-                          Driver: APB_reader_0/count_RNITMF28_0[25]
+                          Driver: APB_reader_0/count_RNI8IFD8[26]
+    24      INT_NET       Net   : APB_reader_0/un1_write_1
+                          Driver: APB_reader_0/count_RNI8IFD8_0[26]
+    23      INT_NET       Net   : APB_reader_0_PWM_DUTY_L_0[4]
+                          Driver: APB_reader_0/PWM_DUTY_L[4]
+    22      INT_NET       Net   : APB_reader_0_PWM_DUTY_L_0[3]
+                          Driver: APB_reader_0/PWM_DUTY_L[3]
     21      INT_NET       Net   : car_MSS_0_M2F_RESET_N
                           Driver: car_MSS_0/MSS_ADLIB_INST
-    21      INT_NET       Net   : APB_reader_0_PWM_DUTY_L_0[1]
-                          Driver: APB_reader_0/PWM_DUTY_L[1]
-    21      INT_NET       Net   : APB_reader_0/write
-                          Driver: APB_reader_0/write
-    20      INT_NET       Net   : APB_reader_0_PWM_DUTY_R_0[1]
-                          Driver: APB_reader_0/PWM_DUTY_R[1]
+    21      INT_NET       Net   : APB_reader_0_PWM_DUTY_R_0[7]
+                          Driver: APB_reader_0/PWM_DUTY_R[7]
+    21      INT_NET       Net   : APB_reader_0/write_5
+                          Driver: APB_reader_0/write_5
+    21      INT_NET       Net   : APB_reader_0/write_4
+                          Driver: APB_reader_0/write_4
+    20      INT_NET       Net   : APB_reader_0_PWM_DUTY_R_0[4]
+                          Driver: APB_reader_0/PWM_DUTY_R[4]
+    19      INT_NET       Net   : APB_reader_0_PWM_DUTY_L_0[7]
+                          Driver: APB_reader_0/PWM_DUTY_L[7]
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    24      INT_NET       Net   : APB_reader_0_PWM_DUTY_L_0[3]
-                          Driver: APB_reader_0/PWM_DUTY_L[3]
-    24      INT_NET       Net   : APB_reader_0_PWM_DUTY_R_0[7]
-                          Driver: APB_reader_0/PWM_DUTY_R[7]
     24      INT_NET       Net   : APB_reader_0/un1_write_1_0_0
-                          Driver: APB_reader_0/count_RNITMF28[25]
-    23      INT_NET       Net   : APB_reader_0_PWM_DUTY_R_0[2]
-                          Driver: APB_reader_0/PWM_DUTY_R[2]
-    23      INT_NET       Net   : APB_reader_0_PWM_DUTY_L_0[2]
-                          Driver: APB_reader_0/PWM_DUTY_L[2]
-    23      INT_NET       Net   : APB_reader_0/un1_write_1
-                          Driver: APB_reader_0/count_RNITMF28_0[25]
+                          Driver: APB_reader_0/count_RNI8IFD8[26]
+    24      INT_NET       Net   : APB_reader_0/un1_write_1
+                          Driver: APB_reader_0/count_RNI8IFD8_0[26]
+    23      INT_NET       Net   : APB_reader_0_PWM_DUTY_L_0[4]
+                          Driver: APB_reader_0/PWM_DUTY_L[4]
+    22      INT_NET       Net   : APB_reader_0_PWM_DUTY_L_0[3]
+                          Driver: APB_reader_0/PWM_DUTY_L[3]
     21      INT_NET       Net   : car_MSS_0_M2F_RESET_N
                           Driver: car_MSS_0/MSS_ADLIB_INST
-    21      INT_NET       Net   : APB_reader_0_PWM_DUTY_L_0[1]
-                          Driver: APB_reader_0/PWM_DUTY_L[1]
-    21      INT_NET       Net   : APB_reader_0/write
-                          Driver: APB_reader_0/write
-    20      INT_NET       Net   : APB_reader_0_PWM_DUTY_R_0[1]
-                          Driver: APB_reader_0/PWM_DUTY_R[1]
+    21      INT_NET       Net   : APB_reader_0_PWM_DUTY_R_0[7]
+                          Driver: APB_reader_0/PWM_DUTY_R[7]
+    21      INT_NET       Net   : APB_reader_0/write_5
+                          Driver: APB_reader_0/write_5
+    21      INT_NET       Net   : APB_reader_0/write_4
+                          Driver: APB_reader_0/write_4
+    20      INT_NET       Net   : APB_reader_0_PWM_DUTY_R_0[4]
+                          Driver: APB_reader_0/PWM_DUTY_R[4]
+    19      INT_NET       Net   : APB_reader_0_PWM_DUTY_L_0[7]
+                          Driver: APB_reader_0/PWM_DUTY_L[7]
 
 
 Layout Output:
@@ -553,16 +553,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Thu Apr 13 20:47:05 2017
+Timing-driven Placer Started: Fri Apr 14 21:42:56 2017
 
-Placer Finished: Thu Apr 13 20:47:17 2017
-Total Placer CPU Time:     00:00:12
+Placer Finished: Fri Apr 14 21:43:07 2017
+Total Placer CPU Time:     00:00:11
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: car                             Started: Thu Apr 13 20:47:21 2017
+Design: car                             Started: Fri Apr 14 21:43:11 2017
 
  
 Iterative improvement...
@@ -570,9 +570,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: car                             
-Finished: Thu Apr 13 20:47:32 2017
-Total CPU Time:     00:00:10            Total Elapsed Time: 00:00:11
-Total Memory Usage: 175.7 Mbytes
+Finished: Fri Apr 14 21:43:23 2017
+Total CPU Time:     00:00:11            Total Elapsed Time: 00:00:12
+Total Memory Usage: 175.5 Mbytes
                         o - o - o - o - o - o
 
 

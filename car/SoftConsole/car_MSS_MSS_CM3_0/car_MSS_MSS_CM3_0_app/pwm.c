@@ -46,6 +46,10 @@ uint8_t getDuty(uint8_t uncalibrate_in) {
 	}
 	else {
 		duty = (uint8_t)(((SLOPE)*((double)(diff - DEAD_ZONE)/(CENTER - DEAD_ZONE)) + MIN_DUTY) * 256);
+		if (duty > 255) {
+			printf("error value: %d\n\r", duty);
+			return 255;
+		}
 		//printf("return value: %d\n", pwm);
 		return duty;
 	}

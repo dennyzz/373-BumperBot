@@ -1,6 +1,6 @@
 <project name="car" version="1.1">
     <ProjectDirectory>
-        C:\Users\weeyizhi\Desktop\car_aprl7\car\designer\impl1\car_fp
+        C:\Users\weeyizhi\Desktop\car_final\car\designer\impl1\car_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,17 +9,17 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        C:\Users\weeyizhi\Desktop\car_aprl7\car\designer\impl1\car_fp\car.log
+        C:\Users\weeyizhi\Desktop\car_final\car\designer\impl1\car_fp\car.log
     </LogFile>
     <SerializationOption>
         Skip
     </SerializationOption>
     <programmer status="enable" type="FlashPro3" revision="UndefRev" connection="usb2.0">
         <name>
-            79439
+            80256
         </name>
         <id>
-            79439
+            80256
         </id>
     </programmer>
     <configuration>
@@ -74,7 +74,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                C:\Users\weeyizhi\Desktop\car_aprl7\car\designer\impl1\car_fp\car.pdb
+                C:\Users\weeyizhi\Desktop\car_final\car\designer\impl1\car_fp\car.pdb
             </filename>
             <local>
                 projectData\car.pdb

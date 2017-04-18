@@ -17,7 +17,7 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart )
 	static uint8_t rx_buff[8] = {128, 128, 128, 128, 128, 128, 128, 128};
 	MSS_UART_get_rx( this_uart, rx_buff, sizeof(rx_buff));
 
-	//printf("%x %x %x %x %x %x %x %x\r\n", rx_buff[0], rx_buff[1], rx_buff[2], rx_buff[3], rx_buff[4], rx_buff[5], rx_buff[6], rx_buff[7]);
+	printf("%x %x %x %x %x %x %x %x\r\n", rx_buff[0], rx_buff[1], rx_buff[2], rx_buff[3], rx_buff[4], rx_buff[5], rx_buff[6], rx_buff[7]);
 
 	setMotorAPB(rx_buff);
 
@@ -26,7 +26,7 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart )
 
 int main()
 {
-	//printf("main started");
+	printf("main started");
 
 	initMotor();
 

@@ -15,14 +15,14 @@
 
 //configure PWM, make sure to change pwm_gen.v too
 #define MIN_DUTY	0.5
-#define MAX_DUTY	0.83
+#define MAX_DUTY	0.9
 #define SLOPE 		(MAX_DUTY - MIN_DUTY)
 
 //configure controller dead zone
 #define CENTER		128	//value from controller when at center
-#define DEAD_ZONE   1	//center plus minus this value is still considered dead
+#define DEAD_ZONE   2	//center plus minus this value is still considered dead
 
-#define APB_RD_ADDR 0x40050000;	//not used
+#define APB_RD_ADDR 0x40050000;	//no used
 #define APB_WR_ADDR 0x40050004;
 
 #define EN_R_MASK	0x1

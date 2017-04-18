@@ -1,6 +1,6 @@
 <project name="car" version="1.1">
     <ProjectDirectory>
-        C:\Users\weeyizhi\Desktop\car_final\car\designer\impl1\car_fp
+        C:\Users\WYZ\Documents\GitHub\373_Repo\373-BumperBot\car\designer\impl1\car_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,7 +9,7 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        C:\Users\weeyizhi\Desktop\car_final\car\designer\impl1\car_fp\car.log
+        C:\Users\WYZ\Documents\GitHub\373_Repo\373-BumperBot\car\designer\impl1\car_fp\car.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -74,7 +74,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                C:\Users\weeyizhi\Desktop\car_final\car\designer\impl1\car_fp\car.pdb
+                C:\Users\WYZ\Documents\GitHub\373_Repo\373-BumperBot\car\designer\impl1\car_fp\car.pdb
             </filename>
             <local>
                 projectData\car.pdb
